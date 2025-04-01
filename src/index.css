@@ -1,21 +1,57 @@
+@import "./styles/typography.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply bg-btb-black text-white;
+    @apply bg-btb-black text-white min-h-screen;
     font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Optimize animations */
+  * {
+    @apply transition-colors duration-200;
+  }
+
+  /* Optimize page transitions */
+  .page-transition {
+    @apply animate-page-transition;
+    will-change: opacity;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors;
+    @apply bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-all duration-200 transform hover:scale-105;
   }
 
   .btn-secondary {
-    @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-gold hover:text-black transition-colors;
+    @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-gold hover:text-black transition-all duration-200 transform hover:scale-105;
+  }
+
+  .card {
+    @apply bg-black/50 backdrop-blur-sm rounded-xl p-6 border border-btb-gold/20 hover:border-btb-gold/40 transition-all duration-200;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .grid-layout {
+    @apply grid gap-8 md:gap-12;
+  }
+
+  /* Optimize navigation transitions */
+  .nav-link {
+    @apply transition-colors duration-200;
   }
 }
 
@@ -34,4 +70,15 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-btb-gold;
+}
+
+/* Optimize smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-btb-gold/20 text-btb-gold;
 }
