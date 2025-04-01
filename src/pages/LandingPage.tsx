@@ -80,7 +80,7 @@ export default function LandingPage() {
           </div>
           <RouterLink
             to="/signup"
-            className="inline-block bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors "
+            className="inline-block bg-btb-gold text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold hover:bg-btb-neon transition-colors"
           >
             I Know What This Is. Let Me In
           </RouterLink>
@@ -344,7 +344,7 @@ export default function LandingPage() {
           </div>
           <RouterLink
             to="/signup"
-            className="inline-block bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold mt-8 hover:bg-btb-neon transition-colors"
+            className="inline-block bg-btb-gold text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold mt-8 hover:bg-btb-neon transition-colors"
           >
             I Don't Need a Pitch. I Need In
           </RouterLink>
