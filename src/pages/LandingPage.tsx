@@ -282,12 +282,14 @@ export default function LandingPage() {
               </motion.div>
             ))}
           </div>
-          <p className="text-xl text-gray-300 mt-8">
-            No coding. No crypto knowledge required. Just guts, hustle, and
-            hunger. This isn't a playground. It's a launchpad for digital
-            ownership. And this opportunity? It's not for sale. It's for the
-            ones bold enough to take it.
-          </p>
+          <div className="flex justify-center w-full">
+            <p className="text-xl text-gray-300 mt-8 text-center max-w-4xl">
+              No coding. No crypto knowledge required. Just guts, hustle, and
+              hunger. This isn't a playground. It's a launchpad for digital
+              ownership. And this opportunity? It's not for sale. It's for the
+              ones bold enough to take it.
+            </p>
+          </div>
         </motion.div>
       </section>
 

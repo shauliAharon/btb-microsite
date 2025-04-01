@@ -77,9 +77,9 @@ export default function SignUpPage() {
             Who This Is For:
           </h3>
           <ul className="text-xl text-gray-300 list-disc pl-6 space-y-2 mb-8">
-            <li>🔥 Hustlers with an audience</li>
-            <li>🔥 Creators, influencers, and affiliate killers</li>
-            <li>🔥 Operators who want to skip building and just own</li>
+            <li> Hustlers with an audience</li>
+            <li> Creators, influencers, and affiliate killers</li>
+            <li> Operators who want to skip building and just own</li>
           </ul>
           <p className="text-xl text-gray-300 mb-8">
             If you're ready to build a real income engine in a zero-BS,
@@ -179,7 +179,7 @@ export default function SignUpPage() {
           How It Works (Step-by-Step):
         </h2>
         <div className="max-w-3xl mx-auto">
-          <div className="space-y-8">
+          <div className="grid grid-cols-3 gap-8">
             {[
               {
                 step: "1",
@@ -218,13 +218,13 @@ export default function SignUpPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="flex items-start space-x-6"
+                className="flex flex-col items-center text-center"
               >
-                <div className="w-12 h-12 bg-btb-gold text-black rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
+                <div className="w-12 h-12 bg-btb-gold text-black rounded-full flex items-center justify-center text-xl font-bold mb-4">
                   {step.step}
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">{step.title}</h3>
+                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                   <p className="text-gray-300">{step.description}</p>
                 </div>
               </motion.div>
@@ -240,15 +240,13 @@ export default function SignUpPage() {
           </h3>
           <ul className="text-xl text-gray-300 list-disc pl-6 space-y-2 mb-8">
             <li>
-              🚀 This is the ground floor. You're not buying access, you're
+              This is the ground floor. You're not buying access, you're
               claiming territory.
             </li>
+            <li>Only 250 spots available — and it closes when they're gone.</li>
             <li>
-              🔒 Only 250 spots available — and it closes when they're gone.
-            </li>
-            <li>
-              💥 Web3 gaming isn't coming — it's here. And you can own a piece
-              of it.
+              Web3 gaming isn't coming — it's here. And you can own a piece of
+              it.
             </li>
           </ul>
         </div>
@@ -257,10 +255,10 @@ export default function SignUpPage() {
             What You're Paying For (No Surprises):
           </h3>
           <ul className="text-xl text-gray-300 list-disc pl-6 space-y-2 mb-4">
-            <li>✅ One-time $1,000 setup</li>
-            <li>✅ Lifetime access to the platform</li>
-            <li>✅ No hidden fees. No monthly anything.</li>
-            <li>✅ You get a full business in a box.</li>
+            <li> One-time $1,000 setup</li>
+            <li> Lifetime access to the platform</li>
+            <li> No hidden fees. No monthly anything.</li>
+            <li> You get a full business in a box.</li>
           </ul>
           <p className="text-xl text-gray-300">
             This is a founders-level asset, not a toy.
