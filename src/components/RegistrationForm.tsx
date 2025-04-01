@@ -81,7 +81,7 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
       <div>
         <label
           htmlFor="walletAddress"
-          className="block text-sm font-medium text-gray-300 mb-2"
+          className="block text-sm sm:text-base font-medium text-gray-300 mb-2"
         >
           Wallet Address
         </label>
@@ -92,15 +92,15 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
           value={formData.walletAddress}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-black/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-btb-gold focus:border-transparent text-white placeholder-gray-400"
+          className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-black/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-btb-gold focus:border-transparent text-white placeholder-gray-400 text-sm sm:text-base"
           placeholder="Enter your wallet address"
         />
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         <button
           type="submit"
-          className="w-full bg-btb-gold text-black px-6 py-3 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors"
+          className="w-full bg-btb-gold text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold hover:bg-btb-neon transition-colors"
         >
           Submit Registration
         </button>
@@ -108,7 +108,7 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
         <button
           type="button"
           onClick={handlePayment}
-          className="w-full bg-btb-neon text-black px-6 py-3 rounded-lg text-lg font-bold hover:bg-btb-gold transition-colors"
+          className="w-full bg-btb-neon text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold hover:bg-btb-gold transition-colors"
         >
           Pay with GCoin
         </button>

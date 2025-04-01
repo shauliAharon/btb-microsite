@@ -22,8 +22,16 @@
   }
 
   p {
-    @apply text-lg md:text-xl lg:text-2xl leading-relaxed mb-4;
+    @apply text-lg leading-relaxed mb-4;
     max-width: 65ch;
+  }
+
+  ul {
+    @apply text-lg leading-relaxed mb-4 space-y-2;
+  }
+
+  li {
+    @apply mb-2;
   }
 
   .text-large {
@@ -31,11 +39,11 @@
   }
 
   .text-small {
-    @apply text-lg md:text-xl leading-relaxed;
+    @apply text-lg leading-relaxed;
   }
 
   .text-caption {
-    @apply text-lg md:text-xl leading-relaxed text-btb-gold/80;
+    @apply text-lg leading-relaxed text-btb-gold/80;
   }
 }
 
@@ -50,15 +58,15 @@
   }
 
   .nav-link {
-    @apply text-lg md:text-xl font-medium hover:text-btb-gold transition-colors;
+    @apply text-lg font-medium hover:text-btb-gold transition-colors;
   }
 
   .hero-text {
-    @apply text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-3xl mx-auto;
+    @apply text-lg leading-relaxed max-w-3xl mx-auto;
   }
 
   .feature-text {
-    @apply text-lg md:text-xl leading-relaxed mb-6;
+    @apply text-lg leading-relaxed mb-6;
   }
 }
 
@@ -68,7 +76,7 @@
 }
 
 .article-content p {
-  @apply mb-6 text-lg md:text-xl;
+  @apply mb-6 text-lg;
 }
 
 .article-content h2 {
@@ -82,7 +90,7 @@
 /* Improved button text */
 .btn-primary,
 .btn-secondary {
-  @apply tracking-wide text-lg;
+  @apply tracking-wide text-base sm:text-lg px-4 sm:px-8 py-2 sm:py-4;
   letter-spacing: 0.02em;
 }
 
@@ -90,9 +98,9 @@
 input,
 textarea,
 select {
-  @apply text-lg md:text-xl;
+  @apply text-base sm:text-lg;
 }
 
 label {
-  @apply text-lg md:text-xl font-medium mb-2 block;
+  @apply text-base sm:text-lg font-medium mb-2 block;
 }

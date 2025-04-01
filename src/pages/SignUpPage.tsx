@@ -121,7 +121,7 @@ export default function SignUpPage() {
         <p className="text-xl text-gray-300 text-center mb-8">
           No fluff. Just your empire, ready to launch.
         </p>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-6">
           {[
             {
               title: "Your Own Gaming Portal",
@@ -155,12 +155,16 @@ export default function SignUpPage() {
               initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="flex items-start space-x-4 bg-black/50 p-6 rounded-lg"
+              className="flex items-start space-x-4 bg-black/50 p-4 sm:p-6 rounded-lg"
             >
-              <CheckCircleIcon className="w-6 h-6 text-btb-gold flex-shrink-0 mt-1" />
+              <CheckCircleIcon className="w-5 h-5 sm:w-6 sm:h-6 text-btb-gold flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-gray-300">{item.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm sm:text-base text-gray-300">
+                  {item.description}
+                </p>
               </div>
             </motion.div>
           ))}

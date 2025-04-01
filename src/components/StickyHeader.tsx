@@ -35,7 +35,7 @@ export default function StickyHeader() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-white p-2"
+              className="md:hidden text-white p-2 hover:bg-black/20 rounded-lg transition-colors"
             >
               <svg
                 className="w-6 h-6"
@@ -67,13 +67,13 @@ export default function StickyHeader() {
                 <>
                   <RouterLink
                     to="/"
-                    className="text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Back
                   </RouterLink>
                   <button
                     onClick={() => setIsAuthModalOpen(true)}
-                    className="bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors"
+                    className="bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-sm sm:text-base"
                   >
                     Sign Up
                   </button>
@@ -84,7 +84,7 @@ export default function StickyHeader() {
                     to="mission"
                     smooth={true}
                     duration={800}
-                    className="text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Mission
                   </ScrollLink>
@@ -92,7 +92,7 @@ export default function StickyHeader() {
                     to="intro"
                     smooth={true}
                     duration={800}
-                    className="text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     About
                   </ScrollLink>
@@ -100,7 +100,7 @@ export default function StickyHeader() {
                     to="benefits"
                     smooth={true}
                     duration={800}
-                    className="text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Benefits
                   </ScrollLink>
@@ -108,13 +108,13 @@ export default function StickyHeader() {
                     to="market"
                     smooth={true}
                     duration={800}
-                    className="text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Market
                   </ScrollLink>
                   <RouterLink
                     to="/signup"
-                    className="bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors"
+                    className="bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-sm sm:text-base"
                   >
                     Join Now
                   </RouterLink>
@@ -125,12 +125,12 @@ export default function StickyHeader() {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden mt-4 space-y-4">
+            <div className="md:hidden mt-4 space-y-3 bg-black/90 p-4 rounded-lg">
               {isSignupPage ? (
                 <>
                   <RouterLink
                     to="/"
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Back
@@ -140,7 +140,7 @@ export default function StickyHeader() {
                       setIsAuthModalOpen(true);
                       setIsMobileMenuOpen(false);
                     }}
-                    className="w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors"
+                    className="w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-sm sm:text-base"
                   >
                     Sign Up
                   </button>
@@ -151,7 +151,7 @@ export default function StickyHeader() {
                     to="mission"
                     smooth={true}
                     duration={800}
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Mission
@@ -160,7 +160,7 @@ export default function StickyHeader() {
                     to="intro"
                     smooth={true}
                     duration={800}
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     About
@@ -169,7 +169,7 @@ export default function StickyHeader() {
                     to="benefits"
                     smooth={true}
                     duration={800}
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Benefits
@@ -178,14 +178,14 @@ export default function StickyHeader() {
                     to="market"
                     smooth={true}
                     duration={800}
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer"
+                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Market
                   </ScrollLink>
                   <RouterLink
                     to="/signup"
-                    className="block w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-center"
+                    className="block w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-center text-sm sm:text-base"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Join Now
