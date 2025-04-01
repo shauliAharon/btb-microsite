@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function LandingPage() {
   return (
     <div className="space-y-32">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative">
+      <section
+        id="hero"
+        className="min-h-screen flex items-center justify-center relative"
+      >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -18,24 +23,31 @@ export default function LandingPage() {
           <p className="text-xl md:text-2xl mb-8 text-gray-300">
             Own Your Gaming Empire
           </p>
-          <a
-            href="/signup"
+          <RouterLink
+            to="/signup"
             className="inline-block bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors"
           >
             Let Me In
-          </a>
+          </RouterLink>
         </motion.div>
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
-          <ArrowDownIcon className="w-8 h-8 text-btb-gold" />
+          <ScrollLink
+            to="mission"
+            smooth={true}
+            duration={800}
+            className="cursor-pointer"
+          >
+            <ArrowDownIcon className="w-8 h-8 text-btb-gold" />
+          </ScrollLink>
         </motion.div>
       </section>
 
       {/* Mission Block */}
-      <section className="container mx-auto px-4">
+      <section id="mission" className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -50,8 +62,46 @@ export default function LandingPage() {
         </motion.div>
       </section>
 
+      {/* BTB Intro Block */}
+      <section id="intro" className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center max-w-4xl mx-auto"
+        >
+          <h2 className="text-4xl font-bold mb-6">What is Be The Boss?</h2>
+          <p className="text-xl text-gray-300 mb-8">
+            Your gateway to Web3 entrepreneurship. Be The Boss is more than just
+            a platform - it's a movement that empowers gaming entrepreneurs to
+            build, own, and scale their gaming empires in the Web3 era.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-black/50 p-6 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-btb-gold">
+                Built for Founders
+              </h3>
+              <p className="text-gray-300">
+                A comprehensive ecosystem designed specifically for gaming
+                entrepreneurs who want to take control of their destiny in the
+                Web3 space.
+              </p>
+            </div>
+            <div className="bg-black/50 p-6 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-btb-gold">
+                Powered by Innovation
+              </h3>
+              <p className="text-gray-300">
+                Leveraging cutting-edge blockchain technology to create
+                unprecedented opportunities in the gaming industry.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* Benefits Overview */}
-      <section className="container mx-auto px-4">
+      <section id="benefits" className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
@@ -87,7 +137,7 @@ export default function LandingPage() {
       </section>
 
       {/* Market Potential */}
-      <section className="container mx-auto px-4">
+      <section id="market" className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -115,7 +165,7 @@ export default function LandingPage() {
       </section>
 
       {/* Scarcity Section */}
-      <section className="container mx-auto px-4">
+      <section id="signup" className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -127,12 +177,12 @@ export default function LandingPage() {
             Limited spots available for true visionaries who want to shape the
             future of gaming.
           </p>
-          <a
-            href="/signup"
+          <RouterLink
+            to="/signup"
             className="inline-block bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold mt-8 hover:bg-btb-neon transition-colors"
           >
             Join the Elite
-          </a>
+          </RouterLink>
         </motion.div>
       </section>
     </div>

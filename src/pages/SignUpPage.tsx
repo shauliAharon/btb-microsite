@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import AuthModal from "../components/AuthModal";
 
 export default function SignUpPage() {
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+
   return (
     <div className="space-y-32 py-20">
       {/* Founder's Circle Section */}
@@ -81,7 +85,7 @@ export default function SignUpPage() {
               {
                 step: "1",
                 title: "Sign Up",
-                description: "Complete the registration form below",
+                description: "Connect with your preferred account",
               },
               {
                 step: "2",
@@ -117,52 +121,34 @@ export default function SignUpPage() {
       </section>
 
       {/* Sign Up Form Section */}
-      <section className="container mx-auto px-4">
+      <section id="signup-form" className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-xl mx-auto bg-black/50 p-8 rounded-lg"
+          className="text-center max-w-4xl mx-auto bg-black/50 p-12 rounded-lg"
         >
-          <h2 className="text-3xl font-bold text-center mb-8">
-            Join the Founder's Circle
+          <h2 className="text-4xl font-bold mb-6">
+            Ready to Build Your Empire?
           </h2>
-          <form className="space-y-6">
-            <div>
-              <label className="block text-sm font-medium mb-2">Name</label>
-              <input
-                type="text"
-                className="w-full px-4 py-2 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-btb-gold"
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
-              <input
-                type="email"
-                className="w-full px-4 py-2 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-btb-gold"
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">
-                Wallet Address
-              </label>
-              <input
-                type="text"
-                className="w-full px-4 py-2 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-btb-gold"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors"
-            >
-              Complete Registration
-            </button>
-          </form>
+          <p className="text-xl text-gray-300 mb-8">
+            Join the Founder's Circle today and secure your spot in the future
+            of Web3 gaming. Limited spots available at the special price of
+            $1,000.
+          </p>
+          <button
+            onClick={() => setIsAuthModalOpen(true)}
+            className="bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors"
+          >
+            Sign Up
+          </button>
         </motion.div>
       </section>
+
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+      />
     </div>
   );
 }
