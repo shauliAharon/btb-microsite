@@ -17,7 +17,7 @@ export default function LandingPage() {
           transition={{ duration: 0.8 }}
           className="text-center px-4"
         >
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-btb-gold to-btb-neon text-transparent bg-clip-text">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-btb-gold to-white text-transparent bg-clip-text">
             Be The Boss
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300">

@@ -2,9 +2,20 @@ import { motion } from "framer-motion";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import AuthModal from "../components/AuthModal";
+import RegistrationForm from "../components/RegistrationForm";
 
 export default function SignUpPage() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+
+  const handleRegistrationSubmit = (formData: {
+    name: string;
+    email: string;
+    walletAddress: string;
+  }) => {
+    // Handle the form submission here
+    console.log("Form submitted:", formData);
+    setIsAuthModalOpen(false);
+  };
 
   return (
     <div className="space-y-32 py-20">
@@ -136,12 +147,7 @@ export default function SignUpPage() {
             of Web3 gaming. Limited spots available at the special price of
             $1,000.
           </p>
-          <button
-            onClick={() => setIsAuthModalOpen(true)}
-            className="bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors"
-          >
-            Sign Up
-          </button>
+          <RegistrationForm onSubmit={handleRegistrationSubmit} />
         </motion.div>
       </section>
 

@@ -5,8 +5,8 @@ export default {
     extend: {
       colors: {
         "btb-black": "#000000",
-        "btb-gold": "#FFD700",
-        "btb-neon": "#00FF00",
+        "btb-gold": "#2687F2",
+        "btb-neon": "#2687F2",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
