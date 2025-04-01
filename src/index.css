@@ -5,11 +5,20 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-btb-black;
+  }
+
   body {
     @apply bg-btb-black text-white min-h-screen;
     font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Prevent white flash */
+  #root {
+    @apply bg-btb-black min-h-screen;
   }
 
   .container {
@@ -18,17 +27,63 @@
 
   /* Optimize animations */
   * {
-    @apply transition-colors duration-200;
+    @apply transition-colors duration-150;
   }
 
   /* Optimize page transitions */
   .page-transition {
-    @apply animate-page-transition;
-    will-change: opacity;
+    @apply animate-page-slide;
+    will-change: transform, opacity;
+  }
+
+  /* Ensure immediate navigation */
+  a {
+    @apply cursor-pointer;
   }
 }
 
 @layer components {
+  /* Hero Section */
+  .hero-section {
+    @apply relative min-h-[80vh] flex items-center justify-center overflow-hidden;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(38, 135, 242, 0.1) 100%
+    );
+  }
+
+  .hero-content {
+    @apply relative z-10 text-center max-w-4xl mx-auto px-4;
+  }
+
+  /* Feature Blocks */
+  .feature-block {
+    @apply bg-btb-dark rounded-block p-8 shadow-block hover:shadow-lg transition-all duration-300;
+    border: 1px solid rgba(38, 135, 242, 0.1);
+  }
+
+  .feature-block:hover {
+    @apply transform -translate-y-1;
+    border-color: rgba(38, 135, 242, 0.3);
+  }
+
+  /* Content Blocks */
+  .content-block {
+    @apply bg-btb-dark/50 backdrop-blur-sm rounded-block p-8 shadow-block;
+    border: 1px solid rgba(38, 135, 242, 0.1);
+  }
+
+  /* Grid Layouts */
+  .grid-2 {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+  }
+
+  .grid-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+
+  /* Buttons */
   .btn-primary {
     @apply bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-all duration-200 transform hover:scale-105;
   }
@@ -37,21 +92,31 @@
     @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-gold hover:text-black transition-all duration-200 transform hover:scale-105;
   }
 
+  /* Cards */
   .card {
-    @apply bg-black/50 backdrop-blur-sm rounded-xl p-6 border border-btb-gold/20 hover:border-btb-gold/40 transition-all duration-200;
+    @apply bg-btb-dark/50 backdrop-blur-sm rounded-block p-6 border border-btb-gold/20 hover:border-btb-gold/40 transition-all duration-200;
   }
 
+  /* Sections */
   .section {
     @apply py-16 md:py-24;
   }
 
-  .grid-layout {
-    @apply grid gap-8 md:gap-12;
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-12;
+    background: linear-gradient(135deg, #fff 0%, #2687f2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  /* Optimize navigation transitions */
+  /* Navigation */
   .nav-link {
-    @apply transition-colors duration-200;
+    @apply transition-colors duration-150 hover:text-btb-gold;
+  }
+
+  /* Floating Elements */
+  .float-element {
+    @apply animate-float;
   }
 }
 
@@ -81,4 +146,16 @@ html {
 /* Selection color */
 ::selection {
   @apply bg-btb-gold/20 text-btb-gold;
+}
+
+/* Glass Effect */
+.glass-effect {
+  @apply bg-btb-dark/30 backdrop-blur-md border border-white/10;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #fff 0%, #2687f2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
