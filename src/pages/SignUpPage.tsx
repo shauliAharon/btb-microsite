@@ -183,7 +183,7 @@ export default function SignUpPage() {
           How It Works (Step-by-Step):
         </h2>
         <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {[
               {
                 step: "1",
@@ -222,7 +222,7 @@ export default function SignUpPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="flex flex-col items-center text-center"
+                className="flex flex-col items-center text-center p-4 bg-black/30 rounded-lg"
               >
                 <div className="w-12 h-12 bg-btb-gold text-black rounded-full flex items-center justify-center text-xl font-bold mb-4">
                   {step.step}
