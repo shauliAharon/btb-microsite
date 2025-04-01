@@ -1,4 +1,8 @@
 @layer base {
+  html {
+    font-family: "Helvetica", sans-serif;
+  }
+
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6;
     letter-spacing: -0.02em;
@@ -18,20 +22,20 @@
   }
 
   p {
-    @apply text-base md:text-lg leading-relaxed mb-4;
+    @apply text-lg md:text-xl lg:text-2xl leading-relaxed mb-4;
     max-width: 65ch;
   }
 
   .text-large {
-    @apply text-lg md:text-xl lg:text-2xl leading-relaxed;
+    @apply text-xl md:text-2xl lg:text-3xl leading-relaxed;
   }
 
   .text-small {
-    @apply text-sm md:text-base leading-relaxed;
+    @apply text-lg md:text-xl leading-relaxed;
   }
 
   .text-caption {
-    @apply text-xs md:text-sm leading-relaxed text-btb-gold/80;
+    @apply text-lg md:text-xl leading-relaxed text-btb-gold/80;
   }
 }
 
@@ -46,7 +50,7 @@
   }
 
   .nav-link {
-    @apply text-base md:text-lg font-medium hover:text-btb-gold transition-colors;
+    @apply text-lg md:text-xl font-medium hover:text-btb-gold transition-colors;
   }
 
   .hero-text {
@@ -64,7 +68,7 @@
 }
 
 .article-content p {
-  @apply mb-6;
+  @apply mb-6 text-lg md:text-xl;
 }
 
 .article-content h2 {
@@ -78,7 +82,7 @@
 /* Improved button text */
 .btn-primary,
 .btn-secondary {
-  @apply tracking-wide;
+  @apply tracking-wide text-lg;
   letter-spacing: 0.02em;
 }
 
@@ -86,9 +90,9 @@
 input,
 textarea,
 select {
-  @apply text-base md:text-lg;
+  @apply text-lg md:text-xl;
 }
 
 label {
-  @apply text-sm md:text-base font-medium mb-2 block;
+  @apply text-lg md:text-xl font-medium mb-2 block;
 }

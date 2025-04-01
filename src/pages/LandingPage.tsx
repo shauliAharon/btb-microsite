@@ -27,12 +27,6 @@ export default function LandingPage() {
             We're not opening the doors. We're cracking them — just enough for
             the next generation of digital owners.
           </p>
-          <RouterLink
-            to="/signup"
-            className="inline-block bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors"
-          >
-            I Know What This Is. Let Me In
-          </RouterLink>
         </motion.div>
         <motion.div
           animate={{ y: [0, 10, 0] }}
@@ -64,7 +58,7 @@ export default function LandingPage() {
             know you were built for more than paychecks, permission, and playing
             small.
           </p>
-          <div className="max-w-3xl mx-auto space-y-4 mb-8">
+          <div className="max-w-3xl mx-auto space-y-4 mb-12">
             <p className="text-xl text-gray-300">
               What if you could lock in a business that:
             </p>
@@ -84,6 +78,12 @@ export default function LandingPage() {
               Bitcoin had 2010. Ethereum had 2015. You can have 2025.
             </p>
           </div>
+          <RouterLink
+            to="/signup"
+            className="inline-block bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-colors "
+          >
+            I Know What This Is. Let Me In
+          </RouterLink>
         </motion.div>
       </section>
 
@@ -110,11 +110,11 @@ export default function LandingPage() {
               <h3 className="text-2xl font-bold mb-4 text-btb-gold">
                 The Vision
               </h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300 mb-4 text-lg">
                 We're building the next-generation economy of social gaming +
                 digital prestige:
               </p>
-              <ul className="text-gray-300 list-disc pl-6 space-y-2">
+              <ul className="text-gray-300 list-disc pl-6 space-y-2 text-lg">
                 <li>Social games</li>
                 <li>PvP sports picks</li>
                 <li>Market trading sims</li>
