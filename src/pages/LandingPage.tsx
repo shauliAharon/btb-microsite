@@ -5,7 +5,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 export default function LandingPage() {
   return (
-    <div >
+    <div className="space-y-32">
       {/* Hero Section */}
       <section
         id="hero"
