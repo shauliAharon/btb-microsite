@@ -100,17 +100,17 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
       <div className="space-y-3 sm:space-y-4">
         <button
           type="submit"
-          className="w-full bg-btb-gold text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold hover:bg-btb-neon transition-colors"
+          className="w-full text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold transition-all duration-300 hover:scale-105 shimmer-button"
         >
-          Submit Registration
+          <span>Submit Registration</span>
         </button>
 
         <button
           type="button"
           onClick={handlePayment}
-          className="w-full bg-btb-neon text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold hover:bg-btb-gold transition-colors"
+          className="w-full text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold transition-all duration-300 hover:scale-105 shimmer-button"
         >
-          Pay with GCoin
+          <span>Pay with GCoin</span>
         </button>
       </div>
     </motion.form>

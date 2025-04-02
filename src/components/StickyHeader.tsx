@@ -74,9 +74,9 @@ export default function StickyHeader() {
                   </RouterLink>
                   <button
                     onClick={() => setIsAuthModalOpen(true)}
-                    className="bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-sm sm:text-base"
+                    className="text-black px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
                   >
-                    Sign Up
+                    <span>Sign Up</span>
                   </button>
                 </>
               ) : (
@@ -107,9 +107,9 @@ export default function StickyHeader() {
                   </button>
                   <RouterLink
                     to="/signup"
-                    className="bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-sm sm:text-base"
+                    className="text-black px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
                   >
-                    Join Now
+                    <span>Join Now</span>
                   </RouterLink>
                 </>
               )}
@@ -134,9 +134,9 @@ export default function StickyHeader() {
                         setIsAuthModalOpen(true);
                         setIsMobileMenuOpen(false);
                       }}
-                      className="block w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-center text-sm sm:text-base"
+                      className="block w-full text-black px-4 py-2 rounded-lg font-bold text-center text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
                     >
-                      Sign Up
+                      <span>Sign Up</span>
                     </button>
                   </>
                 ) : (
@@ -179,10 +179,10 @@ export default function StickyHeader() {
                     </button>
                     <RouterLink
                       to="/signup"
-                      className="block w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-center text-sm sm:text-base"
+                      className="block w-full text-black px-4 py-2 rounded-lg font-bold text-center text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      Join Now
+                      <span>Join Now</span>
                     </RouterLink>
                   </>
                 )}

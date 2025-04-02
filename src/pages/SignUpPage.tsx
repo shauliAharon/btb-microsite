@@ -31,7 +31,7 @@ export default function SignUpPage() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h1 className="text-5xl font-bold mb-8 text-btb-gold">
+          <h1 className="text-5xl font-bold mb-8">
             Be The Boss Founders Circle
           </h1>
           <div className="max-w-3xl mx-auto">

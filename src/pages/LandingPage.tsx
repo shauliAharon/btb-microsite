@@ -10,7 +10,7 @@ export default function LandingPage() {
         className="min-h-screen flex items-center justify-center relative"
       >
         <div className="text-center px-4">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-btb-gold to-white text-transparent bg-clip-text">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-shimmer">
             Be The Boss
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-gray-300">
@@ -66,9 +66,9 @@ export default function LandingPage() {
           </div>
           <RouterLink
             to="/signup"
-            className="inline-block bg-btb-gold text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold hover:bg-btb-neon transition-colors"
+            className="inline-block text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold transition-all duration-300 hover:scale-105 shimmer-button"
           >
-            I Know What This Is. Let Me In
+            <span>I Know What This Is. Let Me In</span>
           </RouterLink>
         </div>
       </section>
@@ -195,9 +195,9 @@ export default function LandingPage() {
           </p>
           <RouterLink
             to="/signup"
-            className="inline-block bg-btb-gold text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold mt-8 hover:bg-btb-neon transition-colors"
+            className="inline-block text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-bold mt-8 transition-all duration-300 hover:scale-105 shimmer-button"
           >
-            I Don't Need a Pitch. I Need In
+            <span>I Don't Need a Pitch. I Need In</span>
           </RouterLink>
         </div>
       </section>

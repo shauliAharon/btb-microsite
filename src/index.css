@@ -79,16 +79,177 @@
 
   /* Buttons */
   .btn-primary {
-    @apply bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon;
+    @apply text-black px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300;
+    background: linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #ffffff 5%,
+      #d4af37 10%,
+      #ffffff 15%,
+      #d4af37 20%,
+      #ffffff 25%,
+      #d4af37 30%,
+      #ffffff 35%,
+      #d4af37 40%,
+      #ffffff 45%,
+      #d4af37 50%,
+      #ffffff 55%,
+      #d4af37 60%,
+      #ffffff 65%,
+      #d4af37 70%,
+      #ffffff 75%,
+      #d4af37 80%,
+      #ffffff 85%,
+      #d4af37 90%,
+      #ffffff 95%,
+      #d4af37 100%
+    );
+    background-size: 200% 200%;
+    animation: shimmer 4s linear infinite;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+
+  .btn-primary:hover {
+    transform: scale(1.05);
+    animation-duration: 2s;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
   }
 
   .btn-secondary {
-    @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-gold hover:text-black;
+    @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300;
+    background: linear-gradient(135deg, transparent 0%, transparent 100%);
   }
 
-  /* Cards */
-  .card {
-    @apply bg-btb-dark/50 backdrop-blur-sm rounded-block p-6 border border-btb-gold/20 hover:border-btb-gold/40;
+  .btn-secondary:hover {
+    background: linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #ffffff 5%,
+      #d4af37 10%,
+      #ffffff 15%,
+      #d4af37 20%,
+      #ffffff 25%,
+      #d4af37 30%,
+      #ffffff 35%,
+      #d4af37 40%,
+      #ffffff 45%,
+      #d4af37 50%,
+      #ffffff 55%,
+      #d4af37 60%,
+      #ffffff 65%,
+      #d4af37 70%,
+      #ffffff 75%,
+      #d4af37 80%,
+      #ffffff 85%,
+      #d4af37 90%,
+      #ffffff 95%,
+      #d4af37 100%
+    );
+    background-size: 200% 200%;
+    animation: shimmer 4s linear infinite;
+    @apply text-black border-transparent;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+  }
+
+  /* Add new button styles for inline buttons */
+  .shimmer-button {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    border-radius: 8px;
+    padding: 2px;
+  }
+
+  .shimmer-button::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    background: linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #ffffff 5%,
+      #d4af37 10%,
+      #ffffff 15%,
+      #d4af37 20%,
+      #ffffff 25%,
+      #d4af37 30%,
+      #ffffff 35%,
+      #d4af37 40%,
+      #ffffff 45%,
+      #d4af37 50%,
+      #ffffff 55%,
+      #d4af37 60%,
+      #ffffff 65%,
+      #d4af37 70%,
+      #ffffff 75%,
+      #d4af37 80%,
+      #ffffff 85%,
+      #d4af37 90%,
+      #ffffff 95%,
+      #d4af37 100%
+    );
+    background-size: 200% 200%;
+    animation: shimmer 6s linear infinite;
+    z-index: -2;
+    border-radius: 10px;
+  }
+
+  .shimmer-button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: black;
+    z-index: -1;
+    border-radius: 8px;
+  }
+
+  .shimmer-button span {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #ffffff 5%,
+      #d4af37 10%,
+      #ffffff 15%,
+      #d4af37 20%,
+      #ffffff 25%,
+      #d4af37 30%,
+      #ffffff 35%,
+      #d4af37 40%,
+      #ffffff 45%,
+      #d4af37 50%,
+      #ffffff 55%,
+      #d4af37 60%,
+      #ffffff 65%,
+      #d4af37 70%,
+      #ffffff 75%,
+      #d4af37 80%,
+      #ffffff 85%,
+      #d4af37 90%,
+      #ffffff 95%,
+      #d4af37 100%
+    );
+    background-size: 200% 200%;
+    animation: shimmer 6s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: block;
+    padding: 8px 24px;
+  }
+
+  .shimmer-button:hover {
+    transform: scale(1.05);
+  }
+
+  .shimmer-button:hover::before {
+    animation-duration: 3s;
+  }
+
+  .shimmer-button:hover span {
+    animation-duration: 3s;
   }
 
   /* Sections */
@@ -98,9 +259,68 @@
 
   .section-title {
     @apply text-3xl md:text-4xl font-bold text-center mb-12;
-    background: linear-gradient(135deg, #fff 0%, #2687f2 100%);
+    background: linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #ffffff 5%,
+      #d4af37 10%,
+      #ffffff 15%,
+      #d4af37 20%,
+      #ffffff 25%,
+      #d4af37 30%,
+      #ffffff 35%,
+      #d4af37 40%,
+      #ffffff 45%,
+      #d4af37 50%,
+      #ffffff 55%,
+      #d4af37 60%,
+      #ffffff 65%,
+      #d4af37 70%,
+      #ffffff 75%,
+      #d4af37 80%,
+      #ffffff 85%,
+      #d4af37 90%,
+      #ffffff 95%,
+      #d4af37 100%
+    );
+    background-size: 200% 200%;
+    animation: shimmer 6s linear infinite;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  h1,
+  h2 {
+    background: linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #ffffff 5%,
+      #d4af37 10%,
+      #ffffff 15%,
+      #d4af37 20%,
+      #ffffff 25%,
+      #d4af37 30%,
+      #ffffff 35%,
+      #d4af37 40%,
+      #ffffff 45%,
+      #d4af37 50%,
+      #ffffff 55%,
+      #d4af37 60%,
+      #ffffff 65%,
+      #d4af37 70%,
+      #ffffff 75%,
+      #d4af37 80%,
+      #ffffff 85%,
+      #d4af37 90%,
+      #ffffff 95%,
+      #d4af37 100%
+    );
+    background-size: 200% 200%;
+    animation: shimmer 6s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   /* Navigation */
@@ -147,4 +367,50 @@ html {
   background: linear-gradient(135deg, #fff 0%, #2687f2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -100% -100%;
+  }
+}
+
+.gradient-shimmer {
+  background: linear-gradient(
+    135deg,
+    #d4af37 0%,
+    #ffffff 5%,
+    #d4af37 10%,
+    #ffffff 15%,
+    #d4af37 20%,
+    #ffffff 25%,
+    #d4af37 30%,
+    #ffffff 35%,
+    #d4af37 40%,
+    #ffffff 45%,
+    #d4af37 50%,
+    #ffffff 55%,
+    #d4af37 60%,
+    #ffffff 65%,
+    #d4af37 70%,
+    #ffffff 75%,
+    #d4af37 80%,
+    #ffffff 85%,
+    #d4af37 90%,
+    #ffffff 95%,
+    #d4af37 100%
+  );
+  background-size: 200% 200%;
+  animation: shimmer 4s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
 }
