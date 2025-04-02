@@ -57,9 +57,9 @@ export default function SignUpPage() {
       </section>
 
       {/* What's Included Section */}
-      <section className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">What Is This?</h2>
-        <div className="max-w-3xl mx-auto text-center mb-12">
+      <section className="container mx-auto px-4 ">
+        <h2 className="text-4xl font-bold text-center mb-12 ">What Is This?</h2>
+        <div className="max-w-3xl mx-auto text-center mb-12 bg-btb-gold/10 p-8 rounded-lg">
           <p className="text-xl text-gray-300 mb-8">
             The Be The Boss (BTB) program gives you a fully branded,
             Web3-powered social gaming platform — in your name, with your
@@ -72,7 +72,7 @@ export default function SignUpPage() {
             marketing. This is ownership.
           </p>
         </div>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto ">
           <h3 className="text-2xl font-bold mb-6 text-btb-gold">
             Who This Is For:
           </h3>
@@ -121,7 +121,7 @@ export default function SignUpPage() {
         <p className="text-xl text-gray-300 text-center mb-8">
           No fluff. Just your empire, ready to launch.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-6 bg-btb-gold/10 p-8 rounded-lg">
           {[
             {
               title: "Your Own Gaming Portal",
@@ -158,7 +158,7 @@ export default function SignUpPage() {
               className="flex items-start space-x-4 bg-black/50 p-4 sm:p-6 rounded-lg"
             >
               <CheckCircleIcon className="w-5 h-5 sm:w-6 sm:h-6 text-btb-gold flex-shrink-0 mt-1" />
-              <div>
+              <div >
                 <h3 className="text-lg sm:text-xl font-bold mb-2">
                   {item.title}
                 </h3>
@@ -169,7 +169,7 @@ export default function SignUpPage() {
             </motion.div>
           ))}
         </div>
-        <div className="max-w-3xl mx-auto mt-8 text-center">
+        <div className="max-w-3xl mx-auto mt-8 text-center ">
           <p className="text-xl text-gray-300">
             Real Example: Player buys $10,000 of tokens → You earn $5,000
             immediately. They keep playing → You keep earning.
@@ -178,7 +178,7 @@ export default function SignUpPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="container mx-auto px-4">
+      <section className="container mx-auto px-4 ">
         <h2 className="text-4xl font-bold text-center mb-12">
           How It Works (Step-by-Step):
         </h2>
@@ -271,7 +271,7 @@ export default function SignUpPage() {
       </section>
 
       {/* Sign Up Form Section */}
-      <section id="signup-form" className="container mx-auto px-4">
+      <section id="signup-form" className="container mx-auto px-4 bg-btb-gold/10 p-8 rounded-lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import AuthModal from "./AuthModal";
@@ -10,13 +8,16 @@ export default function StickyHeader() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-      <motion.header
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-sm z-50"
-      >
+      <header className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-sm z-50">
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <RouterLink to="/" className="cursor-pointer">
@@ -80,38 +81,30 @@ export default function StickyHeader() {
                 </>
               ) : (
                 <>
-                  <ScrollLink
-                    to="mission"
-                    smooth={true}
-                    duration={800}
+                  <button
+                    onClick={() => scrollToSection("mission")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Mission
-                  </ScrollLink>
-                  <ScrollLink
-                    to="intro"
-                    smooth={true}
-                    duration={800}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection("intro")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     About
-                  </ScrollLink>
-                  <ScrollLink
-                    to="benefits"
-                    smooth={true}
-                    duration={800}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection("benefits")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Benefits
-                  </ScrollLink>
-                  <ScrollLink
-                    to="market"
-                    smooth={true}
-                    duration={800}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection("market")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Market
-                  </ScrollLink>
+                  </button>
                   <RouterLink
                     to="/signup"
                     className="bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-sm sm:text-base"
@@ -125,77 +118,79 @@ export default function StickyHeader() {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden mt-4 space-y-3 bg-black/90 p-4 rounded-lg">
-              {isSignupPage ? (
-                <>
-                  <RouterLink
-                    to="/"
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Back
-                  </RouterLink>
-                  <button
-                    onClick={() => {
-                      setIsAuthModalOpen(true);
-                      setIsMobileMenuOpen(false);
-                    }}
-                    className="w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-sm sm:text-base"
-                  >
-                    Sign Up
-                  </button>
-                </>
-              ) : (
-                <>
-                  <ScrollLink
-                    to="mission"
-                    smooth={true}
-                    duration={800}
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Mission
-                  </ScrollLink>
-                  <ScrollLink
-                    to="intro"
-                    smooth={true}
-                    duration={800}
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    About
-                  </ScrollLink>
-                  <ScrollLink
-                    to="benefits"
-                    smooth={true}
-                    duration={800}
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Benefits
-                  </ScrollLink>
-                  <ScrollLink
-                    to="market"
-                    smooth={true}
-                    duration={800}
-                    className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Market
-                  </ScrollLink>
-                  <RouterLink
-                    to="/signup"
-                    className="block w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-center text-sm sm:text-base"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Join Now
-                  </RouterLink>
-                </>
-              )}
+            <div className="md:hidden fixed inset-0 top-16 bg-black/95 backdrop-blur-sm z-40">
+              <div className="container mx-auto px-4 py-8 space-y-4">
+                {isSignupPage ? (
+                  <>
+                    <RouterLink
+                      to="/"
+                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Back
+                    </RouterLink>
+                    <button
+                      onClick={() => {
+                        setIsAuthModalOpen(true);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-center text-sm sm:text-base"
+                    >
+                      Sign Up
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      onClick={() => {
+                        scrollToSection("mission");
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                    >
+                      Mission
+                    </button>
+                    <button
+                      onClick={() => {
+                        scrollToSection("intro");
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                    >
+                      About
+                    </button>
+                    <button
+                      onClick={() => {
+                        scrollToSection("benefits");
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                    >
+                      Benefits
+                    </button>
+                    <button
+                      onClick={() => {
+                        scrollToSection("market");
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                    >
+                      Market
+                    </button>
+                    <RouterLink
+                      to="/signup"
+                      className="block w-full bg-btb-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-btb-neon transition-colors text-center text-sm sm:text-base"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Join Now
+                    </RouterLink>
+                  </>
+                )}
+              </div>
             </div>
           )}
         </nav>
-      </motion.header>
+      </header>
 
       <AuthModal
         isOpen={isAuthModalOpen}

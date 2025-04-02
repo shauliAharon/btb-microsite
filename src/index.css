@@ -25,15 +25,9 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Optimize animations */
+  /* Optimize transitions */
   * {
-    @apply transition-colors duration-150;
-  }
-
-  /* Optimize page transitions */
-  .page-transition {
-    @apply animate-page-slide;
-    will-change: transform, opacity;
+    @apply transition-colors duration-75;
   }
 
   /* Ensure immediate navigation */
@@ -59,12 +53,12 @@
 
   /* Feature Blocks */
   .feature-block {
-    @apply bg-btb-dark rounded-block p-8 shadow-block hover:shadow-lg transition-all duration-300;
+    @apply bg-btb-dark rounded-block p-8 shadow-block;
     border: 1px solid rgba(38, 135, 242, 0.1);
   }
 
   .feature-block:hover {
-    @apply transform -translate-y-1;
+    @apply shadow-lg;
     border-color: rgba(38, 135, 242, 0.3);
   }
 
@@ -85,16 +79,16 @@
 
   /* Buttons */
   .btn-primary {
-    @apply bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon transition-all duration-200 transform hover:scale-105;
+    @apply bg-btb-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-neon;
   }
 
   .btn-secondary {
-    @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-gold hover:text-black transition-all duration-200 transform hover:scale-105;
+    @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg text-lg font-bold hover:bg-btb-gold hover:text-black;
   }
 
   /* Cards */
   .card {
-    @apply bg-btb-dark/50 backdrop-blur-sm rounded-block p-6 border border-btb-gold/20 hover:border-btb-gold/40 transition-all duration-200;
+    @apply bg-btb-dark/50 backdrop-blur-sm rounded-block p-6 border border-btb-gold/20 hover:border-btb-gold/40;
   }
 
   /* Sections */
@@ -111,12 +105,7 @@
 
   /* Navigation */
   .nav-link {
-    @apply transition-colors duration-150 hover:text-btb-gold;
-  }
-
-  /* Floating Elements */
-  .float-element {
-    @apply animate-float;
+    @apply transition-colors duration-75 hover:text-btb-gold;
   }
 }
 
