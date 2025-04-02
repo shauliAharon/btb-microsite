@@ -40,8 +40,8 @@ export default function FeaturesSection() {
             key={index}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8, delay: index * 0.2 }}
             className="flex items-start space-x-4 bg-black/50 p-4 sm:p-6 rounded-lg"
           >
             <CheckCircleIcon className="w-5 h-5 sm:w-6 sm:h-6 text-btb-gold flex-shrink-0 mt-1" />

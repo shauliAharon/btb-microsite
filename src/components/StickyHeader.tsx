@@ -63,70 +63,64 @@ export default function StickyHeader() {
             </button>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-2">
               {isSignupPage ? (
-                <>
-                  <div className="flex items-center space-x-4 gap-4">
-                    <RouterLink
-                      to="/"
-                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
-                    >
-                      Back
-                    </RouterLink>
-                    <button
-                      onClick={() => setIsAuthModalOpen(true)}
-                      className="text-black px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
-                    >
-                      <span>Sign Up</span>
-                    </button>
-                  </div>
-                </>
+                <RouterLink
+                  to="/"
+                  className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
+                >
+                  Back
+                </RouterLink>
               ) : (
-                <>
+                <div className="flex items-center">
                   <button
                     onClick={() => scrollToSection("mission")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Mission
                   </button>
+                  <span className="text-gray-600 mx-2">|</span>
                   <button
                     onClick={() => scrollToSection("intro")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     About
                   </button>
+                  <span className="text-gray-600 mx-2">|</span>
                   <button
                     onClick={() => scrollToSection("benefits")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Benefits
                   </button>
+                  <span className="text-gray-600 mx-2">|</span>
                   <button
                     onClick={() => scrollToSection("market")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
                     Market
                   </button>
+                  <span className="text-gray-600 mx-4"></span>
                   <RouterLink
                     to="/signup"
                     className="text-black px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
                   >
                     <span>Join Now</span>
                   </RouterLink>
-                </>
+                </div>
               )}
             </div>
           </div>
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden fixed inset-0 top-16 bg-black/95 backdrop-blur-sm z-40">
-              <div className="container mx-auto px-4 py-8 space-y-4">
+            <div className="md:hidden fixed inset-0 top-16 bg-black/98 backdrop-blur-lg z-40 shadow-2xl border-t border-btb-gold/20">
+              <div className="container mx-auto px-4 py-8">
                 {isSignupPage ? (
-                  <>
+                  <div className="flex flex-row items-center justify-center space-x-4 relative z-50">
                     <RouterLink
                       to="/"
-                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Back
@@ -136,57 +130,62 @@ export default function StickyHeader() {
                         setIsAuthModalOpen(true);
                         setIsMobileMenuOpen(false);
                       }}
-                      className="block w-full text-black px-4 py-2 rounded-lg font-bold text-center text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
+                      className="text-black px-4 py-2 rounded-lg font-bold text-center text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
                     >
                       <span>Sign Up</span>
                     </button>
-                  </>
+                  </div>
                 ) : (
-                  <>
+                  <div className="flex flex-row items-center justify-center flex-wrap gap-2">
                     <button
                       onClick={() => {
                         scrollToSection("mission");
                         setIsMobileMenuOpen(false);
                       }}
-                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
                       Mission
                     </button>
+                    <span className="text-gray-600">|</span>
                     <button
                       onClick={() => {
                         scrollToSection("intro");
                         setIsMobileMenuOpen(false);
                       }}
-                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
                       About
                     </button>
+                    <span className="text-gray-600">|</span>
                     <button
                       onClick={() => {
                         scrollToSection("benefits");
                         setIsMobileMenuOpen(false);
                       }}
-                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
                       Benefits
                     </button>
+                    <span className="text-gray-600">|</span>
                     <button
                       onClick={() => {
                         scrollToSection("market");
                         setIsMobileMenuOpen(false);
                       }}
-                      className="block text-gray-300 hover:text-btb-gold cursor-pointer py-2 transition-colors"
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
                       Market
                     </button>
-                    <RouterLink
-                      to="/signup"
-                      className="block w-full text-black px-4 py-2 rounded-lg font-bold text-center text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <span>Join Now</span>
-                    </RouterLink>
-                  </>
+                    <div className="w-full flex justify-center mt-4">
+                      <RouterLink
+                        to="/signup"
+                        className="text-black px-4 py-2 rounded-lg font-bold text-center text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        <span>Join Now</span>
+                      </RouterLink>
+                    </div>
+                  </div>
                 )}
               </div>
             </div>

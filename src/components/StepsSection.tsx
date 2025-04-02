@@ -46,8 +46,8 @@ export default function StepsSection() {
               key={index}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
               className="flex flex-col items-center text-center p-4 bg-black/30 rounded-lg"
             >
               <div className="w-12 h-12 bg-btb-gold text-black rounded-full flex items-center justify-center text-xl font-bold mb-4">
@@ -66,7 +66,7 @@ export default function StepsSection() {
       </div>
       <div className="max-w-3xl mx-auto text-center mb-12 p-8 rounded-lg">
         <h3 className="text-2xl font-bold mb-6 text-btb-gold">Why Join Now?</h3>
-        <ul className="text-xl text-gray-300 list-disc pl-6 space-y-2 mb-8">
+        <ul className="text-xl text-gray-300 list-disc space-y-2 mb-8 ">
           <li>
             This is the ground floor. You're not buying access, you're claiming
             territory.
@@ -81,7 +81,7 @@ export default function StepsSection() {
         <h3 className="text-2xl font-bold mb-4 text-btb-gold">
           What You're Paying For (No Surprises):
         </h3>
-        <ul className="text-xl text-gray-300 list-disc pl-6 space-y-2 mb-4">
+        <ul className="text-xl text-gray-300 list-disc space-y-2 mb-4">
           <li>One-time $1,000 setup</li>
           <li>Lifetime access to the platform</li>
           <li>No hidden fees. No monthly anything.</li>

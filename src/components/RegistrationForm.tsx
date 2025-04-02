@@ -30,7 +30,7 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
   };
 
   const handlePayment = () => {
-    window.location.href = "https://playbita.com/gcoin";
+    window.open("https://playbita.com/partners#your-portal", "_blank");
   };
 
   return (

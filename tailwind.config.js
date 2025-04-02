@@ -21,6 +21,7 @@ export default {
         "page-transition": "pageTransition 0.15s ease-out",
         "page-slide": "pageSlide 0.15s ease-out",
         float: "float 6s ease-in-out infinite",
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
         fadeIn: {
@@ -42,6 +43,10 @@ export default {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-20px)" },
+        },
+        shimmer: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(100%)" },
         },
       },
       transitionProperty: {
