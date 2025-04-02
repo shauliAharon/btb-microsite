@@ -66,18 +66,20 @@ export default function StickyHeader() {
             <div className="hidden md:flex space-x-8">
               {isSignupPage ? (
                 <>
-                  <RouterLink
-                    to="/"
-                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
-                  >
-                    Back
-                  </RouterLink>
-                  <button
-                    onClick={() => setIsAuthModalOpen(true)}
-                    className="text-black px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
-                  >
-                    <span>Sign Up</span>
-                  </button>
+                  <div className="flex items-center space-x-4 gap-4">
+                    <RouterLink
+                      to="/"
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
+                    >
+                      Back
+                    </RouterLink>
+                    <button
+                      onClick={() => setIsAuthModalOpen(true)}
+                      className="text-black px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 hover:scale-105 shimmer-button"
+                    >
+                      <span>Sign Up</span>
+                    </button>
+                  </div>
                 </>
               ) : (
                 <>
