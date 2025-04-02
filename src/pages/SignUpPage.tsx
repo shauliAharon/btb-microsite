@@ -31,15 +31,8 @@ export default function SignUpPage() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h1 className="text-5xl font-bold mb-8 relative inline-block">
+          <h1 className="text-5xl font-bold mb-8">
             Be The Boss Founders Circle
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: "100%" }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              className="absolute -bottom-2 left-0 h-[2px] bg-btb-gold"
-              style={{ width: "100%" }}
-            />
           </h1>
           <div className="max-w-3xl mx-auto">
             <p className="text-xl text-gray-300 mb-8">
@@ -204,7 +197,10 @@ export default function SignUpPage() {
       </Suspense>
 
       {/* Sign Up Form Section */}
-      <section className="container mx-auto px-4 p-8 rounded-lg">
+      <section
+        id="signup-form"
+        className="container mx-auto px-4 p-8 rounded-lg"
+      >
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

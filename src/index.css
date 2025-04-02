@@ -349,7 +349,7 @@
 /* Optimize smooth scrolling */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+  scroll-padding-top: 5rem;
 }
 
 /* Selection color */
