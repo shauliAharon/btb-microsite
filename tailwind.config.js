@@ -5,8 +5,8 @@ export default {
     extend: {
       colors: {
         "btb-black": "#000000",
-        "btb-gold": "#2687F2",
-        "btb-neon": "#2687F2",
+        "btb-gold": "#d4af37",
+        "btb-neon": "#d4af37",
         "btb-dark": "#111111",
         "btb-light": "#F5F5F5",
         "btb-gray": "#666666",
