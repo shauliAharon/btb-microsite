@@ -34,7 +34,7 @@ export default function FeaturesSection() {
       <h2 className="text-4xl font-bold text-center mb-12">
         You're In — Here's What You're Actually Getting:
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-6 bg-btb-gold/10 p-8 rounded-lg">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-6 p-8 rounded-lg">
         {features.map((item, index) => (
           <motion.div
             key={index}

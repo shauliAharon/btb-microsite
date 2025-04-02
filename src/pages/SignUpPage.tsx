@@ -47,7 +47,7 @@ export default function SignUpPage() {
               to know crypto. You don't need to know code. You just need to
               move.
             </p>
-            <div className="bg-btb-gold/10 p-8 rounded-lg">
+            <div className="p-8 rounded-lg">
               <h2 className="text-3xl font-bold mb-6 text-btb-gold">
                 $1,000 One-Time Investment
               </h2>
@@ -64,7 +64,7 @@ export default function SignUpPage() {
       {/* What's Included Section */}
       <section className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">What Is This?</h2>
-        <div className="max-w-3xl mx-auto text-center mb-12 bg-btb-gold/10 p-8 rounded-lg">
+        <div className="max-w-3xl mx-auto text-center mb-12 p-8 rounded-lg">
           <p className="text-xl text-gray-300 mb-8">
             The Be The Boss (BTB) program gives you a fully branded,
             Web3-powered social gaming platform — in your name, with your
@@ -77,7 +77,7 @@ export default function SignUpPage() {
             marketing. This is ownership.
           </p>
         </div>
-        <div className="max-w-3xl mx-auto bg-btb-gold/10 p-8 rounded-lg mb-10">
+        <div className="max-w-3xl mx-auto p-8 rounded-lg mb-10">
           <h3 className="text-2xl font-bold mb-6 text-btb-gold">
             Who This Is For:
           </h3>
@@ -91,7 +91,7 @@ export default function SignUpPage() {
             high-reward space — this is your shot.
           </p>
         </div>
-        <div className="max-w-3xl mx-auto text-center mb-12 bg-btb-gold/10 p-8 rounded-lg">
+        <div className="max-w-3xl mx-auto text-center mb-12 p-8 rounded-lg">
           <h3 className="text-2xl font-bold mb-6 text-btb-gold">
             Why This Deal Is Crazy:
           </h3>
@@ -104,7 +104,7 @@ export default function SignUpPage() {
             There's no catch. Just commitment.
           </p>
         </div>
-        <div className="max-w-3xl mx-auto text-center mb-12 bg-btb-gold/10 p-8 rounded-lg">
+        <div className="max-w-3xl mx-auto text-center mb-12 p-8 rounded-lg">
           <h3 className="text-2xl font-bold mb-6 text-btb-gold">
             Ready to Move?
           </h3>
@@ -128,7 +128,7 @@ export default function SignUpPage() {
             No fluff. Just your empire, ready to launch.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-6 bg-btb-gold/10 p-8 rounded-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-6 p-8 rounded-lg">
           {[
             {
               title: "Your Own Gaming Portal",
@@ -199,7 +199,7 @@ export default function SignUpPage() {
       {/* Sign Up Form Section */}
       <section
         id="signup-form"
-        className="container mx-auto px-4 bg-btb-gold/10 p-8 rounded-lg"
+        className="container mx-auto px-4 p-8 rounded-lg"
       >
         <motion.div
           initial={{ opacity: 0 }}

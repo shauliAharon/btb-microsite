@@ -1,4 +1,3 @@
-
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -37,10 +36,7 @@ export default function LandingPage() {
       </section>
 
       {/* Mission Block */}
-      <section
-        id="mission"
-        className="container mx-auto px-4 bg-btb-gold/10 p-8 rounded-lg"
-      >
+      <section id="mission" className="container mx-auto px-4 p-8 rounded-lg">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-6">You're Here to Win</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -78,10 +74,7 @@ export default function LandingPage() {
       </section>
 
       {/* BTB Intro Block */}
-      <section
-        id="intro"
-        className="container mx-auto px-4 bg-btb-gold/10 p-8 rounded-lg"
-      >
+      <section id="intro" className="container mx-auto px-4 p-8 rounded-lg">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-6">
             Introducing: BTB — Be The Boss by Playbita
@@ -124,10 +117,7 @@ export default function LandingPage() {
       </section>
 
       {/* Market Potential */}
-      <section
-        id="market"
-        className="container mx-auto px-4 bg-btb-gold/10 p-8 rounded-lg"
-      >
+      <section id="market" className="container mx-auto px-4 p-8 rounded-lg">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-8">The Market Potential</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -148,10 +138,7 @@ export default function LandingPage() {
       </section>
 
       {/* Scarcity Section */}
-      <section
-        id="signup"
-        className="container mx-auto px-4 bg-btb-gold/10 p-8 rounded-lg"
-      >
+      <section id="signup" className="container mx-auto px-4 p-8 rounded-lg">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-6">
             The Package (If You Qualify)

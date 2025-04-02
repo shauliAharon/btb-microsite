@@ -64,7 +64,7 @@ export default function StepsSection() {
           You're not promoting a brand. You're building your own.
         </p>
       </div>
-      <div className="max-w-3xl mx-auto text-center mb-12 bg-btb-gold/10 p-8 rounded-lg">
+      <div className="max-w-3xl mx-auto text-center mb-12 p-8 rounded-lg">
         <h3 className="text-2xl font-bold mb-6 text-btb-gold">Why Join Now?</h3>
         <ul className="text-xl text-gray-300 list-disc pl-6 space-y-2 mb-8">
           <li>
@@ -77,7 +77,7 @@ export default function StepsSection() {
           </li>
         </ul>
       </div>
-      <div className="max-w-3xl mx-auto bg-black/50 p-8 rounded-lg mb-8 bg-btb-gold/10">
+      <div className="max-w-3xl mx-auto bg-black/50 p-8 rounded-lg mb-8 ">
         <h3 className="text-2xl font-bold mb-4 text-btb-gold">
           What You're Paying For (No Surprises):
         </h3>
