@@ -10,7 +10,7 @@ export default function LandingPage() {
         className="min-h-screen flex items-center justify-center relative"
       >
         <div className="text-center px-4">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-shimmer">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-shimmer elegant-underline">
             Be The Boss
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-gray-300">
