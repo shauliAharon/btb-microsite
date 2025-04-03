@@ -198,8 +198,77 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* The Vision */}
+      <section className="container mx-auto px-4 md:px-6">
+        <div className="relative flex flex-col md:flex-row items-start gap-12">
+          <div
+            className=" w-[1100px] p-6"
+            style={{ backgroundColor: "#1A1A1A" }}
+          >
+            <AnimateOnScroll>
+              <h2 className="text-[40px] font-bold mb-6 text-white text-left">
+                The Vision
+              </h2>
+              <div className="space-y-6 w-[1200px] ">
+                <div>
+                  <p className="text-xl md:text-2xl text-white mb-4">
+                    We’re building the{" "}
+                    <span className="text-white font-bold">
+                      next-generation economy{" "}
+                    </span>{" "}
+                    of social gaming + digital prestige:{" "}
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-xl text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                    <li>Social games</li>
+                    <li>PvP sports picks</li>
+                    <li>Market trading sims</li>
+                    <li>Built-in token mechanics</li>
+                    <li>Quick, Automatic Payouts without delays.</li>
+                    <li>
+                      Prestige Economy System (status-based progression rolling
+                      out soon)
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-xl md:text-2xl text-btb-gold font-bold text-left">
+                    This isn't a launch. It's a movement.
+                  </p>
+                  <p className="text-xl text-white text-left">
+                    If this feels too big, too early, or too unreal —
+                  </p>
+                  <p className="text-xl text-btb-gold text-left">
+                    that's exactly how Bitcoin felt to the first 100 who heard
+                    about it.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-xl text-white text-left">
+                    Built by a proven team. Running live on its own blockchain.
+                    Millions already invested.
+                  </p>
+                  <p className="text-xl text-btb-gold text-left">
+                    This is already happening — with or without you.
+                  </p>
+                </div>
+              </div>
+            </AnimateOnScroll>
+          </div>
+
+          <div className="md:absolute md:right-0 md:top-0 flex-shrink-0 w-[550px]">
+            <AnimateOnScroll delay={0.2}>
+              <div className="rounded-lg w-[230px] h-[650px] bg-gray-500 flex items-center justify-center ml-auto">
+                <span className="text-white text-6xl">Pic</span>
+              </div>
+            </AnimateOnScroll>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
-      <section id="benefits" className="container mx-auto px-4 md:px-6">
+      {/* <section id="benefits" className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-3 gap-4 md:gap-8">
           {[
             {
@@ -227,10 +296,10 @@ export default function LandingPage() {
             </AnimateOnScroll>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Market Potential */}
-      <section id="market" className="container mx-auto px-4 md:px-6">
+      {/* <section id="market" className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <AnimateOnScroll>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-12 text-center">
@@ -260,10 +329,10 @@ export default function LandingPage() {
             </AnimateOnScroll>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Package Section */}
-      <section id="signup" className="container mx-auto px-4 md:px-6">
+      {/* <section id="signup" className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <AnimateOnScroll>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-12 text-center leading-normal py-2">
@@ -318,10 +387,10 @@ export default function LandingPage() {
             </AnimateOnScroll>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA Section */}
-      <section id="final-cta" className="container mx-auto px-4 md:px-6">
+      {/* <section id="final-cta" className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <AnimateOnScroll>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 text-center">
@@ -345,7 +414,7 @@ export default function LandingPage() {
             </RouterLink>
           </AnimateOnScroll>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
