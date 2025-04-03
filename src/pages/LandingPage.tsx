@@ -81,28 +81,30 @@ export default function LandingPage() {
                 </AnimateOnScroll>
                 <AnimateOnScroll delay={0.4}>
                   <div className="text-xl md:text-2xl space-y-3 md:space-y-4 text-left">
-                    <p className="text-gray-300">Runs 24/7</p>
-                    <p className="text-gray-300">
+                    <p className="text-gray-300 md:text-2xl">Runs 24/7</p>
+                    <p className="text-gray-300 md:text-2xl">
                       Rides the biggest digital wave of the decade
                     </p>
-                    <p className="text-gray-300 whitespace-nowrap">
+                    <p className="text-gray-300 whitespace-nowrap md:text-2xl">
                       Requires no code, no product, and no begging for clients
                     </p>
                   </div>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.5}>
-                  <p className="text-xl md:text-3xl text-left text-btb-gold font-bold whitespace-nowrap">
+                  <p className="text-xl md:text-3xl text-left text-btb-gold font-bold whitespace-nowrap md:text-2xl">
                     What if you didn't just play the game — you OWNED the arena?
                   </p>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.6}>
                   <div className="text-xl md:text-2xl text-gray-300 text-left space-y-1">
-                    <p>This is no fluff.</p>
-                    <p>No "guru" fantasy.</p>
-                    <p>No recycled affiliate garbage.</p>
-                    <p className="whitespace-nowrap">
+                    <p className="md:text-2xl">This is no fluff.</p>
+                    <p className="md:text-2xl">No "guru" fantasy.</p>
+                    <p className="md:text-2xl">
+                      No recycled affiliate garbage.
+                    </p>
+                    <p className="whitespace-nowrap md:text-2xl">
                       This is infrastructure — and it's real.
                     </p>
                   </div>
@@ -110,9 +112,9 @@ export default function LandingPage() {
 
                 <AnimateOnScroll delay={0.7}>
                   <div className="text-btb-gold text-left text-xl md:text-2xl space-y-1">
-                    <p>Bitcoin had 2010...</p>
-                    <p>Ethereum had 2015...</p>
-                    <p className="font-bold">You can have 2025!</p>
+                    <p className="md:text-2xl">Bitcoin had 2010...</p>
+                    <p className="md:text-2xl">Ethereum had 2015...</p>
+                    <p className="font-bold md:text-2xl">You can have 2025!</p>
                   </div>
                 </AnimateOnScroll>
 
@@ -145,7 +147,9 @@ export default function LandingPage() {
 
       {/* BTB Intro Block */}
       <section id="intro" className="container mx-auto px-4 md:px-6">
-        <div className="w-full h-[50px] bg-gray-500 mb-9"></div>
+        <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
+          <img src="/your-image-path.png" alt="Graphic banner" />
+        </div>
 
         <div className="space-y-8">
           <AnimateOnScroll>
@@ -212,7 +216,7 @@ export default function LandingPage() {
               <div className="space-y-6 w-[1200px] ">
                 <div>
                   <p className="text-xl md:text-2xl text-white mb-4">
-                    We’re building the{" "}
+                    We're building the{" "}
                     <span className="text-white font-bold">
                       next-generation economy{" "}
                     </span>{" "}
@@ -265,6 +269,83 @@ export default function LandingPage() {
             </AnimateOnScroll>
           </div>
         </div>
+      </section>
+
+      {/*The Market */}
+      <section id="intro" className="container mx-auto px-4 md:px-6">
+        <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
+          <img src="/your-image-path.png" alt="Graphic banner" />
+        </div>
+
+        <div className=" w-[1100px] p-6" style={{ backgroundColor: "#1A1A1A" }}>
+          <AnimateOnScroll>
+            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white whitespace-nowrap text-left">
+              The Market
+            </h1>
+          </AnimateOnScroll>
+
+          <div className="flex flex-col md:flex-row items-start justify-between gap-12">
+            <div className="flex-1">
+              <AnimateOnScroll>
+                <ul className="list-disc pl-6 space-y-2 text-xl text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                  <li>$19.7B Social Gaming market (2023)</li>
+                  <li>Projected $39.5B+ by 2028</li>
+                  <li>
+                    Billions in revenue from platforms you've never heard of
+                  </li>
+                </ul>
+              </AnimateOnScroll>
+
+              <AnimateOnScroll delay={0.2}>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  Governments can't stop Web3.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  Legacy finance can't play in this sandbox.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  This is for the ones ready to rewrite the rules.
+                </p>
+                <p className="text-xl md:text-2xl text-btb-gold font-bold mb-4 text-left">
+                  This isn't something you just click to buy.
+                </p>
+
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  No checkout.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  No shortcut.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  You don't need to be the smartest or the richest.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  But you need <span className="text-btb-gold">iron will</span>.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  The kind that builds, not begs.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  That executes, not complains.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  If that's you?{" "}
+                  <span className="text-btb-gold">Apply now</span>.
+                </p>
+              </AnimateOnScroll>
+            </div>
+          </div>
+        </div>
+        <AnimateOnScroll delay={0.8}>
+          <div className="flex justify-start mt-8">
+            <RouterLink
+              to="/signup"
+              className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
+            >
+              <span>Got it. Let me In Now!</span>
+            </RouterLink>
+          </div>
+        </AnimateOnScroll>
       </section>
 
       {/* Benefits Section */}
