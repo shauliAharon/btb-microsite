@@ -6,14 +6,11 @@ export default {
       colors: {
         "btb-black": "#000000",
         "btb-gold": "#d4af37",
-        "btb-neon": "#d4af37",
-        "btb-dark": "#111111",
-        "btb-light": "#F5F5F5",
-        "btb-gray": "#666666",
-        "btb-accent": "#FFD700",
+        "btb-white": "#ffffff",
+        "btb-accent": "#1A1A1A",
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Poppins", "Segoe UI", "Helvetica Neue", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.15s ease-out",
@@ -21,7 +18,7 @@ export default {
         "page-transition": "pageTransition 0.15s ease-out",
         "page-slide": "pageSlide 0.15s ease-out",
         float: "float 6s ease-in-out infinite",
-        shimmer: "shimmer 2s linear infinite",
+        pulse: "pulse 2s infinite",
       },
       keyframes: {
         fadeIn: {
@@ -44,9 +41,10 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-20px)" },
         },
-        shimmer: {
-          "0%": { transform: "translateY(-100%)" },
-          "100%": { transform: "translateY(100%)" },
+        pulse: {
+          "0%": { boxShadow: "0 0 0 0 rgba(212, 175, 55, 0.4)" },
+          "70%": { boxShadow: "0 0 0 10px rgba(212, 175, 55, 0)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(212, 175, 55, 0)" },
         },
       },
       transitionProperty: {

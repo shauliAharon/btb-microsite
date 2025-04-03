@@ -8,24 +8,40 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="min-h-screen flex items-center justify-center relative"
+        className="min-h-screen flex items-center justify-center relative overflow-x-hidden"
       >
-        <div className="text-center px-4 max-w-5xl mx-auto">
+        <div className="text-center px-4 max-w-[90vw] mx-auto">
           <AnimateOnScroll>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 gradient-shimmer elegant-underline text-center">
-              Be The Boss
+            <h1 className="text-[28px] md:text-[60px] font-bold mb-12 text-white text-center whitespace-nowrap">
+              The doors are opening for a select few...
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.2}>
-            <p className="text-xl md:text-2xl mb-6 md:mb-8 text-gray-300 max-w-4xl mx-auto text-left">
-              The doors are opening for a select few... Are you one of them?
+            <p className="text-xl md:text-3xl mb-12 text-btb-gold mx-auto text-center italic font-bold text-gradient">
+              Are you one of them?
             </p>
           </AnimateOnScroll>
-          <AnimateOnScroll delay={0.4}>
-            <p className="text-xl md:text-2xl mb-6 md:mb-8 text-gray-300 max-w-4xl mx-auto text-left">
-              We're not opening the doors. We're cracking them — just enough for
-              the next generation of digital owners.
-            </p>
+          <div className="flex flex-col items-center space-y-2 mb-16">
+            <AnimateOnScroll delay={0.4}>
+              <p className="text-xl md:text-2xl text-btb-gold mx-auto text-center">
+                We're not opening the doors.
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={0.4}>
+              <p className="text-xl md:text-2xl text-btb-gold mx-auto text-center">
+                We're cracking them — just enough
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={0.4}>
+              <p className="text-xl md:text-2xl text-btb-gold mx-auto text-center">
+                for the next generation of digital owners.
+              </p>
+            </AnimateOnScroll>
+          </div>
+          <AnimateOnScroll>
+            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-center whitespace-nowrap">
+              You're not here to play. You're here to win.
+            </h1>
           </AnimateOnScroll>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
@@ -46,52 +62,81 @@ export default function LandingPage() {
       </section>
 
       {/* Mission Block */}
-      <section
-        id="mission"
-        className="container mx-auto px-4 md:px-6 max-w-6xl"
-      >
+      <section id="mission" className="container mx-auto px-4 md:px-6">
         <AnimateOnScroll>
-          <div className="text-center">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 text-center">
-              You're Here to Win
-            </h2>
-            <AnimateOnScroll delay={0.2}>
-              <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-6 md:mb-8 text-left">
-                You're not here to play. You're here to win. Because deep down,
-                you know you were built for more than paychecks, permission, and
-                playing small.
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            {/* Left side: Text */}
+            <div className="flex-1">
+              <p className="text-xl md:text-3xl text-gray-300 mb-6 md:mb-8 text-left whitespace-nowrap">
+                Because deep down, you know you were built for more than
+                paychecks,
+                <br /> permission, and playing small.
               </p>
-            </AnimateOnScroll>
-            <div className="max-w-4xl mx-auto space-y-6 mb-12">
-              <AnimateOnScroll delay={0.3}>
-                <p className="text-xl md:text-2xl text-gray-300 text-left">
-                  What if you could lock in a business that:
-                </p>
-              </AnimateOnScroll>
-              <AnimateOnScroll delay={0.4}>
-                <ul className="text-xl md:text-2xl text-gray-300 list-disc pl-6 md:pl-8 space-y-3 md:space-y-4 text-left">
-                  <li>Runs 24/7</li>
-                  <li>Rides the biggest digital wave of the decade</li>
-                  <li>
-                    Requires no code, no product, and no begging for clients
-                  </li>
-                </ul>
-              </AnimateOnScroll>
-              <AnimateOnScroll delay={0.5}>
-                <p className="text-xl md:text-2xl text-gray-300 text-left">
-                  What if you didn't just play the game — you OWNED the arena?
-                </p>
-              </AnimateOnScroll>
-              <AnimateOnScroll delay={0.6}>
-                <p className="text-xl md:text-2xl text-gray-300 text-left">
-                  This is no fluff. No "guru" fantasy. No recycled affiliate
-                  garbage. This is infrastructure — and it's real.
-                </p>
-              </AnimateOnScroll>
-              <AnimateOnScroll delay={0.7}>
-                <p className="text-xl md:text-2xl text-gray-300 text-left">
-                  Bitcoin had 2010. Ethereum had 2015. You can have 2025.
-                </p>
+
+              <div className="space-y-6">
+                <AnimateOnScroll delay={0.3}>
+                  <p className="text-xl md:text-3xl text-left text-btb-gold font-bold whitespace-nowrap">
+                    What if you could lock in a business that:
+                  </p>
+                </AnimateOnScroll>
+                <AnimateOnScroll delay={0.4}>
+                  <div className="text-xl md:text-2xl space-y-3 md:space-y-4 text-left">
+                    <p className="text-gray-300">Runs 24/7</p>
+                    <p className="text-gray-300">
+                      Rides the biggest digital wave of the decade
+                    </p>
+                    <p className="text-gray-300 whitespace-nowrap">
+                      Requires no code, no product, and no begging for clients
+                    </p>
+                  </div>
+                </AnimateOnScroll>
+
+                <AnimateOnScroll delay={0.5}>
+                  <p className="text-xl md:text-3xl text-left text-btb-gold font-bold whitespace-nowrap">
+                    What if you didn't just play the game — you OWNED the arena?
+                  </p>
+                </AnimateOnScroll>
+
+                <AnimateOnScroll delay={0.6}>
+                  <div className="text-xl md:text-2xl text-gray-300 text-left space-y-1">
+                    <p>This is no fluff.</p>
+                    <p>No "guru" fantasy.</p>
+                    <p>No recycled affiliate garbage.</p>
+                    <p className="whitespace-nowrap">
+                      This is infrastructure — and it's real.
+                    </p>
+                  </div>
+                </AnimateOnScroll>
+
+                <AnimateOnScroll delay={0.7}>
+                  <div className="text-btb-gold text-left text-xl md:text-2xl space-y-1">
+                    <p>Bitcoin had 2010...</p>
+                    <p>Ethereum had 2015...</p>
+                    <p className="font-bold">You can have 2025!</p>
+                  </div>
+                </AnimateOnScroll>
+
+                <AnimateOnScroll delay={0.8}>
+                  <div className="flex justify-start mt-8">
+                    <RouterLink
+                      to="/signup"
+                      className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
+                    >
+                      <span>Got it. Let me In Now!</span>
+                    </RouterLink>
+                  </div>
+                </AnimateOnScroll>
+              </div>
+            </div>
+
+            {/* Right side: Image */}
+            <div className="flex-shrink-0 w-[450px]">
+              <AnimateOnScroll delay={0.2}>
+                <img
+                  src="/your-image-path.png" // ← תחליף כאן את הנתיב שלך
+                  alt="Hero character"
+                  className="rounded-lg w-[550px] h-[550px]  bg-gray-500"
+                />
               </AnimateOnScroll>
             </div>
           </div>
@@ -99,35 +144,62 @@ export default function LandingPage() {
       </section>
 
       {/* BTB Intro Block */}
-      <section id="intro" className="container mx-auto px-4 md:px-6 max-w-6xl">
-        <div className="max-w-4xl mx-auto">
+      <section id="intro" className="container mx-auto px-4 md:px-6">
+        <div className="w-full h-[50px] bg-gray-500 mb-9"></div>
+
+        <div className="space-y-8">
           <AnimateOnScroll>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 text-center">
+            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-center whitespace-nowrap">
               Introducing: BTB — Be The Boss by Playbita
-            </h2>
+            </h1>
           </AnimateOnScroll>
-          <AnimateOnScroll delay={0.2}>
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
-              This is not some affiliate gimmick. This is a full-scale
-              infrastructure play. You're not here to promote someone else's
-              brand. You're here to build your own empire.
-            </p>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={0.4}>
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
-              The gaming industry is a $180B+ monster. And it's shifting. Fast.
-              The next wave? Social gaming + Web3 infrastructure. We've built
-              it. Now we're opening it up to 250 founders who get it.
-            </p>
-          </AnimateOnScroll>
+
+          <div className="flex flex-col md:flex-row items-start justify-between gap-12">
+            <div className="flex-1">
+              <AnimateOnScroll>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  This is not some affiliate gimmick.
+                </p>
+                <p className="text-xl md:text-2xl text-btb-gold font-bold mb-4 text-left">
+                  This is a full-scale Web3-powered social gaming empire —
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-14 text-left">
+                  and you can own your slice.
+                </p>
+              </AnimateOnScroll>
+
+              <AnimateOnScroll delay={0.2}>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  We've already built the engine.
+                </p>
+                <p className="text-xl md:text-2xl text-btb-gold font-bold mb-4 text-left">
+                  Your job?
+                </p>
+                <p className="text-xl md:text-2xl text-btb-gold mb-4 text-left">
+                  Drive it. Grow it. Dominate your territory.
+                </p>
+                <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                  You're not buying a license.
+                </p>
+                <p className="text-xl md:text-2xl text-white font-bold text-left">
+                  You're claiming digital turf.
+                </p>
+              </AnimateOnScroll>
+            </div>
+
+            <div className="flex-shrink-0 w-[450px]">
+              <AnimateOnScroll delay={0.2}>
+                <div className="rounded-lg w-[450px] h-[450px] bg-gray-500 flex items-center justify-center">
+                  <span className="text-white text-6xl">Pic</span>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section
-        id="benefits"
-        className="container mx-auto px-4 md:px-6 max-w-6xl"
-      >
+      <section id="benefits" className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-3 gap-4 md:gap-8">
           {[
             {
@@ -158,7 +230,7 @@ export default function LandingPage() {
       </section>
 
       {/* Market Potential */}
-      <section id="market" className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section id="market" className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <AnimateOnScroll>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-12 text-center">
@@ -191,7 +263,7 @@ export default function LandingPage() {
       </section>
 
       {/* Package Section */}
-      <section id="signup" className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section id="signup" className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <AnimateOnScroll>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-12 text-center leading-normal py-2">
@@ -249,10 +321,7 @@ export default function LandingPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section
-        id="final-cta"
-        className="container mx-auto px-4 md:px-6 max-w-6xl"
-      >
+      <section id="final-cta" className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <AnimateOnScroll>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 text-center">

@@ -11,7 +11,7 @@
 
   body {
     @apply bg-btb-black text-white min-h-screen;
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", "Segoe UI", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -34,6 +34,40 @@
   a {
     @apply cursor-pointer;
   }
+
+  /* Heading Styles */
+  h1,
+  h2 {
+    background: linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #ffffff 5%,
+      #d4af37 10%,
+      #ffffff 15%,
+      #d4af37 20%,
+      #ffffff 25%,
+      #d4af37 30%,
+      #ffffff 35%,
+      #d4af37 40%,
+      #ffffff 45%,
+      #d4af37 50%,
+      #ffffff 55%,
+      #d4af37 60%,
+      #ffffff 65%,
+      #d4af37 70%,
+      #ffffff 75%,
+      #d4af37 80%,
+      #ffffff 85%,
+      #d4af37 90%,
+      #ffffff 95%,
+      #d4af37 100%
+    );
+    background-size: 200% 200%;
+    animation: shimmer 6s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 @layer components {
@@ -43,7 +77,7 @@
     background: linear-gradient(
       135deg,
       rgba(0, 0, 0, 0.9) 0%,
-      rgba(38, 135, 242, 0.1) 100%
+      rgba(212, 175, 55, 0.1) 100%
     );
   }
 
@@ -53,19 +87,19 @@
 
   /* Feature Blocks */
   .feature-block {
-    @apply bg-btb-dark rounded-block p-8 shadow-block;
-    border: 1px solid rgba(38, 135, 242, 0.1);
+    @apply bg-[#1A1A1A] rounded-block p-8 shadow-block;
+    border: 1px solid rgba(212, 175, 55, 0.1);
   }
 
   .feature-block:hover {
     @apply shadow-lg;
-    border-color: rgba(38, 135, 242, 0.3);
+    border-color: rgba(212, 175, 55, 0.3);
   }
 
   /* Content Blocks */
   .content-block {
-    @apply bg-btb-dark/50 backdrop-blur-sm rounded-block p-8 shadow-block;
-    border: 1px solid rgba(38, 135, 242, 0.1);
+    @apply bg-[#1A1A1A] backdrop-blur-sm rounded-block p-8 shadow-block;
+    border: 1px solid rgba(212, 175, 55, 0.1);
   }
 
   /* Grid Layouts */
@@ -79,7 +113,7 @@
 
   /* Buttons */
   .btn-primary {
-    @apply text-black px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300;
+    @apply text-black px-8 py-4 rounded-lg font-bold transition-all duration-300;
     background: linear-gradient(
       135deg,
       #d4af37 0%,
@@ -107,6 +141,7 @@
     background-size: 200% 200%;
     animation: shimmer 4s linear infinite;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    font-size: 16px;
   }
 
   .btn-primary:hover {
@@ -116,8 +151,9 @@
   }
 
   .btn-secondary {
-    @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300;
+    @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg font-bold transition-all duration-300;
     background: linear-gradient(135deg, transparent 0%, transparent 100%);
+    font-size: 16px;
   }
 
   .btn-secondary:hover {
@@ -252,13 +288,13 @@
     animation-duration: 3s;
   }
 
-  /* Sections */
+  /* Section Styles */
   .section {
     @apply py-16 md:py-24;
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-center mb-12;
+    @apply text-[28px] font-bold mb-8 text-center;
     background: linear-gradient(
       135deg,
       #d4af37 0%,
@@ -290,83 +326,45 @@
     color: transparent;
   }
 
-  h1,
-  h2 {
-    background: linear-gradient(
-      135deg,
-      #d4af37 0%,
-      #ffffff 5%,
-      #d4af37 10%,
-      #ffffff 15%,
-      #d4af37 20%,
-      #ffffff 25%,
-      #d4af37 30%,
-      #ffffff 35%,
-      #d4af37 40%,
-      #ffffff 45%,
-      #d4af37 50%,
-      #ffffff 55%,
-      #d4af37 60%,
-      #ffffff 65%,
-      #d4af37 70%,
-      #ffffff 75%,
-      #d4af37 80%,
-      #ffffff 85%,
-      #d4af37 90%,
-      #ffffff 95%,
-      #d4af37 100%
-    );
-    background-size: 200% 200%;
-    animation: shimmer 6s linear infinite;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  /* List Styles */
+  .benefit-list {
+    @apply space-y-4;
   }
 
-  /* Navigation */
-  .nav-link {
-    @apply transition-colors duration-75 hover:text-btb-gold;
+  .benefit-item {
+    @apply flex items-start space-x-4 text-[18px] text-white;
+  }
+
+  .benefit-item::before {
+    content: "•";
+    @apply text-btb-gold text-2xl;
+  }
+
+  /* Price Frame */
+  .price-frame {
+    @apply bg-[#1A1A1A] p-8 rounded-block border border-btb-gold/20;
+  }
+
+  .price-item {
+    @apply flex items-center space-x-4 mb-4;
+  }
+
+  .price-item::before {
+    content: "✓";
+    @apply text-btb-gold text-xl;
   }
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-black;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-btb-gold/50 rounded-full;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-btb-gold;
-}
-
-/* Optimize smooth scrolling */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
-}
-
-/* Selection color */
-::selection {
-  @apply bg-btb-gold/20 text-btb-gold;
-}
-
-/* Glass Effect */
-.glass-effect {
-  @apply bg-btb-dark/30 backdrop-blur-md border border-white/10;
-}
-
-/* Gradient Text */
-.gradient-text {
-  background: linear-gradient(135deg, #fff 0%, #2687f2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
 }
 
 @keyframes shimmer {
@@ -381,7 +379,39 @@ html {
   }
 }
 
-.gradient-shimmer {
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-btb-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-btb-gold/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-btb-gold/50;
+}
+
+/* Selection Styling */
+::selection {
+  @apply bg-btb-gold text-black;
+}
+
+/* Glass Effect */
+.glass-effect {
+  @apply bg-[#1A1A1A]/80 backdrop-blur-sm;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-btb-gold to-white;
+}
+
+.text-gradient {
   background: linear-gradient(
     135deg,
     #d4af37 0%,
@@ -411,30 +441,4 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-
-.elegant-underline {
-  position: relative;
-  display: inline-block;
-}
-
-.elegant-underline::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background: linear-gradient(90deg, transparent, #d4af37, transparent);
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: drawLine 1.5s ease-out forwards;
-  animation-delay: 0.5s;
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
-}
-
-@keyframes drawLine {
-  to {
-    transform: scaleX(1);
-  }
 }
