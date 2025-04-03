@@ -150,6 +150,8 @@ export default function SignUpPage() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
               Ready to Move?
             </h3>
+                      </AnimateOnScroll>
+
             <p className="text-xl md:text-2xl text-gray-300 mb-3 md:mb-4 text-left">
               You've seen the numbers.
             </p>
@@ -165,7 +167,6 @@ export default function SignUpPage() {
             <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
               Take control. Be the boss. Start earning daily.
             </p>
-          </AnimateOnScroll>
         </div>
         <AnimateOnScroll>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-12 text-center">
