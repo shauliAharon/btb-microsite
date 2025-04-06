@@ -12,7 +12,7 @@ export default function LandingPage() {
       >
         <div className="text-center px-4 max-w-[90vw] mx-auto">
           <AnimateOnScroll>
-            <h1 className="text-[28px] md:text-[60px] font-bold mb-12 text-white text-center whitespace-nowrap">
+            <h1 className="text-[28px] md:text-[60px] font-bold mb-12 text-white text-center">
               The doors are opening for a select few...
             </h1>
           </AnimateOnScroll>
@@ -39,7 +39,7 @@ export default function LandingPage() {
             </AnimateOnScroll>
           </div>
           <AnimateOnScroll>
-            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-center whitespace-nowrap">
+            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-center">
               You're not here to play. You're here to win.
             </h1>
           </AnimateOnScroll>
@@ -67,54 +67,51 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Left side: Text */}
             <div className="flex-1">
-              <p className="text-xl md:text-3xl text-gray-300 mb-6 md:mb-8 text-left whitespace-nowrap">
+              <p className="text-xl md:text-3xl text-gray-300 mb-6 md:mb-8 text-left">
                 Because deep down, you know you were built for more than
                 paychecks,
-                <br /> permission, and playing small.
+                <br className="hidden md:block" /> permission, and playing
+                small.
               </p>
 
               <div className="space-y-6">
                 <AnimateOnScroll delay={0.3}>
-                  <p className="text-xl md:text-3xl text-left text-btb-gold font-bold whitespace-nowrap">
+                  <p className="text-xl md:text-3xl text-left text-btb-gold font-bold">
                     What if you could lock in a business that:
                   </p>
                 </AnimateOnScroll>
                 <AnimateOnScroll delay={0.4}>
                   <div className="text-xl md:text-2xl space-y-3 md:space-y-4 text-left">
-                    <p className="text-gray-300 md:text-2xl">Runs 24/7</p>
-                    <p className="text-gray-300 md:text-2xl">
+                    <p className="text-gray-300">Runs 24/7</p>
+                    <p className="text-gray-300">
                       Rides the biggest digital wave of the decade
                     </p>
-                    <p className="text-gray-300 whitespace-nowrap md:text-2xl">
+                    <p className="text-gray-300">
                       Requires no code, no product, and no begging for clients
                     </p>
                   </div>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.5}>
-                  <p className="text-xl md:text-3xl text-left text-btb-gold font-bold whitespace-nowrap md:text-2xl">
+                  <p className="text-xl md:text-3xl text-left text-btb-gold font-bold">
                     What if you didn't just play the game — you OWNED the arena?
                   </p>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.6}>
                   <div className="text-xl md:text-2xl text-gray-300 text-left space-y-1">
-                    <p className="md:text-2xl">This is no fluff.</p>
-                    <p className="md:text-2xl">No "guru" fantasy.</p>
-                    <p className="md:text-2xl">
-                      No recycled affiliate garbage.
-                    </p>
-                    <p className="whitespace-nowrap md:text-2xl">
-                      This is infrastructure — and it's real.
-                    </p>
+                    <p>This is no fluff.</p>
+                    <p>No "guru" fantasy.</p>
+                    <p>No recycled affiliate garbage.</p>
+                    <p>This is infrastructure — and it's real.</p>
                   </div>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.7}>
                   <div className="text-btb-gold text-left text-xl md:text-2xl space-y-1">
-                    <p className="md:text-2xl">Bitcoin had 2010...</p>
-                    <p className="md:text-2xl">Ethereum had 2015...</p>
-                    <p className="font-bold md:text-2xl">You can have 2025!</p>
+                    <p>Bitcoin had 2010...</p>
+                    <p>Ethereum had 2015...</p>
+                    <p className="font-bold">You can have 2025!</p>
                   </div>
                 </AnimateOnScroll>
 
@@ -132,12 +129,12 @@ export default function LandingPage() {
             </div>
 
             {/* Right side: Image */}
-            <div className="flex-shrink-0 w-[450px]">
+            <div className="w-full md:w-[450px]">
               <AnimateOnScroll delay={0.2}>
                 <img
-                  src="/your-image-path.png" // ← תחליף כאן את הנתיב שלך
+                  src="/your-image-path.png"
                   alt="Hero character"
-                  className="rounded-lg w-[550px] h-[550px]  bg-gray-500"
+                  className="rounded-lg w-full h-auto md:w-[550px] md:h-[550px] bg-gray-500"
                 />
               </AnimateOnScroll>
             </div>
@@ -148,12 +145,16 @@ export default function LandingPage() {
       {/* BTB Intro Block */}
       <section id="intro" className="container mx-auto px-4 md:px-6">
         <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
-          <img src="/your-image-path.png" alt="Graphic banner" />
+          <img
+            src="/your-image-path.png"
+            alt="Graphic banner"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="space-y-8">
           <AnimateOnScroll>
-            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-center whitespace-nowrap">
+            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-center">
               Introducing: BTB — Be The Boss by Playbita
             </h1>
           </AnimateOnScroll>
@@ -191,9 +192,9 @@ export default function LandingPage() {
               </AnimateOnScroll>
             </div>
 
-            <div className="flex-shrink-0 w-[450px]">
+            <div className="w-full md:w-[450px]">
               <AnimateOnScroll delay={0.2}>
-                <div className="rounded-lg w-[450px] h-[450px] bg-gray-500 flex items-center justify-center">
+                <div className="rounded-lg w-full h-[300px] md:w-[450px] md:h-[450px] bg-gray-500 flex items-center justify-center">
                   <span className="text-white text-6xl">Pic</span>
                 </div>
               </AnimateOnScroll>
@@ -204,16 +205,16 @@ export default function LandingPage() {
 
       {/* The Vision */}
       <section className="container mx-auto px-4 md:px-6">
-        <div className="relative flex flex-col md:flex-row items-start gap-12">
+        <div className="flex flex-col md:flex-row items-start gap-8">
           <div
-            className=" w-[1100px] p-6"
+            className="w-full md:w-[70%] p-6"
             style={{ backgroundColor: "#1A1A1A" }}
           >
             <AnimateOnScroll>
-              <h2 className="text-[40px] font-bold mb-6 text-white text-left">
+              <h2 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-left">
                 The Vision
               </h2>
-              <div className="space-y-6 w-[1200px] ">
+              <div className="space-y-6">
                 <div>
                   <p className="text-xl md:text-2xl text-white mb-4">
                     We're building the{" "}
@@ -236,9 +237,6 @@ export default function LandingPage() {
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-xl md:text-2xl text-btb-gold font-bold text-left">
-                    This isn't a launch. It's a movement.
-                  </p>
                   <p className="text-xl text-white text-left">
                     If this feels too big, too early, or too unreal —
                   </p>
@@ -260,10 +258,9 @@ export default function LandingPage() {
               </div>
             </AnimateOnScroll>
           </div>
-
-          <div className="md:absolute md:right-0 md:top-0 flex-shrink-0 w-[550px]">
+          <div className="w-full md:w-[30%] flex justify-end">
             <AnimateOnScroll delay={0.2}>
-              <div className="rounded-lg w-[230px] h-[650px] bg-gray-500 flex items-center justify-center ml-auto">
+              <div className="rounded-lg w-[250px] h-[300px] md:h-[600px] bg-gray-500 flex items-center justify-center">
                 <span className="text-white text-6xl">Pic</span>
               </div>
             </AnimateOnScroll>
@@ -271,15 +268,18 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/*The Market */}
+      {/* The Market */}
       <section id="intro" className="container mx-auto px-4 md:px-6">
         <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
-          <img src="/your-image-path.png" alt="Graphic banner" />
+          <img
+            src="/your-image-path.png"
+            alt="Graphic banner"
+            className="w-full h-full object-cover"
+          />
         </div>
-
-        <div className=" w-[1100px] p-6" style={{ backgroundColor: "#1A1A1A" }}>
+        <div className="w-full p-6" style={{ backgroundColor: "#1A1A1A" }}>
           <AnimateOnScroll>
-            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white whitespace-nowrap text-left">
+            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-left">
               The Market
             </h1>
           </AnimateOnScroll>
@@ -335,14 +335,14 @@ export default function LandingPage() {
               </AnimateOnScroll>
             </div>
           </div>
-        </div>
+        </div>{" "}
         <AnimateOnScroll delay={0.8}>
           <div className="flex justify-start mt-8">
             <RouterLink
               to="/signup"
               className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
             >
-              <span>Got it. Let me In Now!</span>
+              <span>Hell Yes, I'm Claiming to My Spot!</span>
             </RouterLink>
           </div>
         </AnimateOnScroll>
@@ -351,9 +351,9 @@ export default function LandingPage() {
       {/* The Package */}
       <section className="container mx-auto px-4 md:px-6">
         <div className="relative flex flex-col md:flex-row items-start justify-between gap-12">
-          <div className="flex-shrink-0 w-[300px]">
+          <div className="w-full md:w-[300px]">
             <AnimateOnScroll delay={0.2}>
-              <div className="rounded-lg w-[230px] h-[850px] bg-gray-500 flex items-center justify-center">
+              <div className="rounded-lg w-full h-[300px] md:w-[230px] md:h-[850px] bg-gray-500 flex items-center justify-center">
                 <span className="text-white text-6xl">Pic</span>
               </div>
             </AnimateOnScroll>
@@ -366,7 +366,7 @@ export default function LandingPage() {
                 <br /> Few will apply.
                 <br /> Fewer will get in.
                 <br />
-                That’s the point. This could be your moment.
+                That's the point. This could be your moment.
               </p>
               <p className="text-left text-btb-gold text-xl md:text-2xl font-bold italic">
                 Miss it — and... well, you've been there before.
@@ -400,19 +400,19 @@ export default function LandingPage() {
                     <br /> Just guts, hustle, and hunger.
                   </p>
                   <p className="text-xl text-white text-left font-bold">
-                    This isn’t a playground.
+                    This isn't a playground.
                   </p>
                   <p className="text-xl text-btb-gold text-left font-bold">
-                    It’s a launchpad for digital ownership.
+                    It's a launchpad for digital ownership.
                   </p>
                 </div>
 
                 <div className="space-y-4">
                   <p className="text-xl text-white text-left font-bold">
-                    And this opportunity? It’s not for sale.
+                    And this opportunity? It's not for sale.
                   </p>
                   <p className="text-xl text-btb-gold text-left font-bold">
-                    It’s for the ones bold enough to take it.
+                    It's for the ones bold enough to take it.
                   </p>
                 </div>
               </div>
@@ -430,15 +430,15 @@ export default function LandingPage() {
                   This Is Not For Everyone{" "}
                 </p>
                 <p className="text-xl md:text-2xl text-white text-left">
-                  We’re not going wide. <br />
-                  We’re going tight.
+                  We're not going wide. <br />
+                  We're going tight.
                   <br />
                   Invitation-only Founders Circle.
                   <br />
                   Limited seats. <br />
                   Only the right profiles.
                   <br />
-                  If you’ve read this far, maybe you feel it. <br />
+                  If you've read this far, maybe you feel it. <br />
                   That edge. <br />
                   That hunger. <br />
                   That refusal to die average.{" "}
@@ -457,19 +457,19 @@ export default function LandingPage() {
                 </p>
 
                 <p className="text-xl md:text-2xl mb-4 text-left">
-                  This isn’t cheap. <br />
-                  This isn’t easy. <br />
-                  This isn’t a side hustle for the lazy. <br />
-                  We’ve spent millions building this platform. <br />
-                  We’re building infrastructure for a new empire layer in the
+                  This isn't cheap. <br />
+                  This isn't easy. <br />
+                  This isn't a side hustle for the lazy. <br />
+                  We've spent millions building this platform. <br />
+                  We're building infrastructure for a new empire layer in the
                   Web3 economy.{" "}
                 </p>
               </AnimateOnScroll>
             </div>
 
-            <div className="flex-shrink-0 w-[450px]">
+            <div className="w-full md:w-[450px]">
               <AnimateOnScroll delay={0.2}>
-                <div className="rounded-lg w-[450px] h-[450px] bg-gray-500 flex items-center justify-center">
+                <div className="rounded-lg w-full h-[300px] md:w-[450px] md:h-[450px] bg-gray-500 flex items-center justify-center">
                   <span className="text-white text-6xl">Pic</span>
                 </div>
               </AnimateOnScroll>
@@ -484,7 +484,7 @@ export default function LandingPage() {
           <div className="space-y-6 p-6" style={{ backgroundColor: "#1A1A1A" }}>
             <div>
               <p className="text-xl md:text-2xl text-white mb-4 text-left">
-                We’re looking for:
+                We're looking for:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-xl text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
                 <li>Builders</li>
@@ -497,7 +497,7 @@ export default function LandingPage() {
               <p className="text-xl md:text-1xl text-left">
                 There is a cost.
                 <br />
-                We’ll talk price{" "}
+                We'll talk price{" "}
                 <span className="font-bold">if you pass the first gate.</span>
               </p>
               <p className="text-xl text-white text-left font-bold">
@@ -512,17 +512,17 @@ export default function LandingPage() {
                 </span>{" "}
                 Founders Circle? A fraction—if you qualify.
                 <br />
-                If you flinch before qualifying? You already told us you don’t
+                If you flinch before qualifying? You already told us you don't
                 belong.
               </p>
             </div>
 
             <div className="space-y-4">
               <p className="text-xl text-white text-left font-bold">
-                And this opportunity? It’s not for sale.
+                And this opportunity? It's not for sale.
               </p>
               <p className="text-xl text-btb-gold text-left font-bold">
-                It’s for the ones bold enough to take it.
+                It's for the ones bold enough to take it.
               </p>
             </div>
           </div>{" "}
@@ -549,7 +549,7 @@ export default function LandingPage() {
               Will you make the cut?
             </span>
           </p>
-          <p className="text-lg sm:text-xl md:text-2xl text-white text-left">
+          <p className="text-lg sm:text-xl md:text-2xl text-white text-left font-bold">
             Hundreds have already applied.
             <br />
             We're only letting in the right few.
@@ -593,15 +593,15 @@ export default function LandingPage() {
                     to="/signup"
                     className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
                   >
-                    <span>Hell Yes, I’m Claiming to My Spot!</span>
+                    <span>Hell Yes, I'm Claiming to My Spot!</span>
                   </RouterLink>
                 </div>
               </AnimateOnScroll>
             </div>
 
-            <div className="flex-shrink-0 w-full md:w-[450px]">
+            <div className="w-full md:w-[450px]">
               <AnimateOnScroll delay={0.2}>
-                <div className="rounded-lg w-full md:w-[450px] h-[300px] md:h-[450px] bg-gray-500 flex items-center justify-center">
+                <div className="rounded-lg w-full h-[300px] md:w-[450px] md:h-[450px] bg-gray-500 flex items-center justify-center">
                   <span className="text-white text-4xl sm:text-6xl">Pic</span>
                 </div>
               </AnimateOnScroll>
