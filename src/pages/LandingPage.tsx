@@ -1,7 +1,7 @@
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import { Link as RouterLink } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
-import { scrollToSection } from "../components/StickyHeader";
+import { scrollToSection } from "../utils/scrollUtils";
 
 export default function LandingPage() {
   return (

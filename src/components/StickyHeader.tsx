@@ -1,27 +1,13 @@
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import AuthModal from "./AuthModal";
+import { scrollToSection } from "../utils/scrollUtils";
 
 export default function StickyHeader() {
   const location = useLocation();
   const isSignupPage = location.pathname === "/signup";
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 80; // Adjust this value as needed
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <>
@@ -321,17 +307,3 @@ export default function StickyHeader() {
     </>
   );
 }
-
-export const scrollToSection = (sectionId: string) => {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    const headerOffset = 80; // Adjust this value as needed
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
-  }
-};
