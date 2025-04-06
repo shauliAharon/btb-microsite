@@ -119,7 +119,7 @@ export default function SignUpPage() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
               Who This Is For:
             </h3>
-            <ul className="text-xl md:text-2xl text-gray-300 list-disc pl-6 md:pl-8 space-y-3 md:space-y-4 mb-6 md:mb-8 text-left">
+            <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
               <li>Hustlers with an audience</li>
               <li>Creators, influencers, and affiliate killers</li>
               <li>Operators who want to skip building and just own</li>
@@ -135,7 +135,7 @@ export default function SignUpPage() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
               Why This Deal Is Crazy:
             </h3>
-            <ul className="text-xl md:text-2xl text-gray-300 list-disc pl-6 md:pl-8 space-y-3 md:space-y-4 mb-6 md:mb-8 text-left">
+            <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
               <li>Building this yourself? Costs $1M+</li>
               <li>Licensing a white-label? $25K minimum</li>
               <li>Joining BTB? A fraction — if you qualify.</li>
@@ -150,23 +150,23 @@ export default function SignUpPage() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
               Ready to Move?
             </h3>
-                      </AnimateOnScroll>
+          </AnimateOnScroll>
 
-            <p className="text-xl md:text-2xl text-gray-300 mb-3 md:mb-4 text-left">
-              You've seen the numbers.
-            </p>
-            <p className="text-xl md:text-2xl text-gray-300 mb-3 md:mb-4 text-left">
-              You've seen the value.
-            </p>
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
-              You're either in — or you're not.
-            </p>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
-              Launch Your Web3 Gaming Portal Now
-            </h3>
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
-              Take control. Be the boss. Start earning daily.
-            </p>
+          <p className="text-xl md:text-2xl text-gray-300 mb-3 md:mb-4 text-left">
+            You've seen the numbers.
+          </p>
+          <p className="text-xl md:text-2xl text-gray-300 mb-3 md:mb-4 text-left">
+            You've seen the value.
+          </p>
+          <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
+            You're either in — or you're not.
+          </p>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
+            Launch Your Web3 Gaming Portal Now
+          </h3>
+          <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
+            Take control. Be the boss. Start earning daily.
+          </p>
         </div>
         <AnimateOnScroll>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-12 text-center">

@@ -16,7 +16,7 @@ export default function AnimateOnScroll({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8, delay }}
       className={className}
     >

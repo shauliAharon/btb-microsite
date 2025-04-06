@@ -9,43 +9,43 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="min-h-screen flex items-center justify-center relative overflow-x-hidden"
+        className="min-h-screen flex items-center justify-center relative overflow-x-hidden mb-48"
       >
         <div className="text-center px-4 max-w-[90vw] mx-auto">
           <AnimateOnScroll>
-            <h1 className="text-[28px] md:text-[60px] font-bold mb-12 text-white text-center">
+            <h1 className="text-[28px] md:text-[40px] font-bold mb-12 text-white text-center">
               The doors are opening for a select few...
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.2}>
-            <p className=" md:text-3xl mb-12 text-btb-gold mx-auto text-center italic font-bold text-gradient">
+            <p className=" md:text-[28px] mb-12 text-btb-gold mx-auto text-center italic font-bold text-gradient">
               Are you one of them?
             </p>
           </AnimateOnScroll>
           <div className="flex flex-col items-center space-y-2 mb-16">
             <AnimateOnScroll delay={0.4}>
-              <p className=" md:text-2xl text-btb-gold mx-auto text-center">
+              <p className="  md:text-[28px]  text-btb-gold mx-auto text-center">
                 We're not opening the doors.
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.4}>
-              <p className=" md:text-2xl text-btb-gold mx-auto text-center">
+              <p className="  md:text-[28px]  text-btb-gold mx-auto text-center">
                 We're cracking them — just enough
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.4}>
-              <p className=" md:text-2xl text-btb-gold mx-auto text-center">
+              <p className="  md:text-[28px]  text-btb-gold mx-auto text-center">
                 for the next generation of digital owners.
               </p>
             </AnimateOnScroll>
           </div>
           <AnimateOnScroll>
-            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-center">
+            <h1 className="text-[28px] md:text-[28px] font-bold mb-6 text-white text-center">
               You're not here to play. You're here to win.
             </h1>
           </AnimateOnScroll>
         </div>
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 ">
           <button
             onClick={() => scrollToSection("mission")}
             className="cursor-pointer group"
@@ -66,18 +66,17 @@ export default function LandingPage() {
             <div className="flex-1">
               <p className=" md:text-3xl text-gray-300 mb-6 md:mb-8 text-left">
                 Because deep down, you know you were built for more than
-                paychecks,
                 <br className="hidden md:block" /> permission, and playing
                 small.
               </p>
 
               <div className="space-y-6">
-                <AnimateOnScroll delay={0.3}>
+                <AnimateOnScroll delay={0.1}>
                   <p className=" md:text-3xl text-left text-btb-gold font-bold">
                     What if you could lock in a business that:
                   </p>
                 </AnimateOnScroll>
-                <AnimateOnScroll delay={0.4}>
+                <AnimateOnScroll delay={0.2}>
                   <div className=" md:text-2xl space-y-3 md:space-y-4 text-left">
                     <p className="text-gray-300">Runs 24/7</p>
                     <p className="text-gray-300">
@@ -89,13 +88,13 @@ export default function LandingPage() {
                   </div>
                 </AnimateOnScroll>
 
-                <AnimateOnScroll delay={0.5}>
+                <AnimateOnScroll delay={0.3}>
                   <p className=" md:text-3xl text-left text-btb-gold font-bold">
                     What if you didn't just play the game — you OWNED the arena?
                   </p>
                 </AnimateOnScroll>
 
-                <AnimateOnScroll delay={0.6}>
+                <AnimateOnScroll delay={0.4}>
                   <div className=" md:text-2xl text-gray-300 text-left space-y-1">
                     <p>This is no fluff.</p>
                     <p>No "guru" fantasy.</p>
@@ -104,7 +103,7 @@ export default function LandingPage() {
                   </div>
                 </AnimateOnScroll>
 
-                <AnimateOnScroll delay={0.7}>
+                <AnimateOnScroll delay={0.5}>
                   <div className="text-btb-gold text-left  md:text-2xl space-y-1">
                     <p>Bitcoin had 2010...</p>
                     <p>Ethereum had 2015...</p>
@@ -112,7 +111,7 @@ export default function LandingPage() {
                   </div>
                 </AnimateOnScroll>
 
-                <AnimateOnScroll delay={0.8}>
+                <AnimateOnScroll delay={0.6}>
                   <div className="flex justify-start mt-8">
                     <RouterLink
                       to="/signup"
@@ -129,7 +128,7 @@ export default function LandingPage() {
 
             {/* Right side: Image */}
             <div className="w-full md:w-[450px]">
-              <AnimateOnScroll delay={0.2}>
+              <AnimateOnScroll delay={0.7}>
                 <img
                   src="/your-image-path.png"
                   alt="Hero character"
@@ -160,7 +159,7 @@ export default function LandingPage() {
 
           <div className="flex flex-col md:flex-row items-start justify-between gap-12">
             <div className="flex-1">
-              <AnimateOnScroll>
+              <AnimateOnScroll delay={0.1}>
                 <p className=" md:text-2xl text-white mb-4 text-left">
                   This is not some affiliate gimmick.
                 </p>
@@ -192,7 +191,7 @@ export default function LandingPage() {
             </div>
 
             <div className="w-full md:w-[450px]">
-              <AnimateOnScroll delay={0.2}>
+              <AnimateOnScroll delay={0.3}>
                 <div className="rounded-lg w-full h-[300px] md:w-[450px] md:h-[450px] bg-gray-500 flex items-center justify-center">
                   <span className="text-white text-6xl">Pic</span>
                 </div>
@@ -222,7 +221,7 @@ export default function LandingPage() {
                     </span>{" "}
                     of social gaming + digital prestige:{" "}
                   </p>
-                  <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                  <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
                     <li>Social games</li>
                     <li>PvP sports picks</li>
                     <li>Market trading sims</li>
@@ -286,7 +285,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row items-start justify-between gap-12">
             <div className="flex-1">
               <AnimateOnScroll>
-                <ul className="list-disc pl-6 space-y-2  text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
                   <li>$19.7B Social Gaming market (2023)</li>
                   <li>Projected $39.5B+ by 2028</li>
                   <li>
@@ -386,7 +385,7 @@ export default function LandingPage() {
                   <p className=" md:text-2xl text-white font-bold mb-4 text-left">
                     What you get:
                   </p>
-                  <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                  <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
                     <li>
                       Multiple verticals (casino-style, sports, financial)
                     </li>
@@ -490,7 +489,7 @@ export default function LandingPage() {
               <p className=" md:text-2xl text-white mb-4 text-left">
                 We're looking for:
               </p>
-              <ul className="list-disc pl-6 space-y-2  text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+              <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
                 <li>Builders</li>
                 <li>Operators</li>
                 <li>Owners</li>
@@ -597,7 +596,9 @@ export default function LandingPage() {
                     to="/signup"
                     className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg  font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
                   >
-                    <span className="text-[20px]">Hell Yes, I'm Claiming to My Spot!</span>
+                    <span className="text-[20px]">
+                      Hell Yes, I'm Claiming to My Spot!
+                    </span>
                   </RouterLink>
                 </div>
               </AnimateOnScroll>

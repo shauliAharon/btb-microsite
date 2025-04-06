@@ -70,7 +70,7 @@ export default function StepsSection() {
           </h3>
         </AnimateOnScroll>
         <AnimateOnScroll delay={0.8}>
-          <ul className="text-xl text-gray-300 list-disc pl-6 space-y-2 mb-8">
+          <ul className="text-xl text-gray-300 list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
             <li>
               This is the ground floor. You're not buying access, you're
               claiming territory.
@@ -88,7 +88,7 @@ export default function StepsSection() {
           <h3 className="text-2xl font-bold mb-4 text-btb-gold">
             What You're Paying For (No Surprises):
           </h3>
-          <ul className="text-xl text-gray-300 list-disc space-y-2 mb-4">
+          <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
             <li>One-time $1,000 setup</li>
             <li>Lifetime access to the platform</li>
             <li>No hidden fees. No monthly anything.</li>
