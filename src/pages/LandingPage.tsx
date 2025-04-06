@@ -214,14 +214,14 @@ export default function LandingPage() {
               </h2>
               <div className="space-y-6">
                 <div>
-                  <p className=" md:text-2xl text-white mb-4">
+                  <p className=" md:text-2xl text-white mb-4 text-left">
                     We're building the{" "}
                     <span className="text-white font-bold">
                       next-generation economy{" "}
                     </span>{" "}
                     of social gaming + digital prestige:{" "}
                   </p>
-                  <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                  <ul className="text-left list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
                     <li>Social games</li>
                     <li>PvP sports picks</li>
                     <li>Market trading sims</li>
@@ -285,7 +285,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row items-start justify-between gap-12">
             <div className="flex-1">
               <AnimateOnScroll>
-                <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                <ul className="text-left list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
                   <li>$19.7B Social Gaming market (2023)</li>
                   <li>Projected $39.5B+ by 2028</li>
                   <li>
@@ -362,7 +362,7 @@ export default function LandingPage() {
             </AnimateOnScroll>
           </div>
 
-          <div className="flex-1 p-6">
+          <div className="flex-1">
             <AnimateOnScroll>
               <p className="text-left italic">
                 Most people will scroll.
@@ -385,7 +385,7 @@ export default function LandingPage() {
                   <p className=" md:text-2xl text-white font-bold mb-4 text-left">
                     What you get:
                   </p>
-                  <ul className="list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                  <ul className="text-left list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
                     <li>
                       Multiple verticals (casino-style, sports, financial)
                     </li>
