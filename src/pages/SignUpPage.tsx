@@ -1,25 +1,11 @@
-import { useState, lazy, Suspense } from "react";
+import { useState } from "react";
 import AuthModal from "../components/AuthModal";
-import RegistrationForm from "../components/RegistrationForm";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import { Link as RouterLink } from "react-router-dom";
 // Lazy load components that aren't immediately needed
-const FeaturesSection = lazy(() => import("../components/FeaturesSection"));
-const StepsSection = lazy(() => import("../components/StepsSection"));
-
-interface RegistrationData {
-  name: string;
-  email: string;
-  walletAddress: string;
-}
 
 export default function SignUpPage() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-
-  const handleRegistrationSubmit = (data: RegistrationData) => {
-    console.log("Registration data:", data);
-    setIsAuthModalOpen(true);
-  };
 
   return (
     <div className="space-y-16 md:space-y-32 py-12 md:py-20">
@@ -113,12 +99,12 @@ export default function SignUpPage() {
                   </p>
 
                   <p>
-                    We’re giving 250 founding partners <br />
+                    We're giving 250 founding partners <br />
                     the keys to launch their own money machine — <br />
                     a social gaming portal with multiple games, <br />
                     automated payments, <br />
                     and daily rev share. <br />
-                    This isn’t affiliate marketing. <br />
+                    This isn't affiliate marketing. <br />
                     <span className="text-[#D4AF37] font-bold">
                       This is ownership.
                     </span>
@@ -176,7 +162,7 @@ export default function SignUpPage() {
                     Joining BTB? A fraction — if you act now.
                   </p>
                   <p>
-                    There’s no catch.
+                    There's no catch.
                     <br />
                     <span className="text-[#D4AF37] font-bold">
                       Just commitment.
@@ -247,7 +233,7 @@ export default function SignUpPage() {
                 {/* כותרת */}
                 <div className="flex-1 flex justify-start md:justify-center items-center">
                   <h2 className="text-[#D4AF37] font-bold text-2xl whitespace-nowrap">
-                    Here’s What You’re Actually Getting:
+                    Here's What You're Actually Getting:
                   </h2>
                 </div>
 
@@ -337,7 +323,7 @@ export default function SignUpPage() {
                     <br />
                     3. Pick Your Portal Name — YourBrand.pvxpx.com style.
                     <br />
-                    4. Go Live Instantly — Everything’s done-for-you.
+                    4. Go Live Instantly — Everything's done-for-you.
                     <br />
                     5. Drive Players — Use your audience, ads, or affiliates.
                     <br />
@@ -345,8 +331,8 @@ export default function SignUpPage() {
                   </p>
 
                   <p className="font-bold text-center">
-                    You’re not promoting a brand.
-                    <br /> You’re building your own.
+                    You're not promoting a brand.
+                    <br /> You're building your own.
                   </p>
                 </div>
               </div>
@@ -355,10 +341,13 @@ export default function SignUpPage() {
         </AnimateOnScroll>
       </section>
 
-      <section id="last-step" className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section
+        id="last-step"
+        className="container mx-auto px-4 md:px-6 max-w-6xl"
+      >
         <AnimateOnScroll>
           <p className="text-lg sm: md:text-2xl font-bold mb-4 text-left text-btb-gold">
-            What You’re Paying For (No Surprises): <br />
+            What You're Paying For (No Surprises): <br />
           </p>
           <p className="text-lg sm: md:text-2xl text-white text-left font-bold">
             ✅ One-time $1,000 setup <br />
@@ -370,20 +359,18 @@ export default function SignUpPage() {
           <p className="text-lg sm: md:text-2xl font-bold text-left mb-9 text-btb-gold">
             This is a founders-level asset, not a toy.
             <br />
-            Let’s F*ing Go!
+            Let's F*ing Go!
           </p>
           <div className="flex justify-start mt-8">
-                <RouterLink
-                  to="/signup"
-                  className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg  font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
-                >
-                  <span className="text-[20px]">Take Me to My Spot! </span>
-                </RouterLink>
-              </div>
+            <RouterLink
+              to="/signup"
+              className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg  font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
+            >
+              <span className="text-[20px]">Take Me to My Spot! </span>
+            </RouterLink>
+          </div>
         </AnimateOnScroll>
       </section>
-
-
 
       <AuthModal
         isOpen={isAuthModalOpen}
