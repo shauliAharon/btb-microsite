@@ -18,7 +18,11 @@ export default {
         "page-transition": "pageTransition 0.15s ease-out",
         "page-slide": "pageSlide 0.15s ease-out",
         float: "float 6s ease-in-out infinite",
-        pulse: "pulse 2s infinite",
+        "bounce-subtle": "bounce-subtle 2s infinite",
+        "shimmer-fast": "shimmer 1.5s infinite",
+        sparkle: "sparkle 2s infinite",
+        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        shine: "shine 3s infinite",
       },
       keyframes: {
         fadeIn: {
@@ -41,10 +45,28 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-20px)" },
         },
+        "bounce-subtle": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-5px)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        sparkle: {
+          "0%": { opacity: "0.2", transform: "scale(1)" },
+          "50%": { opacity: "0.4", transform: "scale(1.1)" },
+          "100%": { opacity: "0.2", transform: "scale(1)" },
+        },
         pulse: {
           "0%": { boxShadow: "0 0 0 0 rgba(212, 175, 55, 0.4)" },
           "70%": { boxShadow: "0 0 0 10px rgba(212, 175, 55, 0)" },
           "100%": { boxShadow: "0 0 0 0 rgba(212, 175, 55, 0)" },
+        },
+        shine: {
+          "0%": { transform: "translateY(-100%)" },
+          "50%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(-100%)" },
         },
       },
       transitionProperty: {

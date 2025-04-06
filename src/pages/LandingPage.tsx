@@ -64,7 +64,7 @@ export default function LandingPage() {
       {/* Mission Block */}
       <section id="mission" className="container mx-auto px-4 md:px-6">
         <AnimateOnScroll>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="relative flex flex-col-reverse md:flex-row items-start justify-between gap-12">
             {/* Left side: Text */}
             <div className="flex-1">
               <p className="text-xl md:text-3xl text-gray-300 mb-6 md:mb-8 text-left">
@@ -119,7 +119,7 @@ export default function LandingPage() {
                   <div className="flex justify-start mt-8">
                     <RouterLink
                       to="/signup"
-                      className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
+                      className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
                     >
                       <span>Got it. Let me In Now!</span>
                     </RouterLink>
@@ -204,7 +204,7 @@ export default function LandingPage() {
       </section>
 
       {/* The Vision */}
-      <section className="container mx-auto px-4 md:px-6">
+      <section id="vision" className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-start gap-8">
           <div
             className="w-full md:w-[70%] p-6"
@@ -340,9 +340,14 @@ export default function LandingPage() {
           <div className="flex justify-start mt-8">
             <RouterLink
               to="/signup"
-              className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
+              className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
             >
-              <span>Hell Yes, I'm Claiming to My Spot!</span>
+              <span className="text-black font-bold text-xl relative z-10 animate-pulse">
+                I Don't need a Pitch. I Need In!
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer-fast" />
+              <div className="absolute inset-0 bg-[url('/sparkles.png')] opacity-30 animate-sparkle" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-btb-gold/20 to-transparent animate-shine" />
             </RouterLink>
           </div>
         </AnimateOnScroll>
@@ -567,7 +572,7 @@ export default function LandingPage() {
           </p>
         </AnimateOnScroll>
         <div className="space-y-8">
-          <div className="flex flex-col md:flex-row items-start justify-between gap-8 sm:gap-12 pt-12">
+<div className="flex flex-col-reverse md:flex-row items-start justify-between gap-8 sm:gap-12 pt-12">
             <div className="flex-1">
               <AnimateOnScroll>
                 <p className="text-xl sm:text-2xl text-white mb-4 text-left font-bold">
@@ -591,7 +596,7 @@ export default function LandingPage() {
                 <div className="flex justify-start mt-8">
                   <RouterLink
                     to="/signup"
-                    className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
+                    className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
                   >
                     <span>Hell Yes, I'm Claiming to My Spot!</span>
                   </RouterLink>
@@ -609,154 +614,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      {/* Benefits Section */}
-      {/* <section id="benefits" className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-3 gap-4 md:gap-8">
-          {[
-            {
-              title: "Runs 24/7",
-              description: "Automated platform that never sleeps",
-            },
-            {
-              title: "No Code Required",
-              description: "No tech headaches, no devs needed",
-            },
-            {
-              title: "Tokenized Economy",
-              description: "Built-in token mechanics and automatic payouts",
-            },
-          ].map((benefit, index) => (
-            <AnimateOnScroll key={index} delay={index * 0.1}>
-              <div className="bg-black/50 p-6 md:p-8 rounded-lg">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
-                  {benefit.title}
-                </h3>
-                <p className="text-lg md:text-xl text-gray-300 text-left">
-                  {benefit.description}
-                </p>
-              </div>
-            </AnimateOnScroll>
-          ))}
-        </div>
-      </section> */}
-
-      {/* Market Potential */}
-      {/* <section id="market" className="container mx-auto px-4 md:px-6">
-        <div className="text-center">
-          <AnimateOnScroll>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-12 text-center">
-              The Market Potential
-            </h2>
-          </AnimateOnScroll>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
-            <AnimateOnScroll delay={0.2}>
-              <div className="bg-black/50 p-6 md:p-8 rounded-lg">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
-                  $19.7B Market
-                </h3>
-                <p className="text-lg md:text-xl text-gray-300 text-canter">
-                  Social Gaming market (2023)
-                </p>
-              </div>
-            </AnimateOnScroll>
-            <AnimateOnScroll delay={0.3}>
-              <div className="bg-black/50 p-6 md:p-8 rounded-lg">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
-                  $39.5B+ Projected
-                </h3>
-                <p className="text-lg md:text-xl text-gray-300 text-canter">
-                  By 2028
-                </p>
-              </div>
-            </AnimateOnScroll>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Package Section */}
-      {/* <section id="signup" className="container mx-auto px-4 md:px-6">
-        <div className="text-center">
-          <AnimateOnScroll>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-12 text-center leading-normal py-2">
-              The Package (If You Qualify)
-            </h2>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={0.2}>
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-canter">
-              What you get:
-            </p>
-          </AnimateOnScroll>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                title: "Multiple Verticals",
-                description: "Casino-style, sports, financial games",
-              },
-              {
-                title: "Full Backend System",
-                description:
-                  "Wallet system, player engine, funnels, creatives, brand assets",
-              },
-              {
-                title: "Direct Earnings",
-                description: "From every player you bring in",
-              },
-              {
-                title: "Founder Benefits",
-                description: "Founder-only access, bonuses, and tiered status",
-              },
-            ].map((benefit, index) => (
-              <AnimateOnScroll key={index} delay={0.3 + index * 0.1}>
-                <div className="bg-black/50 p-6 md:p-8 rounded-lg">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-lg md:text-xl text-gray-300 text-left">
-                    {benefit.description}
-                  </p>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-          <div className="flex justify-start w-full">
-            <AnimateOnScroll delay={0.7}>
-              <p className="text-xl md:text-2xl text-gray-300 mt-8 text-left max-w-4xl mx-auto">
-                No coding. No crypto knowledge required. Just guts, hustle, and
-                hunger. This isn't a playground. It's a launchpad for digital
-                ownership. And this opportunity? It's not for sale. It's for the
-                ones bold enough to take it.
-              </p>
-            </AnimateOnScroll>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Final CTA Section */}
-      {/* <section id="final-cta" className="container mx-auto px-4 md:px-6">
-        <div className="text-center">
-          <AnimateOnScroll>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 text-center">
-              This Is Not For Everyone
-            </h2>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={0.2}>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-6 md:mb-8 text-left">
-              We're not going wide. We're going tight. Invitation-only Founders
-              Circle. Limited seats. Only the right profiles. If you've read
-              this far, maybe you feel it. That edge. That hunger. That refusal
-              to die average. You want in? Then prove it.
-            </p>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={0.4}>
-            <RouterLink
-              to="/signup"
-              className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
-            >
-              <span>I Don't Need a Pitch. I Need In</span>
-            </RouterLink>
-          </AnimateOnScroll>
-        </div>
-      </section> */}
     </div>
   );
 }
