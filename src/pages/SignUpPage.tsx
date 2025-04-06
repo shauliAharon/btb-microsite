@@ -29,45 +29,50 @@ export default function SignUpPage() {
       <section className="container mx-auto px-4 md:px-6 max-w-6xl">
         <AnimateOnScroll>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 elegant-underline">
-            <div className="sm:flex sm:flex-row sm:justify-start sm:items-center sm:space-x-2">
+            <div className="sm:flex sm:flex-row sm:justify-center sm:items-center sm:space-x-2">
               <span className="block sm:inline whitespace-normal sm:whitespace-nowrap">
-                Be The Boss Founders
-              </span>
-              <span className="block text-center sm:inline whitespace-normal">
-                Circle
+                Be The Boss Founders Circle
               </span>
             </div>
           </h1>
-          <div className="w-full">
-            <AnimateOnScroll delay={0.2}>
+
+          {/* START: wrapper with relative */}
+          <div
+            className="relative w-full p-5 flex flex-col md:flex-row items-start"
+            style={{ backgroundColor: "#1A1A1A" }}
+          >
+            <div className="flex-1">
               <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
-                This isn't a sales page. It's a warning. We're not opening the
-                doors—we're cracking them. And only the fast, the real, and the
-                ready are getting in.
+                This isn't a sales page. <br />
+                <span className="text-btb-gold"> It's a warning. </span> <br />
+                We're not opening the doors—we're cracking them. <br />
+                And only the fast, the real, and the ready are getting in.{" "}
+                <br />
+                <span className="text-btb-gold">
+                  Welcome to the BTB Founders Circle
+                </span>
+                — the no-fluff, skin-in-the-game launch program for bold players{" "}
+                <br />
+                ready to stake their claim in the <br />
+                $180B+ social gaming industry.
               </p>
-            </AnimateOnScroll>
-            <AnimateOnScroll delay={0.4}>
               <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
-                Welcome to the BTB Founders Circle — the no-fluff,
-                skin-in-the-game launch program for bold players ready to stake
-                their claim in the $180B+ social gaming industry. You don't need
-                to know crypto. You don't need to know code. You just need to
-                move.
+                You don't need to know crypto.
               </p>
-            </AnimateOnScroll>
-            <AnimateOnScroll delay={0.6}>
-              <div className="p-6 md:p-8 rounded-lg bg-black/50">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-btb-gold text-center">
-                  $1,000 One-Time Investment
-                </h2>
-                <p className="text-lg md:text-xl text-gray-300 text-center">
-                  Building this yourself? Costs $1M+. Licensing from someone
-                  else? $25K minimum. Joining BTB Founders Circle? A fraction—if
-                  you qualify.
-                </p>
-              </div>
-            </AnimateOnScroll>
+              <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
+                You don't need to know code.
+              </p>
+              <p className="text-xl md:text-2xl mb-6 md:mb-8 text-left text-btb-gold font-bold">
+                You just need to move.
+              </p>
+            </div>
+
+            {/* הקובייה שיוצאת למטה */}
+            <div className="absolute right-[-20px] md:right-[-40px] -bottom-16 w-[496px] h-[366px] bg-[#726D6D] flex items-center justify-center text-white text-4xl font-bold">
+              Pic
+            </div>
           </div>
+          {/* END wrapper */}
         </AnimateOnScroll>
       </section>
 
