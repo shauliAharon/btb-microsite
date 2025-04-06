@@ -11,7 +11,15 @@ export default function StickyHeader() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const headerOffset = 80; // Adjust this value as needed
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -90,50 +98,66 @@ export default function StickyHeader() {
                     onClick={() => scrollToSection("hero")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
-                    Hero
+                    start
                   </button>
                   <span className="text-gray-600 mx-2">|</span>
                   <button
                     onClick={() => scrollToSection("mission")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
-                    Mission
+                    why
                   </button>
                   <span className="text-gray-600 mx-2">|</span>
                   <button
                     onClick={() => scrollToSection("intro")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
-                    Intro
-                  </button>
-                  <span className="text-gray-600 mx-2">|</span>
-                  <button
-                    onClick={() => scrollToSection("benefits")}
-                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
-                  >
-                    Benefits
-                  </button>
-                  <span className="text-gray-600 mx-2">|</span>
-                  <button
-                    onClick={() => scrollToSection("market")}
-                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
-                  >
-                    Market
+                    btb
                   </button>
                   <span className="text-gray-600 mx-2">|</span>
                   <button
                     onClick={() => scrollToSection("vision")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
-                    Vision
+                    future
+                  </button>
+                  <span className="text-gray-600 mx-2">|</span>
+                  <button
+                    onClick={() => scrollToSection("market")}
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
+                  >
+                    stats
                   </button>
                   <span className="text-gray-600 mx-2">|</span>
                   <button
                     onClick={() => scrollToSection("package")}
                     className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
                   >
-                    Package
+                    deal
                   </button>
+                  <span className="text-gray-600 mx-2">|</span>
+                  <button
+                    onClick={() => scrollToSection("not-for-everyone")}
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
+                  >
+                    elite
+                  </button>
+                  <span className="text-gray-600 mx-2">|</span>
+                  <button
+                    onClick={() => scrollToSection("looking")}
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
+                  >
+                    team
+                  </button>
+                  <span className="text-gray-600 mx-2">|</span>
+                  <button
+                    onClick={() => scrollToSection("last-step")}
+                    className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors"
+                  >
+                    join
+                  </button>
+                  <span className="text-gray-600 mx-2">|</span>
+
                   <span className="text-gray-600 mx-4"></span>
                   <RouterLink
                     to="/signup"
@@ -185,7 +209,7 @@ export default function StickyHeader() {
                       }}
                       className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
-                      Hero
+                      start
                     </button>
                     <span className="text-gray-600">|</span>
                     <button
@@ -195,7 +219,7 @@ export default function StickyHeader() {
                       }}
                       className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
-                      Mission
+                      why
                     </button>
                     <span className="text-gray-600">|</span>
                     <button
@@ -205,27 +229,7 @@ export default function StickyHeader() {
                       }}
                       className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
-                      Intro
-                    </button>
-                    <span className="text-gray-600">|</span>
-                    <button
-                      onClick={() => {
-                        scrollToSection("benefits");
-                        setIsMobileMenuOpen(false);
-                      }}
-                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
-                    >
-                      Benefits
-                    </button>
-                    <span className="text-gray-600">|</span>
-                    <button
-                      onClick={() => {
-                        scrollToSection("market");
-                        setIsMobileMenuOpen(false);
-                      }}
-                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
-                    >
-                      Market
+                      btb
                     </button>
                     <span className="text-gray-600">|</span>
                     <button
@@ -235,7 +239,17 @@ export default function StickyHeader() {
                       }}
                       className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
-                      Vision
+                      future
+                    </button>
+                    <span className="text-gray-600">|</span>
+                    <button
+                      onClick={() => {
+                        scrollToSection("market");
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
+                    >
+                      stats
                     </button>
                     <span className="text-gray-600">|</span>
                     <button
@@ -245,8 +259,39 @@ export default function StickyHeader() {
                       }}
                       className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
                     >
-                      Package
+                      deal
                     </button>
+                    <span className="text-gray-600">|</span>
+                    <button
+                      onClick={() => {
+                        scrollToSection("not-for-everyone");
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
+                    >
+                      elite
+                    </button>
+                    <span className="text-gray-600">|</span>
+                    <button
+                      onClick={() => {
+                        scrollToSection("looking");
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
+                    >
+                      team
+                    </button>
+                    <span className="text-gray-600">|</span>
+                    <button
+                      onClick={() => {
+                        scrollToSection("last-step");
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="text-gray-300 hover:text-btb-gold cursor-pointer transition-colors whitespace-nowrap"
+                    >
+                      join
+                    </button>
+                    <span className="text-gray-600">|</span>
                     <div className="w-full flex justify-center mt-4">
                       <RouterLink
                         to="/signup"

@@ -46,11 +46,7 @@ export default function LandingPage() {
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <button
-            onClick={() => {
-              document
-                .getElementById("mission")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
+            onClick={() => scrollToSection("mission")}
             className="cursor-pointer group"
           >
             <div className="relative">
@@ -269,7 +265,7 @@ export default function LandingPage() {
       </section>
 
       {/* The Market */}
-      <section id="intro" className="container mx-auto px-4 md:px-6">
+      <section id="market" className="container mx-auto px-4 md:px-6">
         <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
           <img
             src="/your-image-path.png"
@@ -354,7 +350,7 @@ export default function LandingPage() {
       </section>
 
       {/* The Package */}
-      <section className="container mx-auto px-4 md:px-6">
+      <section id="package" className="container mx-auto px-4 md:px-6">
         <div className="relative flex flex-col md:flex-row items-start justify-between gap-12">
           <div className="w-full md:w-[300px]">
             <AnimateOnScroll delay={0.2}>
@@ -426,7 +422,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="intro" className="container mx-auto px-4 md:px-6">
+      <section id="not-for-everyone" className="container mx-auto px-4 md:px-6">
         <div className="space-y-8">
           <div className="flex flex-col md:flex-row items-start justify-between gap-12">
             <div className="flex-1">
@@ -484,7 +480,7 @@ export default function LandingPage() {
       </section>
 
       {/* {looking} */}
-      <section id="intro" className="container mx-auto px-4 md:px-6">
+      <section id="looking" className="container mx-auto px-4 md:px-6">
         <AnimateOnScroll delay={0.2}>
           <div className="space-y-6 p-6" style={{ backgroundColor: "#1A1A1A" }}>
             <div>
@@ -534,7 +530,7 @@ export default function LandingPage() {
         </AnimateOnScroll>
       </section>
 
-      <section id="intro" className="container mx-auto px-4">
+      <section id="last-step" className="container mx-auto px-4">
         <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
           <img
             src="/your-image-path.png"
@@ -572,7 +568,7 @@ export default function LandingPage() {
           </p>
         </AnimateOnScroll>
         <div className="space-y-8">
-<div className="flex flex-col-reverse md:flex-row items-start justify-between gap-8 sm:gap-12 pt-12">
+          <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-8 sm:gap-12 pt-12">
             <div className="flex-1">
               <AnimateOnScroll>
                 <p className="text-xl sm:text-2xl text-white mb-4 text-left font-bold">
