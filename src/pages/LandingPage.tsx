@@ -348,6 +348,267 @@ export default function LandingPage() {
         </AnimateOnScroll>
       </section>
 
+      {/* The Package */}
+      <section className="container mx-auto px-4 md:px-6">
+        <div className="relative flex flex-col md:flex-row items-start justify-between gap-12">
+          <div className="flex-shrink-0 w-[300px]">
+            <AnimateOnScroll delay={0.2}>
+              <div className="rounded-lg w-[230px] h-[850px] bg-gray-500 flex items-center justify-center">
+                <span className="text-white text-6xl">Pic</span>
+              </div>
+            </AnimateOnScroll>
+          </div>
+
+          <div className="flex-1 p-6">
+            <AnimateOnScroll>
+              <p className="text-left italic">
+                Most people will scroll.
+                <br /> Few will apply.
+                <br /> Fewer will get in.
+                <br />
+                That’s the point. This could be your moment.
+              </p>
+              <p className="text-left text-btb-gold text-xl md:text-2xl font-bold italic">
+                Miss it — and... well, you've been there before.
+              </p>
+              <div
+                className="space-y-6 p-6"
+                style={{ backgroundColor: "#1A1A1A" }}
+              >
+                <div>
+                  <p className="text-xl md:text-2xl text-btb-gold mb-4 text-left">
+                    The Package (If You Qualify in time)
+                  </p>
+                  <p className="text-xl md:text-2xl text-white font-bold mb-4 text-left">
+                    What you get:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-xl text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                    <li>
+                      Multiple verticals (casino-style, sports, financial)
+                    </li>
+                    <li>Full backend, wallet system, player engine</li>
+                    <li>Funnels, creatives, brand assets</li>
+                    <li>Direct earning from every player you bring in</li>
+                    <li>Founder-only access, bonuses, and tiered status</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-xl md:text-1xl text-left">
+                    No coding.
+                    <br /> No crypto knowledge required.
+                    <br /> Just guts, hustle, and hunger.
+                  </p>
+                  <p className="text-xl text-white text-left font-bold">
+                    This isn’t a playground.
+                  </p>
+                  <p className="text-xl text-btb-gold text-left font-bold">
+                    It’s a launchpad for digital ownership.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-xl text-white text-left font-bold">
+                    And this opportunity? It’s not for sale.
+                  </p>
+                  <p className="text-xl text-btb-gold text-left font-bold">
+                    It’s for the ones bold enough to take it.
+                  </p>
+                </div>
+              </div>
+            </AnimateOnScroll>
+          </div>
+        </div>
+      </section>
+
+      <section id="intro" className="container mx-auto px-4 md:px-6">
+        <div className="space-y-8">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-12">
+            <div className="flex-1">
+              <AnimateOnScroll>
+                <p className="text-xl md:text-2xl font-bold mb-4 text-left text-btb-gold">
+                  This Is Not For Everyone{" "}
+                </p>
+                <p className="text-xl md:text-2xl text-white text-left">
+                  We’re not going wide. <br />
+                  We’re going tight.
+                  <br />
+                  Invitation-only Founders Circle.
+                  <br />
+                  Limited seats. <br />
+                  Only the right profiles.
+                  <br />
+                  If you’ve read this far, maybe you feel it. <br />
+                  That edge. <br />
+                  That hunger. <br />
+                  That refusal to die average.{" "}
+                </p>
+                <p className="text-xl md:text-2xl font-bold text-left ">
+                  You want in?
+                </p>
+                <p className="text-xl md:text-2xl font-bold text-left mb-9 text-btb-gold">
+                  Then prove it.{" "}
+                </p>
+              </AnimateOnScroll>
+
+              <AnimateOnScroll delay={0.2}>
+                <p className="text-xl md:text-2xl text-red-500 font-bold mb-4 text-left">
+                  Read This Before Applying!
+                </p>
+
+                <p className="text-xl md:text-2xl mb-4 text-left">
+                  This isn’t cheap. <br />
+                  This isn’t easy. <br />
+                  This isn’t a side hustle for the lazy. <br />
+                  We’ve spent millions building this platform. <br />
+                  We’re building infrastructure for a new empire layer in the
+                  Web3 economy.{" "}
+                </p>
+              </AnimateOnScroll>
+            </div>
+
+            <div className="flex-shrink-0 w-[450px]">
+              <AnimateOnScroll delay={0.2}>
+                <div className="rounded-lg w-[450px] h-[450px] bg-gray-500 flex items-center justify-center">
+                  <span className="text-white text-6xl">Pic</span>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* {looking} */}
+      <section id="intro" className="container mx-auto px-4 md:px-6">
+        <AnimateOnScroll delay={0.2}>
+          <div className="space-y-6 p-6" style={{ backgroundColor: "#1A1A1A" }}>
+            <div>
+              <p className="text-xl md:text-2xl text-white mb-4 text-left">
+                We’re looking for:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-xl text-white [&>li::before]:content-['•'] [&>li::before]:text-white [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
+                <li>Builders</li>
+                <li>Operators</li>
+                <li>Owners</li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <p className="text-xl md:text-1xl text-left">
+                There is a cost.
+                <br />
+                We’ll talk price{" "}
+                <span className="font-bold">if you pass the first gate.</span>
+              </p>
+              <p className="text-xl text-white text-left font-bold">
+                But, just so you get a taste of the best part
+              </p>
+              <p className="text-xl text-left ">
+                Building this yourself? Costs $1M+. <br />
+                Licensing from someone else? $25K minimum. <br />
+                Joining{" "}
+                <span className="font-bold text-btb-gold">
+                  Be The Boss
+                </span>{" "}
+                Founders Circle? A fraction—if you qualify.
+                <br />
+                If you flinch before qualifying? You already told us you don’t
+                belong.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <p className="text-xl text-white text-left font-bold">
+                And this opportunity? It’s not for sale.
+              </p>
+              <p className="text-xl text-btb-gold text-left font-bold">
+                It’s for the ones bold enough to take it.
+              </p>
+            </div>
+          </div>{" "}
+        </AnimateOnScroll>
+      </section>
+
+      <section id="intro" className="container mx-auto px-4">
+        <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
+          <img
+            src="/your-image-path.png"
+            alt="Graphic banner"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <AnimateOnScroll>
+          <p className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-left">
+            We get applications daily.
+            <br />
+            We reject most.
+            <br />
+            <span className="text-btb-gold">
+              Only a few earn a shot at the next level.
+              <br />
+              Will you make the cut?
+            </span>
+          </p>
+          <p className="text-lg sm:text-xl md:text-2xl text-white text-left">
+            Hundreds have already applied.
+            <br />
+            We're only letting in the right few.
+          </p>
+
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-left mb-9 text-btb-gold">
+            What Comes Next?{" "}
+          </p>
+          <p className="text-lg sm:text-xl md:text-2xl text-white text-left">
+            Step 1: Apply below.
+            <br />
+            Step 2: We review. We respond.
+            <br />
+            Step 3: If accepted, you receive the Founder's Package. One shot.
+          </p>
+        </AnimateOnScroll>
+        <div className="space-y-8">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-8 sm:gap-12 pt-12">
+            <div className="flex-1">
+              <AnimateOnScroll>
+                <p className="text-xl sm:text-2xl text-white mb-4 text-left font-bold">
+                  This page will disappear.
+                  <br />
+                  The Founders will still be eating.
+                  <br />
+                  You'll be watching.
+                  <br />
+                  You bring the fire.
+                  <br />
+                  We bring the machine.
+                  <br />
+                  Let's F*ing Do It.** <br />
+                  <span className="text-btb-gold">Let'em talk.</span>
+                  <br />
+                  You click.{" "}
+                </p>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={0.8}>
+                <div className="flex justify-start mt-8">
+                  <RouterLink
+                    to="/signup"
+                    className="inline-block text-black px-8 py-4 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shimmer-button"
+                  >
+                    <span>Hell Yes, I’m Claiming to My Spot!</span>
+                  </RouterLink>
+                </div>
+              </AnimateOnScroll>
+            </div>
+
+            <div className="flex-shrink-0 w-full md:w-[450px]">
+              <AnimateOnScroll delay={0.2}>
+                <div className="rounded-lg w-full md:w-[450px] h-[300px] md:h-[450px] bg-gray-500 flex items-center justify-center">
+                  <span className="text-white text-4xl sm:text-6xl">Pic</span>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Benefits Section */}
       {/* <section id="benefits" className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-3 gap-4 md:gap-8">
