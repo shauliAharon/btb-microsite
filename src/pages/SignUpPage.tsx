@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { useState, lazy, Suspense } from "react";
 import AuthModal from "../components/AuthModal";
 import RegistrationForm from "../components/RegistrationForm";
