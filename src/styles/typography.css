@@ -24,12 +24,12 @@
   }
 
   p {
-    @apply text-[18px] leading-relaxed mb-4 text-white;
+    @apply text-[24px] leading-relaxed mb-4 text-white;
     max-width: 65ch;
   }
 
   ul {
-    @apply text-[18px] leading-relaxed mb-4 space-y-2 list-none;
+    @apply text-[24px] leading-relaxed mb-4 space-y-2 list-none;
   }
 
   li {
@@ -66,7 +66,7 @@
   }
 
   .cta-text {
-    @apply text-[16px] md:text-[18px] font-bold;
+    @apply text-[20px] md:text-[18px] font-bold;
   }
 }
 
@@ -113,7 +113,7 @@
 /* Improved button text */
 .btn-primary,
 .btn-secondary {
-  @apply tracking-wide text-[16px] md:text-[18px] px-4 sm:px-8 py-2 sm:py-4;
+  @apply tracking-wide text-[20px] md:text-[20px] px-4 sm:px-8 py-2 sm:py-4;
   letter-spacing: 0.02em;
 }
 

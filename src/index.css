@@ -141,7 +141,7 @@
     background-size: 200% 200%;
     animation: shimmer 4s linear infinite;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .btn-primary:hover {
@@ -153,7 +153,7 @@
   .btn-secondary {
     @apply border-2 border-btb-gold text-btb-gold px-8 py-4 rounded-lg font-bold transition-all duration-300;
     background: linear-gradient(135deg, transparent 0%, transparent 100%);
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .btn-secondary:hover {

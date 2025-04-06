@@ -163,7 +163,7 @@ export default function StickyHeader() {
                     to="/signup"
                     className="relative overflow-hidden group px-4 py-2 rounded-lg bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 animate-bounce-subtle border-2 border-btb-gold/50 text-black font-bold text-sm sm:text-base"
                   >
-                    <span className="text-black font-bold text-sm sm:text-base relative z-10 animate-pulse">
+                    <span className="text-black font-bold text-sm sm:text-base relative z-10 animate-pulse ">
                       Join Now
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer-fast" />
@@ -321,3 +321,17 @@ export default function StickyHeader() {
     </>
   );
 }
+
+export const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    const headerOffset = 80; // Adjust this value as needed
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+};
