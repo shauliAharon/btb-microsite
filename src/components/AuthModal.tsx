@@ -9,6 +9,13 @@ interface AuthModalProps {
 export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
   if (!isOpen) return null;
 
+  const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // נבדוק אם המשתמש לחץ על הרקע ולא על המודל
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   const handleGoogleSignIn = () => {
     // TODO: Implement Google Sign In
     console.log("Google Sign In");
@@ -40,6 +47,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
 
   return (
     <motion.div
+      onClick={handleOverlayClick}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

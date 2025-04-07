@@ -1,11 +1,17 @@
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
-import { Link as RouterLink } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import { scrollToSection } from "../utils/scrollUtils";
 import pic1 from "../assets/pic1.jpeg";
 import pic2 from "../assets/pic2.jpeg";
 import "./LandingPage.css";
 export default function LandingPage() {
+  const navigate = useNavigate();
+
+  const handleSignupClick = () => {
+    navigate("/signup", { state: { openAuthModal: true } });
+  };
+
   return (
     <div className="space-y-16 md:space-y-32">
       {/* Hero Section */}
@@ -114,9 +120,9 @@ export default function LandingPage() {
 
                 <AnimateOnScroll delay={0.6}>
                   <div className="cta-container">
-                    <RouterLink to="/signup" className="cta-button">
+                    <button className="cta-button" onClick={handleSignupClick}>
                       <span>Got it. Let me In Now!</span>
-                    </RouterLink>
+                    </button>
                   </div>
                 </AnimateOnScroll>
               </div>
@@ -301,17 +307,9 @@ export default function LandingPage() {
         </div>{" "}
         <AnimateOnScroll delay={0.8}>
           <div className="flex justify-start mt-8">
-            <RouterLink
-              to="/signup"
-              className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg  font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
-            >
-              <span className="text-black font-bold  relative z-10 animate-pulse text-[20px]">
-                I Don't need a Pitch. I Need In!
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer-fast" />
-              <div className="absolute inset-0 bg-[url('/sparkles.png')] opacity-30 animate-sparkle" />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-btb-gold/20 to-transparent animate-shine" />
-            </RouterLink>
+            <button className="cta-button" onClick={handleSignupClick}>
+              <span> I Don't need a Pitch. I Need In!</span>
+            </button>
           </div>
         </AnimateOnScroll>
       </section>
@@ -557,14 +555,11 @@ export default function LandingPage() {
               </AnimateOnScroll>
               <AnimateOnScroll delay={0.8}>
                 <div className="flex justify-start mt-8">
-                  <RouterLink
-                    to="/signup"
-                    className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg  font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
-                  >
-                    <span className="text-[20px]">
+                <button className="cta-button" onClick={handleSignupClick}>
+                    <span>
                       Hell Yes, I'm Claiming to My Spot!
                     </span>
-                  </RouterLink>
+                  </button>
                 </div>
               </AnimateOnScroll>
             </div>

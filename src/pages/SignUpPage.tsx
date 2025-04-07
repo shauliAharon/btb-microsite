@@ -1,13 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AuthModal from "../components/AuthModal";
 import AnimateOnScroll from "../components/AnimateOnScroll";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import "../styles/SignUpPage.css";
 // Lazy load components that aren't immediately needed
 
 export default function SignUpPage() {
-  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  useEffect(() => {
+    if (location.state?.openAuthModal) {
+      setIsAuthModalOpen(true);
+    }
+  }, [location.state]);
+
+  const handleSignupClick = () => {
+    navigate("/signup", { state: { openAuthModal: true } });
+  };
   return (
     <div className="signup-page">
       {/* Founder's Circle Section */}
@@ -175,11 +186,11 @@ export default function SignUpPage() {
                 <span className="bold">Start earning daily.</span>
               </p>
               <div className="ready-to-move-button">
-                <RouterLink to="/signup" className="signup-button">
+                <button className="signup-button" onClick={handleSignupClick}>
                   <span className="signup-button-text">
                     Take Me to My Spot!{" "}
                   </span>
-                </RouterLink>
+                  </button>
               </div>
             </div>
 
@@ -321,9 +332,9 @@ export default function SignUpPage() {
             Let's F*ing Go!
           </p>
           <div className="last-step-button">
-            <RouterLink to="/signup" className="signup-button">
+            <button className="signup-button" onClick={handleSignupClick}>
               <span className="signup-button-text">Take Me to My Spot! </span>
-            </RouterLink>
+            </button>
           </div>
         </AnimateOnScroll>
       </section>
