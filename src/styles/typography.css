@@ -37,12 +37,9 @@
   }
 
   li::before {
-    content: "";
-    @apply w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 mt-1 mr-4;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23d4af37'/%3E%3Cpath fill='%23000000' d='M16.78 8.28a1 1 0 0 0-1.41 0L10.5 13.17l-1.87-1.87a1 1 0 0 0-1.41 1.41l2.58 2.58a1 1 0 0 0 1.41 0l5.57-5.57a1 1 0 0 0 0-1.41z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    content: "●";
+    @apply text-btb-gold text-2xl;
+    background-image: none;
   }
 
   .text-large {

@@ -4,7 +4,7 @@ import AnimateOnScroll from "../components/AnimateOnScroll";
 import { scrollToSection } from "../utils/scrollUtils";
 import pic1 from "../assets/pic1.jpeg";
 import pic2 from "../assets/pic2.jpeg";
-
+import "./LandingPage.css";
 export default function LandingPage() {
   return (
     <div className="space-y-16 md:space-y-32">
@@ -61,43 +61,42 @@ export default function LandingPage() {
       </section>
 
       {/* Mission Block */}
-      <section id="mission" className="container mx-auto px-4 md:px-6">
+      <section id="mission" className="mission-section">
         <AnimateOnScroll>
-          <div className="relative flex flex-col-reverse md:flex-row items-start justify-between gap-12">
+          <div className="mission-content">
             {/* Left side: Text */}
-            <div className="flex-1">
-              <p className=" md:text-3xl text-gray-300 mb-6 md:mb-8 text-left">
+            <div className="mission-text">
+              <p className="intro-text">
                 Because deep down, you know you were built for more than
-                <br className="hidden md:block" /> permission, and playing
-                small.
+                <br className="desktop-only" />
+                permission, and playing small.
               </p>
 
-              <div className="space-y-6">
+              <div className="mission-points">
                 <AnimateOnScroll delay={0.1}>
-                  <p className=" md:text-3xl text-left text-btb-gold font-bold">
+                  <p className="highlighted-title">
                     What if you could lock in a business that:
                   </p>
                 </AnimateOnScroll>
+
                 <AnimateOnScroll delay={0.2}>
-                  <div className=" md:text-2xl space-y-3 md:space-y-4 text-left">
-                    <p className="text-gray-300">Runs 24/7</p>
-                    <p className="text-gray-300">
-                      Rides the biggest digital wave of the decade
-                    </p>
-                    <p className="text-gray-300">
+                  <div className="points-list">
+                    <p>Runs 24/7</p>
+                    <p>Rides the biggest digital wave of the decade</p>
+                    <p>
                       Requires no code, no product, and no begging for clients
                     </p>
                   </div>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.3}>
-                  <p className=" md:text-3xl text-left text-btb-gold font-bold">
+                  <p className="highlighted-title">
                     What if you didn't just play the game — you OWNED the arena?
                   </p>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.4}>
-                  <div className=" md:text-2xl text-gray-300 text-left space-y-1">
+                  <div className="details-text">
                     <p>This is no fluff.</p>
                     <p>No "guru" fantasy.</p>
                     <p>No recycled affiliate garbage.</p>
@@ -106,24 +105,17 @@ export default function LandingPage() {
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.5}>
-                  <div className="text-btb-gold text-left  md:text-2xl space-y-1">
-                    <p className="text-btb-gold">Bitcoin had 2010...</p>
-                    <p className="text-btb-gold">Ethereum had 2015...</p>
-                    <p className="font-bold text-btb-gold">
-                      You can have 2025!
-                    </p>
+                  <div className="gold-list">
+                    <p>Bitcoin had 2010...</p>
+                    <p>Ethereum had 2015...</p>
+                    <p className="bold-gold">You can have 2025!</p>
                   </div>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll delay={0.6}>
-                  <div className="flex justify-start mt-8">
-                    <RouterLink
-                      to="/signup"
-                      className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg  font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
-                    >
-                      <span className="text-[20px]">
-                        Got it. Let me In Now!
-                      </span>
+                  <div className="cta-container">
+                    <RouterLink to="/signup" className="cta-button">
+                      <span>Got it. Let me In Now!</span>
                     </RouterLink>
                   </div>
                 </AnimateOnScroll>
@@ -131,7 +123,7 @@ export default function LandingPage() {
             </div>
 
             {/* Right side: Image */}
-            <div className="w-full md:w-[500px]">
+            <div className="mission-image">
               <AnimateOnScroll delay={0.7}>
                 <img src={pic1} alt="Hero character" />
               </AnimateOnScroll>
@@ -141,128 +133,98 @@ export default function LandingPage() {
       </section>
 
       {/* BTB Intro Block */}
-      <section id="intro" className="container mx-auto px-4 md:px-6">
-        <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
-          <img
-            src="/your-image-path.png"
-            alt="Graphic banner"
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section id="intro">
+        <AnimateOnScroll>
+          <div className="banner">
+            <img src="/your-image-path.png" alt="Graphic banner" />
+          </div>
 
-        <div className="space-y-8">
-          <AnimateOnScroll>
-            <h1 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-center">
-              Introducing: BTB — Be The Boss by Playbita
-            </h1>
-          </AnimateOnScroll>
+          <h1>Introducing: BTB — Be The Boss by Playbita</h1>
+          <div className="content">
+            <div className="left">
+              <p>This is not some affiliate gimmick.</p>
+              <p className="gold bold">
+                <span className="normal">This is a</span> full-scale
+                Web3-powered social gaming empire —
+              </p>
+              <p style={{ paddingBottom: "30px" }}>
+                and you can own your slice.
+              </p>
 
-          <div className="flex flex-col md:flex-row items-start justify-between gap-12">
-            <div className="flex-1">
-              <AnimateOnScroll delay={0.1}>
-                <p className=" md:text-2xl text-white mb-4 text-left">
-                  This is not some affiliate gimmick.
-                </p>
-                <p className=" md:text-2xl text-btb-gold font-bold mb-4 text-left">
-                  <span className="text-white font-normal ">This is a</span>{" "}
-                  full-scale Web3-powered social gaming empire —
-                </p>
-                <p className=" md:text-2xl text-white mb-14 text-left">
-                  and you can own your slice.
-                </p>
-              </AnimateOnScroll>
-
-              <AnimateOnScroll delay={0.2}>
-                <p className=" md:text-2xl text-white mb-4 text-left">
-                  We've already built the engine.
-                </p>
-                <p className=" md:text-2xl text-btb-gold font-bold mb-4 text-left">
-                  Your job?
-                </p>
-                <p className=" md:text-2xl text-btb-gold mb-4 text-left">
-                  Drive it. Grow it. Dominate your territory.
-                </p>
-                <p className=" md:text-2xl text-white mb-4 text-left">
-                  You're not buying a license.
-                </p>
-                <p className=" md:text-2xl text-white font-bold text-left">
-                  You're claiming digital turf.
-                </p>
-              </AnimateOnScroll>
+              <p>We've already built the engine.</p>
+              <p className="gold bold">Your job?</p>
+              <p className="gold">
+                Drive it. Grow it. Dominate your territory.
+              </p>
+              <p>You're not buying a license.</p>
+              <p className="bold">You're claiming digital turf.</p>
             </div>
 
-            <div className="w-full md:w-[450px]">
-              <AnimateOnScroll delay={0.3}>
-                <div className="rounded-lg w-full h-[300px] md:w-[450px] md:h-[450px] flex items-center justify-center">
-                  <AnimateOnScroll delay={0.7}>
-                    <img src={pic2} alt="Hero" />
-                  </AnimateOnScroll>
-                </div>
-              </AnimateOnScroll>
+            <div className="right">
+              <div className="image-wrapper">
+                <img src={pic2} alt="Hero" />
+              </div>
             </div>
           </div>
-        </div>
+        </AnimateOnScroll>
       </section>
 
       {/* The Vision */}
-      <section id="vision" className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row items-start gap-8">
-          <div
-            className="w-full md:w-[70%] p-6"
-            style={{ backgroundColor: "#1A1A1A" }}
-          >
+      <section id="vision" className="vision-container">
+        <div className="vision-flex-wrapper">
+          <div className="vision-text-box">
             <AnimateOnScroll>
-              <h2 className="text-[28px] md:text-[40px] font-bold mb-6 text-white text-left">
-                The Vision
-              </h2>
-              <div className="space-y-6">
+              <h2 className="vision-title">The Vision</h2>
+              <div className="vision-content">
                 <div>
-                  <p className=" md:text-2xl text-white mb-4 text-left">
+                  <p className="vision-paragraph">
                     We're building the{" "}
-                    <span className="text-white font-bold">
-                      next-generation economy{" "}
+                    <span className="vision-highlight">
+                      next-generation economy
                     </span>{" "}
-                    of social gaming + digital prestige:{" "}
+                    of social gaming + digital prestige:
                   </p>
-                  <ul className="text-left list-disc pl-6 space-y-2 text-white [&>li::before]:content-['•'] [&>li::before]:text-btb-gold [&>li::before]:text-2xl [&>li::before]:bg-none [&>li::before]:w-auto [&>li::before]:h-auto [&>li::before]:mt-0 [&>li::before]:mr-2">
-                    <li>Social games</li>
-                    <li>PvP sports picks</li>
-                    <li>Market trading sims</li>
-                    <li>Built-in token mechanics</li>
-                    <li>Quick, Automatic Payouts without delays.</li>
-                    <li>
-                      Prestige Economy System (status-based progression rolling
-                      out soon)
-                    </li>
-                  </ul>
+                  <div className="vision-list">
+                    <ul className="styled-list">
+                      <li>Social games</li>
+                      <li>PvP sports picks</li>
+                      <li>Market trading sims</li>
+                      <li>Built-in token mechanics</li>
+                      <li>Quick, Automatic Payouts without delays.</li>
+                      <li>
+                        Prestige Economy System (status-based progression
+                        rolling out soon)
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div className="space-y-4">
-                  <p className=" text-white text-left">
+                <div>
+                  <p className="vision-paragraph">
                     If this feels too big, too early, or too unreal —
                   </p>
-                  <p className=" text-btb-gold text-left">
+                  <p className="vision-gold-text">
                     that's exactly how Bitcoin felt to the first 100 who heard
                     about it.
                   </p>
                 </div>
 
-                <div className="space-y-4">
-                  <p className=" text-white text-left">
+                <div>
+                  <p className="vision-paragraph">
                     Built by a proven team. Running live on its own blockchain.
                     Millions already invested.
                   </p>
-                  <p className=" text-btb-gold text-left">
+                  <p className="vision-gold-text">
                     This is already happening — with or without you.
                   </p>
                 </div>
               </div>
             </AnimateOnScroll>
           </div>
-          <div className="w-full md:w-[30%] flex justify-end">
+          <div className="vision-image-box">
             <AnimateOnScroll delay={0.2}>
-              <div className="rounded-lg w-[250px] h-[300px] md:h-[600px] bg-gray-500 flex items-center justify-center">
-                <span className="text-white text-6xl">Pic</span>
+              <div className="vision-image-placeholder">
+                <span className="vision-image-text">Pic</span>
               </div>
             </AnimateOnScroll>
           </div>
