@@ -483,9 +483,10 @@
   .how-it-works-steps {
     white-space: normal;
   }
-
+  .last-step-text {
+    line-height: 2.5rem;
+  }
   .features-title-text,
-  .last-step-text,
   .ready-to-move-title,
   .last-step-title {
     font-size: 1.25rem;
@@ -508,7 +509,9 @@
     text-align: center;
     font-size: 1.25rem;
   }
-
+  .founders-title-text {
+    white-space: normal;
+  }
   .features-image,
   .how-it-works-image-box {
     max-width: 100%;
