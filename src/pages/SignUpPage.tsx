@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AuthModal from "../components/AuthModal";
 import AnimateOnScroll from "../components/AnimateOnScroll";
-import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../styles/SignUpPage.css";
 // Lazy load components that aren't immediately needed
 
@@ -190,7 +190,7 @@ export default function SignUpPage() {
                   <span className="signup-button-text">
                     Take Me to My Spot!{" "}
                   </span>
-                  </button>
+                </button>
               </div>
             </div>
 

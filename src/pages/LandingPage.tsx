@@ -1,5 +1,5 @@
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import { scrollToSection } from "../utils/scrollUtils";
 import pic1 from "../assets/pic1.jpeg";
@@ -444,7 +444,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* {looking} */}
       <section id="looking" className="container mx-auto px-4 md:px-6">
         <AnimateOnScroll delay={0.2}>
           <div className="space-y-6 p-6" style={{ backgroundColor: "#1A1A1A" }}>
@@ -555,10 +554,8 @@ export default function LandingPage() {
               </AnimateOnScroll>
               <AnimateOnScroll delay={0.8}>
                 <div className="flex justify-start mt-8">
-                <button className="cta-button" onClick={handleSignupClick}>
-                    <span>
-                      Hell Yes, I'm Claiming to My Spot!
-                    </span>
+                  <button className="cta-button" onClick={handleSignupClick}>
+                    <span>Hell Yes, I'm Claiming to My Spot!</span>
                   </button>
                 </div>
               </AnimateOnScroll>
