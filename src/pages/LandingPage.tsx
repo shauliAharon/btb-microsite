@@ -2,6 +2,8 @@ import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import { Link as RouterLink } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import { scrollToSection } from "../utils/scrollUtils";
+import pic1 from "../assets/pic1.jpeg";
+import pic2 from "../assets/pic2.jpeg";
 
 export default function LandingPage() {
   return (
@@ -105,9 +107,11 @@ export default function LandingPage() {
 
                 <AnimateOnScroll delay={0.5}>
                   <div className="text-btb-gold text-left  md:text-2xl space-y-1">
-                    <p>Bitcoin had 2010...</p>
-                    <p>Ethereum had 2015...</p>
-                    <p className="font-bold">You can have 2025!</p>
+                    <p className="text-btb-gold">Bitcoin had 2010...</p>
+                    <p className="text-btb-gold">Ethereum had 2015...</p>
+                    <p className="font-bold text-btb-gold">
+                      You can have 2025!
+                    </p>
                   </div>
                 </AnimateOnScroll>
 
@@ -127,13 +131,9 @@ export default function LandingPage() {
             </div>
 
             {/* Right side: Image */}
-            <div className="w-full md:w-[450px]">
+            <div className="w-full md:w-[500px]">
               <AnimateOnScroll delay={0.7}>
-                <img
-                  src="/your-image-path.png"
-                  alt="Hero character"
-                  className="rounded-lg w-full h-auto md:w-[550px] md:h-[550px] bg-gray-500"
-                />
+                <img src={pic1} alt="Hero character" />
               </AnimateOnScroll>
             </div>
           </div>
@@ -164,7 +164,8 @@ export default function LandingPage() {
                   This is not some affiliate gimmick.
                 </p>
                 <p className=" md:text-2xl text-btb-gold font-bold mb-4 text-left">
-                  This is a full-scale Web3-powered social gaming empire —
+                  <span className="text-white font-normal ">This is a</span>{" "}
+                  full-scale Web3-powered social gaming empire —
                 </p>
                 <p className=" md:text-2xl text-white mb-14 text-left">
                   and you can own your slice.
@@ -192,8 +193,10 @@ export default function LandingPage() {
 
             <div className="w-full md:w-[450px]">
               <AnimateOnScroll delay={0.3}>
-                <div className="rounded-lg w-full h-[300px] md:w-[450px] md:h-[450px] bg-gray-500 flex items-center justify-center">
-                  <span className="text-white text-6xl">Pic</span>
+                <div className="rounded-lg w-full h-[300px] md:w-[450px] md:h-[450px] flex items-center justify-center">
+                  <AnimateOnScroll delay={0.7}>
+                    <img src={pic2} alt="Hero" />
+                  </AnimateOnScroll>
                 </div>
               </AnimateOnScroll>
             </div>
