@@ -2,37 +2,35 @@ import { useState } from "react";
 import AuthModal from "../components/AuthModal";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import { Link as RouterLink } from "react-router-dom";
+import "../styles/SignUpPage.css";
 // Lazy load components that aren't immediately needed
 
 export default function SignUpPage() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
   return (
-    <div className="space-y-16 md:space-y-32 py-12 md:py-20">
+    <div className="signup-page">
       {/* Founder's Circle Section */}
-      <section className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section className="founders-circle">
         <AnimateOnScroll>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 elegant-underline text-btb-gold">
-            <div className="sm:flex sm:flex-row sm:justify-center sm:items-center sm:space-x-2">
-              <span className="block sm:inline whitespace-normal sm:whitespace-nowrap">
+          <h1 className="founders-title">
+            <div className="founders-title-container">
+              <span className="founders-title-text">
                 Be The Boss Founders Circle
               </span>
             </div>
           </h1>
 
           {/* START: wrapper with relative */}
-          <div
-            className="relative w-full p-5 flex flex-col md:flex-row items-start"
-            style={{ backgroundColor: "#1A1A1A" }}
-          >
-            <div className="flex-1">
-              <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
+          <div className="founders-content">
+            <div className="founders-text">
+              <p className="founders-paragraph">
                 This isn't a sales page. <br />
-                <span className="text-btb-gold"> It's a warning. </span> <br />
+                <span className="highlight"> It's a warning. </span> <br />
                 We're not opening the doors—we're cracking them. <br />
                 And only the fast, the real, and the ready are getting in.{" "}
                 <br />
-                <span className="text-btb-gold">
+                <span className="highlight">
                   Welcome to the BTB Founders Circle
                 </span>
                 — the no-fluff, skin-in-the-game launch program for bold players{" "}
@@ -40,51 +38,43 @@ export default function SignUpPage() {
                 ready to stake their claim in the <br />
                 $180B+ social gaming industry.
               </p>
-              <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
+              <p className="founders-paragraph">
                 You don't need to know crypto.
               </p>
-              <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
-                You don't need to know code.
-              </p>
-              <p className="text-xl md:text-2xl mb-6 md:mb-8 text-left text-btb-gold font-bold">
-                You just need to move.
-              </p>
+              <p className="founders-paragraph">You don't need to know code.</p>
+              <p className="founders-paragraph-bold">You just need to move.</p>
             </div>
 
             {/* הקובייה שיוצאת למטה */}
-            <div className="absolute right-[-20px] md:right-[-40px] -bottom-16 w-[496px] h-[366px] bg-[#726D6D] flex items-center justify-center text-white text-4xl font-bold">
-              Pic
-            </div>
+            <div className="founders-image">Pic</div>
           </div>
           {/* END wrapper */}
         </AnimateOnScroll>
       </section>
 
       {/* What's Included Section */}
-      <section className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section className="whats-included">
         <AnimateOnScroll>
-          <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
+          <div className="graphic-banner">
             <img
               src="/your-image-path.png"
               alt="Graphic banner"
-              className="w-full h-full object-cover"
+              className="graphic-banner-image"
             />
           </div>
 
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-black/90 p-6 md:p-10 rounded-lg">
-              <div className="flex flex-col md:flex-row gap-8">
-                {/* כותרת - מיושרת לשמאל ומרוכזת אנכית */}
-                <div className="md:w-1/3 flex justify-start md:justify-center items-center">
-                  <h2 className="text-[#D4AF37] font-bold text-2xl md:text-2xl whitespace-nowrap">
-                    What Is This?
-                  </h2>
+          <div className="whats-included-content">
+            <div className="whats-included-box">
+              <div className="whats-included-flex-row">
+                <div className="whats-included-title-left">
+                  <h2 className="whats-included-title-text">What Is This?</h2>
                 </div>
 
-                {/* טקסט תוכן - מיושר לשמאל עם ירידות שורה מדויקות */}
-                <div className="md:w-2/3 text-left text-white space-y-8 text-lg md:text-xl leading-relaxed">
-                  <p className="whitespace-nowrap">
-                    The Be The Boss (BTB) program gives you a fully branded,{" "}
+                <div className="whats-included-text-right">
+                  <p>
+                    <span className="whats-included-text">
+                      The Be The Boss (BTB) program gives you a fully branded,
+                    </span>
                     <br />
                     Web3-powered social gaming platform — <br />
                     in your name, with your identity, <br />
@@ -95,7 +85,7 @@ export default function SignUpPage() {
                     No tech. <br />
                     No staff. <br />
                     No devs. <br />
-                    <span className="text-[#D4AF37] font-bold">No slow.</span>
+                    <span className="highlight">No slow.</span>
                   </p>
 
                   <p>
@@ -105,9 +95,7 @@ export default function SignUpPage() {
                     automated payments, <br />
                     and daily rev share. <br />
                     This isn't affiliate marketing. <br />
-                    <span className="text-[#D4AF37] font-bold">
-                      This is ownership.
-                    </span>
+                    <span className="highlight">This is ownership.</span>
                   </p>
                 </div>
               </div>
@@ -117,56 +105,49 @@ export default function SignUpPage() {
       </section>
 
       {/* Features Section - Lazy Loaded */}
-      <section className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section className="features-section">
         <AnimateOnScroll>
-          <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
+          <div className="graphic-banner">
             <img
               src="/your-image-path.png"
               alt="Graphic banner"
-              className="w-full h-full object-cover"
+              className="graphic-banner-image"
             />
           </div>
 
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-black/90 p-6 md:p-10 rounded-lg">
-              <div className="flex flex-col md:flex-row gap-8">
-                {/* כותרת - מיושרת לשמאל ומרוכזת אנכית */}
-                <div className="md:w-1/3 flex flex-col items-center gap-6 justify-center">
-                  <h2 className="text-[#D4AF37] font-bold text-2xl md:text-2xl whitespace-nowrap">
-                    Who This Is For:
-                  </h2>
-                  <div className="w-[350px] h-[450px] bg-[#726D6D] flex items-center justify-center text-white text-4xl font-bold mr-8">
-                    Pic
-                  </div>
+          <div className="features-content">
+            <div className="features-box">
+              <div className="features-flex">
+                <div className="features-left">
+                  <h2 className="features-title-text">Who This Is For:</h2>
+                  <div className="features-image">Pic</div>
                 </div>
 
-                {/* טקסט תוכן - מיושר לשמאל עם ירידות שורה מדויקות */}
-                <div className="md:w-2/3 text-left text-white space-y-8 text-lg md:text-xl leading-relaxed">
-                  <p className="whitespace-nowrap">
+                <div className="features-text">
+                  <p>
                     🔥 Hustlers with an audience <br />
                     🔥 Creators, influencers, and affiliate killers <br />
                     🔥 Operators who want to skip building and just own
                   </p>
 
                   <p>
-                    If you're ready to build a real income engine in a zero-BS,
-                    high-reward space — this is your shot.
+                    <strong>
+                      If you're ready to build a real income engine <br />
+                      in a zero-BS, high-reward space — <br />
+                      this is your shot.
+                    </strong>
                   </p>
 
-                  <h2 className="text-btb-gold text-2xl font-bold">
-                    Why This Deal Is Crazy:
-                  </h2>
+                  <h2 className="highlight">Why This Deal Is Crazy:</h2>
                   <p>
                     Building this yourself? Costs $1M+ <br />
                     Licensing a white-label? $25K minimum <br />
                     Joining BTB? A fraction — if you act now.
                   </p>
                   <p>
-                    There's no catch.
+                    <strong>There's no catch.</strong>
                     <br />
-                    <span className="text-[#D4AF37] font-bold">
-                      Just commitment.
-                    </span>
+                    <span className="highlight">Just commitment.</span>
                   </p>
                 </div>
               </div>
@@ -175,123 +156,105 @@ export default function SignUpPage() {
         </AnimateOnScroll>
       </section>
 
-      <section className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section className="ready-to-move">
         <AnimateOnScroll>
-          <h1 className="sm:text-5xl md:text-3xl font-bold elegant-underline text-btb-gold text-left mb-0">
-            Ready to Move?
-          </h1>
+          <h1 className="ready-to-move-title">Ready to Move?</h1>
 
           {/* START: wrapper with relative */}
-          <div
-            className="relative w-full p-5 flex flex-col md:flex-row items-start pb-9"
-            style={{ backgroundColor: "#1A1A1A" }}
-          >
-            <div className="flex-1">
-              <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
+          <div className="ready-to-move-content">
+            <div className="ready-to-move-text">
+              <p className="ready-to-move-paragraph">
                 You've seen the numbers. <br />
                 You've seen the value.
               </p>
-              <p className="text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 text-left">
+              <p className="ready-to-move-paragraph">
                 Launch Your Web3 Gaming Portal Now <br />
                 Take control. <br />
-                <span className="text-btb-gold font-bold">Be the boss.</span>
+                <span className="highlight">Be the boss.</span>
                 <br />
-                <span className=" font-bold">Start earning daily.</span>
+                <span className="bold">Start earning daily.</span>
               </p>
-              <div className="flex justify-start mt-8">
-                <RouterLink
-                  to="/signup"
-                  className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg  font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
-                >
-                  <span className="text-[20px]">Take Me to My Spot! </span>
+              <div className="ready-to-move-button">
+                <RouterLink to="/signup" className="signup-button">
+                  <span className="signup-button-text">
+                    Take Me to My Spot!{" "}
+                  </span>
                 </RouterLink>
               </div>
             </div>
 
             {/* הקובייה שיוצאת למטה */}
-            <div className="absolute right-[-20px] md:right-[-130px] -bottom--10 w-[306px] h-[306px] bg-[#726D6D] flex items-center justify-center text-white text-4xl font-bold">
-              Pic
-            </div>
+            <div className="ready-to-move-image">Pic</div>
           </div>
           {/* END wrapper */}
         </AnimateOnScroll>
       </section>
 
-      <section className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section className="additional-info">
         <AnimateOnScroll>
-          <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
+          <div className="graphic-banner">
             <img
               src="/your-image-path.png"
               alt="Graphic banner"
-              className="w-full h-full object-cover"
+              className="graphic-banner-image"
             />
           </div>
 
-          <div className="w-full max-w-9xl mx-auto">
-            <div className="bg-black/90 p-6 md:p-10 rounded-lg">
-              <div className="flex flex-col md:flex-row gap-8">
-                {/* כותרת */}
-                <div className="flex-1 flex justify-start md:justify-center items-center">
-                  <h2 className="text-[#D4AF37] font-bold text-2xl whitespace-nowrap">
+          <div className="additional-info-content">
+            <div className="additional-info-box">
+              <div className="additional-info-flex">
+                <div
+                  className="additional-info-title"
+                  style={{ flex: "0 0 30%" }}
+                >
+                  <h2 className="additional-info-title-text">
                     Here's What You're Actually Getting:
                   </h2>
                 </div>
-
-                {/* טקסט תוכן */}
-                <div className="flex-[2] text-left text-white space-y-8 text-lg md:text-xl">
+                <div className="additional-info-text" style={{ flex: "1" }}>
                   <p>
                     No fluff. Just your empire, ready to launch.
                     <br />
-                    🔹 <span className="font-bold">
-                      Your Own Gaming Portal
-                    </span>{" "}
-                    — Fully branded, fully yours.
+                    🔹 <span className="bold">Your Own Gaming Portal</span> —
+                    Fully branded, fully yours.
                     <br />
                     🔹{" "}
-                    <span className="text-btb-gold font-bold">
+                    <span className="highlight bold">
                       50% Rev Share on Token Sales
-                    </span>{" "}
+                    </span>
                     — During presale, you get half of every G Coin purchase.
                     <br />
-                    🔹{" "}
-                    <span className="font-bold">
-                      50% Rev Share on Game Fees
-                    </span>{" "}
+                    🔹 <span className="bold">50% Rev Share on Game Fees</span>
                     — Ongoing revenue every time your players play.
                     <br />
                     🔹{" "}
-                    <span className="font-bold text-btb-gold">
+                    <span className="highlight bold">
                       No Tech Headaches — No devs.
                     </span>
                     <br />
-                    🔹 <span className="font-bold">No integrations.</span> Just
-                    plug & profit.
+                    🔹 <span className="bold">No integrations.</span> Just plug
+                    & profit.
                     <br />
-                    🔹{" "}
-                    <span className="font-bold text-btb-gold">
-                      Instant Setup
-                    </span>{" "}
-                    — Your portal goes live in minutes. Literally.
+                    🔹 <span className="highlight bold">Instant Setup</span> —
+                    Your portal goes live in minutes. Literally.
                     <br />
-                    🔹{" "}
-                    <span className="font-bold">Automated Daily Payouts</span> —
+                    🔹 <span className="bold">Automated Daily Payouts</span> —
                     Earnings drop into your wallet every day at 12PM GMT.
                   </p>
                 </div>
               </div>
-              <div className="flex-1 flex justify-start ">
+              <div className="additional-info-example">
                 <p>
-                  <span className="font-bold text-btb-gold">Real Example</span>:
-                  Player buys <span className="text-btb-gold">$500</span> of
-                  tokens → You earn <span className="text-btb-gold">$250</span>{" "}
-                  Instantly. <br />
+                  <span className="highlight bold">Real Example</span>: Player
+                  buys <span className="highlight">$500</span> of tokens → You
+                  earn <span className="highlight">$250</span> Instantly. <br />
                   They keep playing → You keep earning.
                   <br />
                   Some buy more. Some buy less. But you get 50% of every
                   purchase — no cap.
                 </p>
               </div>
-              <p className="text-btb-gold text-2xl">
+              <p className="highlight">
                 Now, imagine if you had just 1,000 players in a year . . .
               </p>
             </div>
@@ -299,24 +262,22 @@ export default function SignUpPage() {
         </AnimateOnScroll>
       </section>
 
-      <section className="container mx-auto px-4 md:px-6 max-w-6xl">
+      <section className="how-it-works">
         <AnimateOnScroll>
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-[#D4AF37] font-bold text-2xl md:text-2xl whitespace-nowrap text-left">
+          <div className="how-it-works-content">
+            <h2 className="how-it-works-title">
               How It Works (Step-by-Step):{" "}
             </h2>
-            <div className="bg-black/90 p-6 md:p-10 rounded-lg">
-              <div className="flex flex-col md:flex-row gap-8">
-                {/* כותרת - מיושרת לשמאל ומרוכזת אנכית */}
-                <div className="md:w-1/3 flex flex-col items-center gap-6 justify-center">
-                  <div className="w-[350px] h-[350px] bg-[#726D6D] flex items-center justify-center text-white text-4xl font-bold mr-8">
-                    Pic
-                  </div>
+            <div className="how-it-works-box">
+              <div className="how-it-works-flex">
+                {/* ריבוע התמונה */}
+                <div className="how-it-works-image">
+                  <div className="how-it-works-image-box">Pic</div>
                 </div>
 
-                {/* טקסט תוכן - מיושר לשמאל עם ירידות שורה מדויקות */}
-                <div className="md:w-2/3 text-left text-white space-y-8 text-lg md:text-xl leading-relaxed">
-                  <p className="whitespace-nowrap">
+                {/* טקסט התוכן */}
+                <div className="how-it-works-text">
+                  <p className="how-it-works-steps">
                     1. Connect Wallet — Takes 2 minutes. No KYC, no nonsense.
                     <br />
                     2. Pay One-Time $1,000 Setup — No subscriptions. No upsells.
@@ -330,9 +291,10 @@ export default function SignUpPage() {
                     6. Get Paid — Daily. Automatically. Forever.
                   </p>
 
-                  <p className="font-bold text-center">
+                  <p className="how-it-works-footer bold">
                     You're not promoting a brand.
-                    <br /> You're building your own.
+                    <br />
+                    <strong>You're building your own.</strong>
                   </p>
                 </div>
               </div>
@@ -341,32 +303,26 @@ export default function SignUpPage() {
         </AnimateOnScroll>
       </section>
 
-      <section
-        id="last-step"
-        className="container mx-auto px-4 md:px-6 max-w-6xl"
-      >
+      <section id="last-step" className="last-step">
         <AnimateOnScroll>
-          <p className="text-lg sm: md:text-2xl font-bold mb-4 text-left text-btb-gold">
+          <p className="last-step-title">
             What You're Paying For (No Surprises): <br />
           </p>
-          <p className="text-lg sm: md:text-2xl text-white text-left font-bold">
+          <p className="last-step-text">
             ✅ One-time $1,000 setup <br />
             ✅ Lifetime access to the platform <br />
             ✅ No hidden fees. No monthly anything. <br />
             ✅ You get a full business in a box. <br />
           </p>
 
-          <p className="text-lg sm: md:text-2xl font-bold text-left mb-9 text-btb-gold">
+          <p className="last-step-highlight">
             This is a founders-level asset, not a toy.
             <br />
             Let's F*ing Go!
           </p>
-          <div className="flex justify-start mt-8">
-            <RouterLink
-              to="/signup"
-              className="relative overflow-hidden group inline-block text-black px-8 py-4 rounded-lg  font-bold transition-all duration-500 hover:scale-105 bg-gradient-to-r from-btb-gold via-yellow-400 to-btb-gold bg-[length:200%_100%] hover:bg-[position:100%_0] shadow-lg hover:shadow-xl animate-bounce-subtle border-2 border-btb-gold/50"
-            >
-              <span className="text-[20px]">Take Me to My Spot! </span>
+          <div className="last-step-button">
+            <RouterLink to="/signup" className="signup-button">
+              <span className="signup-button-text">Take Me to My Spot! </span>
             </RouterLink>
           </div>
         </AnimateOnScroll>

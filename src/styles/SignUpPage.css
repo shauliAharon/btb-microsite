@@ -1,0 +1,566 @@
+.bg-dark {
+  background-color: #1a1a1a;
+}
+
+.responsive-pic {
+  width: 100%;
+  max-width: 248px;
+  height: auto;
+  margin-right: 0;
+}
+
+.absolute-pic {
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 153px;
+  height: auto;
+}
+
+/* General Styles */
+.signup-page {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Founder's Circle Section */
+.founders-circle {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.founders-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #d4af37;
+}
+.founders-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.founders-title-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+.founders-content {
+  position: relative;
+  width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+}
+.founders-text {
+  flex: 1;
+}
+.founders-paragraph {
+  font-size: 22px;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.founders-paragraph-bold {
+  font-size: 22px;
+  color: #d4af37;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.founders-image {
+  position: absolute;
+  right: -1.25rem;
+  bottom: -4rem;
+  width: 31rem;
+  height: 22.875rem;
+  background-color: #726d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+/* What's Included Section */
+.whats-included {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.graphic-banner {
+  width: 100%;
+  height: 6.25rem;
+  background-color: #6b7280;
+  margin-bottom: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8.25rem;
+}
+.graphic-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.whats-included-content {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+.whats-included-box {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.whats-included-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.features-title-text {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  padding-bottom: 9rem;
+}
+
+.features-image {
+  width: 21.875rem;
+  height: 12.5rem;
+  background-color: #726d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.whats-included-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.whats-included-title-text {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 2.125rem;
+  white-space: nowrap;
+}
+.whats-included-text {
+  text-align: left;
+  color: white;
+  font-size: 22px;
+  line-height: 1.75rem;
+}
+.highlight {
+  color: #d4af37;
+}
+.additional-info-title-text {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+/* Features Section */
+.features-section {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.features-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.features-box {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.features-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.features-title {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.features-title-text {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+.features-image {
+  width: 20.875rem;
+  height: 20.125rem;
+  background-color: #726d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+.features-text {
+  flex: 2;
+  text-align: left;
+  color: white;
+  font-size: 22px;
+  line-height: 1.75rem;
+}
+
+/* Ready to Move Section */
+.ready-to-move {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.ready-to-move-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: left;
+  color: #d4af37;
+  margin-bottom: 0;
+}
+.ready-to-move-content {
+  position: relative;
+  width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  padding-bottom: 2.25rem;
+}
+.ready-to-move-text {
+  flex: 1;
+}
+.ready-to-move-paragraph {
+  font-size: 22px;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.bold {
+  font-weight: bold;
+}
+.ready-to-move-button {
+  display: flex;
+  justify-content: start;
+  margin-top: 2rem;
+}
+.signup-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.5s;
+  background: linear-gradient(to right, #d4af37, #d4af37, #d4af37);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(212, 175, 55, 0.5);
+}
+.signup-button:hover {
+  transform: scale(1.05);
+  background-position: 100% 0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.signup-button-text {
+  font-size: 1.25rem;
+}
+.ready-to-move-image {
+  position: absolute;
+  right: -8.125rem;
+  bottom: 2rem;
+  width: 19.125rem;
+  height: 19.125rem;
+  background-color: #726d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+/* Additional Info Section */
+.additional-info {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.additional-info-content {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+.additional-info-box {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.additional-info-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.additional-info-title {
+  flex: 0 0 30%;
+  text-align: left;
+}
+.additional-info-text {
+  flex: 1;
+  text-align: left;
+}
+.additional-info-example {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+}
+
+/* How It Works Section */
+.how-it-works {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.how-it-works-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.how-it-works-title {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-align: left;
+}
+.how-it-works-box {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+.how-it-works-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.how-it-works-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-right: 5rem;
+}
+
+.how-it-works-image-box {
+  background-color: #888;
+  color: #fff;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.how-it-works-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Last Step Section */
+.last-step {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.last-step-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #d4af37;
+}
+.last-step-text {
+  font-size: 22px;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+.last-step-highlight {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2.25rem;
+  color: #d4af37;
+}
+.last-step-button {
+  display: flex;
+  justify-content: start;
+  margin-top: 2rem;
+}
+.how-it-works-steps {
+  line-height: 1.75rem;
+  white-space: nowrap;
+}
+
+.how-it-works-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+.whats-included-flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 9rem;
+  padding-top: 2rem;
+  align-items: flex-start;
+  align-items: center;
+}
+.whats-included-title-left {
+  flex: 0 0 auto;
+  text-align: left;
+  padding-top: 0.3rem;
+}
+
+.whats-included-text-right {
+  flex: 1;
+  text-align: left;
+  color: white;
+  font-size: 22px;
+  line-height: 1.75rem;
+}
+.whats-included-text {
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 3rem;
+  }
+
+  .founders-content,
+  .features-flex,
+  .how-it-works-flex,
+  .additional-info-flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .whats-included-text {
+    white-space: normal;
+  }
+  .founders-image,
+  .ready-to-move-image {
+    position: static;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    align-self: center;
+  }
+  .how-it-works-steps {
+    white-space: normal;
+  }
+
+  .features-title-text,
+  .last-step-text,
+  .ready-to-move-title,
+  .last-step-title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .signup-button {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .ready-to-move-button,
+  .last-step-button {
+    justify-content: center;
+  }
+
+  .how-it-works-title,
+  .additional-info-title-text {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .features-image,
+  .how-it-works-image-box {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .graphic-banner {
+    height: auto;
+  }
+
+  p,
+  .founders-paragraph,
+  .founders-paragraph-bold,
+  .whats-included-text,
+  .features-text,
+  .ready-to-move-paragraph,
+  .additional-info-text,
+  .how-it-works-steps,
+  .last-step-text {
+    font-size: 18px;
+  }
+
+  .whats-included-flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whats-included-title-left {
+    order: -1;
+    text-align: center;
+  }
+
+  .whats-included-text-right {
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.founders-title,
+.founders-paragraph-bold,
+.features-title-text,
+.whats-included-title-text,
+.additional-info-title-text,
+.how-it-works-title,
+.last-step-title,
+.last-step-highlight {
+  color: #d4af37;
+}
+
+.signup-button {
+  background: linear-gradient(to right, #d4af37, #d4af37, #d4af37);
+  border: 2px solid rgba(212, 175, 55, 0.5);
+}
