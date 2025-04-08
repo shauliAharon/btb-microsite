@@ -114,3 +114,21 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+  }
+
+  .hero-cta {
+    font-size: 28px;
+  }
+}
