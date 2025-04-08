@@ -17,9 +17,15 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
     walletAddress: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (
+    e: React.FormEvent | React.MouseEvent<HTMLButtonElement>
+  ) => {
     e.preventDefault();
-    onSubmit(formData);
+    onSubmit({
+      name: formData.name,
+      email: formData.email,
+      walletAddress: formData.walletAddress,
+    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,8 +44,9 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
     <motion.form
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col gap-6"
       onSubmit={handleSubmit}
-      className="space-y-6 w-full max-w-md mx-auto"
     >
       <div>
         <label
@@ -99,12 +106,7 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4">
-        <Button
-          type="submit"
-          variant="primary"
-          fullWidth
-          onClick={handleSubmit}
-        >
+        <Button type="submit" variant="primary" fullWidth>
           Submit
         </Button>
 
