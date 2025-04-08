@@ -1,5 +1,6 @@
 import AnimateOnScroll from "../AnimateOnScroll";
 import pic2 from "../../assets/pic2.jpeg";
+import "./IntroSection.css";
 
 export default function IntroSection() {
   return (

@@ -1,0 +1,65 @@
+#intro {
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+#intro .banner {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#intro .banner img {
+  width: 100%;
+  height: auto;
+}
+
+#intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#intro .content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+#intro .left {
+  flex: 1;
+}
+
+#intro .left p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#intro .left .gold {
+  color: #d4af37;
+}
+
+#intro .left .bold {
+  font-weight: bold;
+}
+
+#intro .left .normal {
+  font-weight: normal;
+}
+
+#intro .right {
+  flex: 1;
+}
+
+#intro .right .image-wrapper {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#intro .right .image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

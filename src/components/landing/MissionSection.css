@@ -22,8 +22,9 @@
   @apply text-[20px] md:text-[24px] font-bold text-btb-gold;
 }
 
-.points-list {
+.points-list1 {
   @apply space-y-4 text-[20px] text-white;
+  text-align: left;
 }
 
 .points-list p {
@@ -37,6 +38,7 @@
 
 .details-text {
   @apply space-y-2 text-[18px] text-white/80;
+
 }
 
 .gold-list {

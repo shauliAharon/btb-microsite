@@ -28,10 +28,10 @@ export default function MissionSection({ onSignupClick }: MissionSectionProps) {
               </AnimateOnScroll>
 
               <AnimateOnScroll delay={0.2}>
-                <div className="points-list">
-                  <p>Runs 24/7</p>
-                  <p>Rides the biggest digital wave of the decade</p>
+                <div className="points-list1">
                   <p>
+                    Runs 24/7 <br />
+                    Rides the biggest digital wave of the decade <br />
                     Requires no code, no product, and no begging for clients
                   </p>
                 </div>
@@ -45,25 +45,30 @@ export default function MissionSection({ onSignupClick }: MissionSectionProps) {
 
               <AnimateOnScroll delay={0.4}>
                 <div className="details-text">
-                  <p>This is no fluff.</p>
-                  <p>No "guru" fantasy.</p>
-                  <p>No recycled affiliate garbage.</p>
-                  <p>This is infrastructure — and it's real.</p>
+                  <p>
+                    This is no fluff. <br />
+                    No "guru" fantasy. <br />
+                    No recycled affiliate garbage. <br />
+                    This is infrastructure — and it's real.
+                  </p>
                 </div>
               </AnimateOnScroll>
 
               <AnimateOnScroll delay={0.5}>
                 <div className="gold-list">
-                  <p>Bitcoin had 2010...</p>
-                  <p>Ethereum had 2015...</p>
-                  <p className="bold-gold">You can have 2025!</p>
+                  <p>
+                    Bitcoin had 2010... <br />
+                    Ethereum had 2015... <br />
+                    <span className="bold-gold">You can have 2025!</span>{" "}
+                  </p>
                 </div>
               </AnimateOnScroll>
 
               <AnimateOnScroll delay={0.6}>
                 <div className="cta-container">
                   <Button variant="primary" size="lg" onClick={onSignupClick}>
-                  Got it. Let me In Now!                  </Button>
+                    Got it. Let me In Now!{" "}
+                  </Button>
                 </div>
               </AnimateOnScroll>
             </div>
