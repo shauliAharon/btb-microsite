@@ -1,5 +1,7 @@
 import AnimateOnScroll from "../AnimateOnScroll";
+import Button from "../Button";
 import pic1 from "../../assets/pic1.jpeg";
+import "./MissionSection.css";
 
 interface MissionSectionProps {
   onSignupClick: () => void;
@@ -60,9 +62,8 @@ export default function MissionSection({ onSignupClick }: MissionSectionProps) {
 
               <AnimateOnScroll delay={0.6}>
                 <div className="cta-container">
-                  <button className="cta-button" onClick={onSignupClick}>
-                    <span>Got it. Let me In Now!</span>
-                  </button>
+                  <Button variant="primary" size="lg" onClick={onSignupClick}>
+                  Got it. Let me In Now!                  </Button>
                 </div>
               </AnimateOnScroll>
             </div>

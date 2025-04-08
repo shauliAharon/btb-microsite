@@ -1,4 +1,5 @@
 import AnimateOnScroll from "../AnimateOnScroll";
+import Button from "../Button";
 
 interface LastStepSectionProps {
   onSignupClick: () => void;
@@ -68,9 +69,9 @@ export default function LastStepSection({
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.8}>
               <div className="flex justify-start mt-8">
-                <button className="cta-button" onClick={onSignupClick}>
-                  <span>Hell Yes, I'm Claiming to My Spot!</span>
-                </button>
+                <Button variant="primary" size="lg" onClick={onSignupClick}>
+                  Hell Yes, I'm Claiming to My Spot!
+                </Button>
               </div>
             </AnimateOnScroll>
           </div>

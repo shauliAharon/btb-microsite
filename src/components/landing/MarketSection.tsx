@@ -1,4 +1,5 @@
 import AnimateOnScroll from "../AnimateOnScroll";
+import Button from "../Button";
 
 interface MarketSectionProps {
   onSignupClick: () => void;
@@ -74,9 +75,9 @@ export default function MarketSection({ onSignupClick }: MarketSectionProps) {
       </div>
       <AnimateOnScroll delay={0.8}>
         <div className="flex justify-start mt-8">
-          <button className="cta-button" onClick={onSignupClick}>
-            <span>I Don't need a Pitch. I Need In!</span>
-          </button>
+          <Button variant="primary" size="lg" onClick={onSignupClick}>
+            I Don't need a Pitch. I Need In!
+          </Button>
         </div>
       </AnimateOnScroll>
     </section>

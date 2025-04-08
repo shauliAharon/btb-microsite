@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AuthModal from "../components/AuthModal";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import { useLocation, useNavigate } from "react-router-dom";
+import Button from "../components/Button";
 import "../styles/SignUpPage.css";
 // Lazy load components that aren't immediately needed
 
@@ -186,11 +187,9 @@ export default function SignUpPage() {
                 <span className="bold">Start earning daily.</span>
               </p>
               <div className="ready-to-move-button">
-                <button className="signup-button" onClick={handleSignupClick}>
-                  <span className="signup-button-text">
-                    Take Me to My Spot!{" "}
-                  </span>
-                </button>
+                <Button variant="primary" size="lg" onClick={handleSignupClick}>
+                  Take Me to My Spot!
+                </Button>
               </div>
             </div>
 
@@ -332,9 +331,9 @@ export default function SignUpPage() {
             Let's F*ing Go!
           </p>
           <div className="last-step-button">
-            <button className="signup-button" onClick={handleSignupClick}>
-              <span className="signup-button-text">Take Me to My Spot! </span>
-            </button>
+            <Button variant="primary" size="lg" onClick={handleSignupClick}>
+              Take Me to My Spot!
+            </Button>
           </div>
         </AnimateOnScroll>
       </section>

@@ -1,0 +1,94 @@
+.mission-section {
+  @apply py-16 md:py-24;
+}
+
+.mission-content {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-12 items-center;
+}
+
+.mission-text {
+  @apply space-y-8;
+}
+
+.intro-text {
+  @apply text-[24px] md:text-[28px] font-bold text-white leading-tight;
+}
+
+.mission-points {
+  @apply space-y-6;
+}
+
+.highlighted-title {
+  @apply text-[20px] md:text-[24px] font-bold text-btb-gold;
+}
+
+.points-list {
+  @apply space-y-4 text-[20px] text-white;
+}
+
+.points-list p {
+  @apply flex items-center;
+}
+
+.points-list p::before {
+  content: "•";
+  @apply text-btb-gold text-2xl mr-3;
+}
+
+.details-text {
+  @apply space-y-2 text-[18px] text-white/80;
+}
+
+.gold-list {
+  @apply space-y-2 text-[18px] text-btb-gold;
+}
+
+.bold-gold {
+  @apply font-bold text-[24px];
+}
+
+.cta-container {
+  @apply pt-8;
+}
+
+.cta-button {
+  @apply shimmer-button;
+}
+
+.mission-image {
+  @apply relative;
+}
+
+.mission-image img {
+  @apply w-full h-auto rounded-block shadow-block;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mission-content {
+    @apply gap-8;
+  }
+
+  .mission-text {
+    @apply text-center;
+  }
+
+  .points-list {
+    @apply text-center text-[20px];
+  }
+
+  .points-list p {
+    @apply text-[20px];
+    text-align: left;
+    justify-content: left;
+  }
+
+  .details-text {
+    @apply text-center;
+  }
+
+  .gold-list {
+    @apply text-center;
+  }
+}
