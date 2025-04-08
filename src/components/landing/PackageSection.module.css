@@ -1,0 +1,156 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.sectionWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .sectionWrapper {
+    flex-direction: row;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .imageContainer {
+    width: 300px;
+  }
+}
+
+.imageWrapper {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 300px;
+  background-color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .imageWrapper {
+    width: 230px;
+    height: 850px;
+  }
+}
+
+.imageText {
+  color: white;
+  font-size: 3.75rem;
+}
+
+.contentWrapper {
+  flex: 1;
+}
+
+.italicText {
+  text-align: left;
+  font-style: italic;
+}
+
+.goldText {
+  text-align: left;
+  color: #d4af37;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .goldText {
+    font-size: 1.5rem;
+  }
+}
+
+.packageContent {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.5rem; */
+}
+
+.packageContent p {
+  margin-bottom: 0;
+}
+
+.packageTitle {
+  color: #d4af37;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .packageTitle {
+    font-size: 1.5rem;
+  }
+}
+
+.whatYouGet {
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .whatYouGet {
+    font-size: 1.5rem;
+  }
+}
+
+.bulletList {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0;
+  gap: 0rem;
+  margin-bottom: 1rem;
+}
+.bulletItem {
+  margin: 0;
+}
+.descriptionText {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .descriptionText {
+    font-size: 1.25rem;
+  }
+}
+
+.whiteText {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.goldBoldText {
+  color: #d4af37;
+  text-align: left;
+  font-weight: bold;
+}
