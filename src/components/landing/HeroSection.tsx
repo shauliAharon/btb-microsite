@@ -38,7 +38,7 @@ export default function HeroSection() {
         onClick={() => scrollToSection("mission")}
         className="scroll-button"
       >
-        <div className="relative">
+        <div className="hero-icon">
           <ArrowDownIcon className="scroll-icon" />
           <div className="scroll-shimmer" />
         </div>

@@ -7,7 +7,13 @@
   overflow-x: hidden;
   margin-bottom: 12rem;
 }
-
+.hero-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #d4af37;
+  animation: float 3s ease-in-out infinite;
+  z-index: 10;
+}
 .hero-content {
   text-align: center;
   padding: 0 1rem;

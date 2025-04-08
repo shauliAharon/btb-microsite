@@ -20,7 +20,7 @@
 .hero-subtitle {
   font-size: 28px;
   margin-bottom: 3rem;
-  color: var(--btb-gold);
+  color: #d4af37;
   margin: 0 auto;
   text-align: center;
   font-style: italic;
@@ -40,7 +40,7 @@
 
 .hero-text {
   font-size: 28px;
-  color: var(--btb-gold);
+  color: #d4af37;
   margin: 0 auto;
   text-align: center;
 }
@@ -69,7 +69,7 @@
 .hero-icon {
   width: 2rem;
   height: 2rem;
-  color: var(--btb-gold);
+  color: #d4af37;
   animation: float 3s ease-in-out infinite;
   z-index: 10;
   background: red;

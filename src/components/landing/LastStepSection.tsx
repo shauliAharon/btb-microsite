@@ -1,5 +1,6 @@
 import AnimateOnScroll from "../AnimateOnScroll";
 import Button from "../Button";
+import "./LastStepSection.css";
 
 interface LastStepSectionProps {
   onSignupClick: () => void;
@@ -9,36 +10,36 @@ export default function LastStepSection({
   onSignupClick,
 }: LastStepSectionProps) {
   return (
-    <section id="last-step" className="container mx-auto px-4">
-      <div className="w-full h-[100px] bg-gray-500 mb-9 flex justify-center items-center">
+    <section id="last-step" className="last-step-section">
+      <div className="banner-container">
         <img
           src="/your-image-path.png"
           alt="Graphic banner"
-          className="w-full h-full object-cover"
+          className="banner-image"
         />
       </div>
       <AnimateOnScroll>
-        <p className="text-lg sm:md:text-2xl font-bold mb-4 text-left">
+        <p className="main-text-bold">
           We get applications daily.
           <br />
           We reject most.
           <br />
-          <span className="text-btb-gold">
+          <span className="gold-text">
             Only a few earn a shot at the next level.
             <br />
             Will you make the cut?
           </span>
         </p>
-        <p className="text-lg sm:md:text-2xl text-white text-left font-bold">
+        <p className="main-text-bold white-text">
           Hundreds have already applied.
           <br />
           We're only letting in the right few.
         </p>
 
-        <p className="text-lg sm:md:text-2xl font-bold text-left mb-9 text-btb-gold">
+        <p className="main-text-bold gold-text" style={{ fontSize: "26px" }}>
           What Comes Next?{" "}
         </p>
-        <p className="text-lg sm:md:text-2xl text-white text-left">
+        <p className="main-text white-text">
           Step 1: Apply below.
           <br />
           Step 2: We review. We respond.
@@ -46,43 +47,41 @@ export default function LastStepSection({
           Step 3: If accepted, you receive the Founder's Package. One shot.
         </p>
       </AnimateOnScroll>
-      <div className="space-y-8">
-        <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-8 sm:gap-12 pt-12">
-          <div className="flex-1">
-            <AnimateOnScroll>
-              <p className="sm:text-2xl text-white mb-4 text-left font-bold">
-                This page will disappear.
-                <br />
-                The Founders will still be eating.
-                <br />
-                You'll be watching.
-                <br />
-                You bring the fire.
-                <br />
-                We bring the machine.
-                <br />
-                Let's F*ing Do It.** <br />
-                <span className="text-btb-gold">Let'em talk.</span>
-                <br />
-                You click.{" "}
-              </p>
-            </AnimateOnScroll>
-            <AnimateOnScroll delay={0.8}>
-              <div className="flex justify-start mt-8">
-                <Button variant="primary" size="lg" onClick={onSignupClick}>
-                  Hell Yes, I'm Claiming to My Spot!
-                </Button>
-              </div>
-            </AnimateOnScroll>
-          </div>
+      <div className="steps-container">
+        <div className="text-content">
+          <AnimateOnScroll>
+            <p className="main-text-bold white-text">
+              This page will disappear.
+              <br />
+              The Founders will still be eating.
+              <br />
+              You'll be watching.
+              <br />
+              You bring the fire.
+              <br />
+              We bring the machine.
+              <br />
+              Let's F*ing Do It.** <br />
+              <span className="gold-text">Let'em talk.</span>
+              <br />
+              You click.{" "}
+            </p>
+          </AnimateOnScroll>
+          <AnimateOnScroll delay={0.8}>
+            <div className="button-container">
+              <Button variant="primary" size="lg" onClick={onSignupClick}>
+                Hell Yes, I'm Claiming to My Spot!
+              </Button>
+            </div>
+          </AnimateOnScroll>
+        </div>
 
-          <div className="w-full md:w-[450px]">
-            <AnimateOnScroll delay={0.2}>
-              <div className="rounded-lg w-full h-[300px] md:w-[450px] md:h-[450px] bg-gray-500 flex items-center justify-center">
-                <span className="text-white text-4xl sm:text-6xl">Pic</span>
-              </div>
-            </AnimateOnScroll>
-          </div>
+        <div className="image-container">
+          <AnimateOnScroll delay={0.2}>
+            <div className="image-placeholder">
+              <span className="placeholder-text">Pic</span>
+            </div>
+          </AnimateOnScroll>
         </div>
       </div>
     </section>
