@@ -36,6 +36,12 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  #intro .left p {
+    font-size: 18px !important;
+  }
+}
+
 #intro .left .gold {
   color: #d4af37;
 }

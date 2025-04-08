@@ -93,6 +93,12 @@
   font-size: 3.75rem;
 }
 
+@media (max-width: 767px) {
+  .styled-list li {
+    font-size: 18px !important;
+  }
+}
+
 @media (min-width: 768px) {
   .vision-container {
     padding: 1.5rem;
@@ -122,18 +128,22 @@
   .vision-image-placeholder {
     height: 600px;
   }
+
+  .styled-list li {
+    font-size: 24px !important;
+  }
 }
 
 .styled-list {
   list-style-type: none;
   padding: 0;
+  text-align: left;
 }
 
 .styled-list li {
   position: relative;
   padding-left: 20px;
   margin-bottom: 15px;
-  font-size: 1em;
   color: white;
 }
 
