@@ -93,6 +93,12 @@
   .how-it-works-image {
     min-height: 15rem;
     width: 100%;
+    margin-top: 2rem;
+    order: -1;
+  }
+
+  .how-it-works-text {
+    order: 1;
   }
 
   .how-it-works-steps {

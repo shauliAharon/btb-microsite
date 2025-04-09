@@ -66,30 +66,23 @@
 @media (max-width: 768px) {
   .last-step {
     padding: 2rem 1rem;
-
   }
   .last-step-title-text {
     text-align: center;
     white-space: normal;
-
   }
   .last-step-container {
     flex-direction: column;
     gap: 1.5rem;
-
-
   }
 
   .last-step-left {
-    order: 2;
-
-
+    order: 1;
   }
 
   .last-step-right {
-    order: 1;
+    order: 2;
     text-align: center;
-    
   }
 
   .last-step-title-pic {
