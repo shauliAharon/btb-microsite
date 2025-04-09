@@ -1,7 +1,7 @@
 import AnimateOnScroll from "../AnimateOnScroll";
 import Button from "../Button";
 import "./LastStepSection.css";
-
+import faces1 from "../../assets/faces1.jpg";
 interface LastStepSectionProps {
   onSignupClick: () => void;
 }
@@ -11,13 +11,6 @@ export default function LastStepSection({
 }: LastStepSectionProps) {
   return (
     <section id="last-step" className="last-step-section">
-      <div className="banner-container">
-        <img
-          src="/your-image-path.png"
-          alt="Graphic banner"
-          className="banner-image"
-        />
-      </div>
       <AnimateOnScroll>
         <p className="main-text-bold">
           We get applications daily.
@@ -76,10 +69,10 @@ export default function LastStepSection({
           </AnimateOnScroll>
         </div>
 
-        <div className="image-container">
+        <div className="imageContainer">
           <AnimateOnScroll delay={0.2}>
-            <div className="image-placeholder">
-              <span className="placeholder-text">Pic</span>
+            <div className="imagePlaceholder">
+              <img src={faces1} alt="faces1" className="imagePlaceholder" />
             </div>
           </AnimateOnScroll>
         </div>

@@ -2,8 +2,18 @@
   background-color: #1a1a1a;
   padding: 1.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
 
+.looking-section-content {
+  flex: 0 0 40%;
+  max-width: 40%;
+  z-index: 2;
+  padding-right: 2rem;
 }
 
 .looking-section-title {
@@ -42,6 +52,8 @@
 .looking-section-text {
   text-align: left;
   margin-bottom: 0rem;
+  white-space: nowrap;
+
 }
 
 .looking-section-text-bold {
@@ -53,4 +65,55 @@
   color: #d4af37; /* btb-gold color */
   font-weight: bold;
   /* margin-top: 0rem !important; */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  right: -100px;
+  overflow: visible;
+  background-color: transparent;
+  top: -90px;
+}
+
+.image-outside-frame {
+  width: 900px;
+  height: auto;
+  max-width: none;
+}
+
+@media (max-width: 768px) {
+  .looking-section {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .looking-section-content {
+    flex: 1;
+    max-width: 100%;
+    z-index: 2;
+    order: 2;
+    padding-right: 0;
+  }
+
+  .image-container {
+    position: relative;
+    right: auto;
+    width: 100%;
+    margin: 0;
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-outside-frame {
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }

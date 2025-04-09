@@ -1,14 +1,12 @@
 import AnimateOnScroll from "../AnimateOnScroll";
-import pic2 from "../../assets/pic2.jpeg";
 import "./IntroSection.css";
+import LP2 from "../../assets/LP2.jpg";
 
 export default function IntroSection() {
   return (
     <section id="intro">
       <AnimateOnScroll>
-        <div className="banner">
-          <img src="/your-image-path.png" alt="Graphic banner" />
-        </div>
+
 
         <h1>Introducing: BTB — Be The Boss by Playbita</h1>
         <div className="content">
@@ -29,7 +27,7 @@ export default function IntroSection() {
 
           <div className="right">
             <div className="image-wrapper">
-              <img src={pic2} alt="Hero" />
+              <img src={LP2} alt="Hero" />
             </div>
           </div>
         </div>

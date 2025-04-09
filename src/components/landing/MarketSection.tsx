@@ -9,13 +9,6 @@ interface MarketSectionProps {
 export default function MarketSection({ onSignupClick }: MarketSectionProps) {
   return (
     <section id="market" className={styles.marketSection}>
-      <div className={styles.bannerContainer}>
-        <img
-          src="/your-image-path.png"
-          alt="Graphic banner"
-          className={styles.bannerImage}
-        />
-      </div>
       <div className={styles.contentContainer}>
         <AnimateOnScroll>
           <h1 className={styles.title}>The Market</h1>
@@ -35,15 +28,15 @@ export default function MarketSection({ onSignupClick }: MarketSectionProps) {
 
             <AnimateOnScroll delay={0.2}>
               <div style={{ marginTop: "50px", marginBottom: "50px" }}>
-              <p className={styles.text_bold}>Governments can't stop Web3.</p>
-              <p className={styles.text_bold}>
-                Legacy finance can't play in this sandbox.
-              </p>
-              <p className={styles.text_bold}>
-                This is for the ones ready to rewrite the rules.
-              </p>
+                <p className={styles.text_bold}>Governments can't stop Web3.</p>
+                <p className={styles.text_bold}>
+                  Legacy finance can't play in this sandbox.
+                </p>
+                <p className={styles.text_bold}>
+                  This is for the ones ready to rewrite the rules.
+                </p>
               </div>
-             
+
               <p
                 className={`${styles.text} ${styles.goldText} ${styles.boldText}`}
               >
@@ -56,13 +49,20 @@ export default function MarketSection({ onSignupClick }: MarketSectionProps) {
                 You don't need to be the smartest or the richest.
               </p>
               <p className={styles.text}>
-                But you need <span className={`${styles.goldText} ${styles.boldText}`}>iron will</span>.
+                But you need{" "}
+                <span className={`${styles.goldText} ${styles.boldText}`}>
+                  iron will
+                </span>
+                .
               </p>
               <p className={styles.text}>The kind that builds, not begs.</p>
               <p className={styles.text}>That executes, not complains.</p>
               <p className={styles.text}>
                 If that's you?{" "}
-                <span className={`${styles.goldText} ${styles.boldText}`}>Apply now</span>.
+                <span className={`${styles.goldText} ${styles.boldText}`}>
+                  Apply now
+                </span>
+                .
               </p>
             </AnimateOnScroll>
           </div>

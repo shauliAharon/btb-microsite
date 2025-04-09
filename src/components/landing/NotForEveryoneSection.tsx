@@ -39,12 +39,6 @@ export default function NotForEveryoneSection() {
             </p>
           </AnimateOnScroll>
         </div>
-
-        <div className="image-container">
-          <AnimateOnScroll delay={0.2}>
-            <span className="image-placeholder">Pic</span>
-          </AnimateOnScroll>
-        </div>
       </div>
     </section>
   );

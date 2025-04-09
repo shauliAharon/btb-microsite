@@ -1,6 +1,7 @@
 import AnimateOnScroll from "../AnimateOnScroll";
 import styles from "./PackageSection.module.css";
-
+import UpvsDown from "../../assets/UpvsDpwn.png";
+import UpvsDown1 from "../../assets/UpvsDpwn1.png";
 export default function PackageSection() {
   return (
     <section id="package" className={styles.container}>
@@ -8,7 +9,14 @@ export default function PackageSection() {
         <div className={styles.imageContainer}>
           <AnimateOnScroll delay={0.2}>
             <div className={styles.imageWrapper}>
-              <span className={styles.imageText}>Pic</span>
+              <img src={UpvsDown} alt="UpvsDown" className={styles.imageText} />
+            </div>
+            <div className={styles.imageWrapper1}>
+              <img
+                src={UpvsDown1}
+                alt="UpvsDown1"
+                className={styles.imageText}
+              />
             </div>
           </AnimateOnScroll>
         </div>
@@ -32,11 +40,21 @@ export default function PackageSection() {
                 </p>
                 <p className={styles.whatYouGet}>What you get:</p>
                 <div className={styles.bulletList}>
-                  <p className={styles.bulletItem}>🔹 Multiple verticals (casino-style, sports, financial)</p>
-                  <p className={styles.bulletItem}>🔹 Full backend, wallet system, player engine</p>
-                  <p className={styles.bulletItem}>🔹 Funnels, creatives, brand assets</p>
-                  <p className={styles.bulletItem}>🔹 Direct earning from every player you bring in</p>
-                  <p className={styles.bulletItem}>🔹 Founder-only access, bonuses, and tiered status</p>
+                  <p className={styles.bulletItem}>
+                    🔹 Multiple verticals (casino-style, sports, financial)
+                  </p>
+                  <p className={styles.bulletItem}>
+                    🔹 Full backend, wallet system, player engine
+                  </p>
+                  <p className={styles.bulletItem}>
+                    🔹 Funnels, creatives, brand assets
+                  </p>
+                  <p className={styles.bulletItem}>
+                    🔹 Direct earning from every player you bring in
+                  </p>
+                  <p className={styles.bulletItem}>
+                    🔹 Founder-only access, bonuses, and tiered status
+                  </p>
                 </div>
               </div>
 

@@ -18,7 +18,10 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="space-y-16 md:space-y-32">
+    <div
+      className="space-y-16 md:space-y-32"
+      style={{ width: "80vw", margin: "auto" }}
+    >
       <HeroSection />
       <MissionSection onSignupClick={handleSignupClick} />
       <IntroSection />
