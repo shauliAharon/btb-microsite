@@ -1,7 +1,7 @@
 import AnimateOnScroll from "../AnimateOnScroll";
 import Button from "../Button";
 import "./LastStepSection.css";
-import faces1 from "../../assets/faces1.jpg";
+import faces2 from "../../assets/faces2.png";
 interface LastStepSectionProps {
   onSignupClick: () => void;
 }
@@ -72,7 +72,7 @@ export default function LastStepSection({
         <div className="imageContainer">
           <AnimateOnScroll delay={0.2}>
             <div className="imagePlaceholder">
-              <img src={faces1} alt="faces1" className="imagePlaceholder" />
+              <img src={faces2} alt="faces1" className="imagePlaceholder" />
             </div>
           </AnimateOnScroll>
         </div>

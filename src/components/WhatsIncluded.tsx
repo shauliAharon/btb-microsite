@@ -2,17 +2,12 @@ import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import "../styles/WhatsIncluded.css";
 
+
 const WhatsIncluded: React.FC = () => {
   return (
     <section className="whats-included">
       <AnimateOnScroll>
-        <div className="graphic-banner">
-          <img
-            src="/your-image-path.png"
-            alt="Graphic banner"
-            className="graphic-banner-image"
-          />
-        </div>
+    
 
         <div className="whats-included-content">
           <div className="whats-included-box">

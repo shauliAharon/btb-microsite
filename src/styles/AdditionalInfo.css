@@ -4,6 +4,15 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.graphic-banner {
+  width: 100%;
+  height: 100%;
+}
+.graphic-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .additional-info-flex {
   display: flex;
@@ -19,6 +28,9 @@
   text-align: left;
   color: #d4af37;
   margin-bottom: 0;
+  align-self: center;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .additional-info-text {
@@ -32,7 +44,7 @@
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   padding-bottom: 2.25rem;
 }
 
@@ -84,14 +96,18 @@
 
   .additional-info-title {
     font-size: 1.8rem;
+    white-space: normal;
   }
 
   .additional-info-text {
     width: 100%;
   }
 
-  .additional-info-paragraph {
-    font-size: 1.1rem;
+  .additional-info-paragraph,
+  .additional-info-text p,
+  .additional-info-example p {
+    font-size: 18px;
+    line-height: 1.5rem;
   }
 
   .additional-info-image {

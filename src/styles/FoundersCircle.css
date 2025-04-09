@@ -54,11 +54,11 @@
 
 .founders-image {
   position: absolute;
-  right: -1.25rem;
-  bottom: -4rem;
+  right: -14.25rem;
+  bottom: -11rem;
   width: 31rem;
   height: 22.875rem;
-  background-color: #726d6d;
+  /* background-color: #726d6d; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,6 +88,11 @@
 
   .founders-title-text {
     white-space: normal;
+  }
+
+  .founders-paragraph,
+  .founders-paragraph-bold {
+    font-size: 18px;
   }
 }
 

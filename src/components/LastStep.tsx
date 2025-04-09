@@ -2,6 +2,7 @@ import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import Button from "./Button";
 import "../styles/LastStep.css";
+import MattA2 from "../assets/MattA2.png";
 
 interface LastStepProps {
   onSignupClick: () => void;
@@ -14,7 +15,9 @@ const LastStep: React.FC<LastStepProps> = ({ onSignupClick }) => {
         <div className="last-step-container">
           <div className="last-step-left">
             <div className="last-step-title">
-              <p className="last-step-title-pic">pic</p>
+              <p className="last-step-title-pic">
+                <img src={MattA2} alt="MattA2" />
+              </p>
               <p className="last-step-title-text">
                 What You're Paying For (No Surprises):
               </p>

@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-top: 14rem;
 }
 
 .graphic-banner {
@@ -86,7 +87,7 @@
   }
 
   .whats-included-text-right p {
-    font-size: 1.1rem;
+    font-size: 18px;
   }
 
   .graphic-banner {

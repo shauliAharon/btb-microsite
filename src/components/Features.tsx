@@ -1,25 +1,19 @@
 import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import "../styles/Features.css";
-
+import pack from "../assets/pack.jpg";
 const Features: React.FC = () => {
   return (
     <section className="features-section">
       <AnimateOnScroll>
-        <div className="graphic-banner">
-          <img
-            src="/your-image-path.png"
-            alt="Graphic banner"
-            className="graphic-banner-image"
-          />
-        </div>
-
         <div className="features-content">
           <div className="features-box">
             <div className="features-flex">
               <div className="features-left">
                 <h2 className="features-title-text">Who This Is For:</h2>
-                <div className="features-image">Pic</div>
+                <div className="features-image">
+                  <img className="features-image-pic" src={pack} alt="pack" />
+                </div>
               </div>
 
               <div className="features-text">

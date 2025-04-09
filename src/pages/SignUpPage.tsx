@@ -9,6 +9,7 @@ import AdditionalInfo from "../components/AdditionalInfo";
 import HowItWorks from "../components/HowItWorks";
 import LastStep from "../components/LastStep";
 
+
 export default function SignUpPage() {
   const location = useLocation();
   const navigate = useNavigate();

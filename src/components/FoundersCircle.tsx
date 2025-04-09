@@ -1,7 +1,7 @@
 import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import "../styles/FoundersCircle.css";
-
+import MattB2x from "../assets/MattB2x.png";
 const FoundersCircle: React.FC = () => {
   return (
     <section className="founders-circle">
@@ -34,7 +34,9 @@ const FoundersCircle: React.FC = () => {
             <p className="founders-paragraph-bold">You just need to move.</p>
           </div>
 
-          <div className="founders-image">Pic</div>
+          <div className="founders-image">
+            <img src={MattB2x} alt="MattB2x" />
+          </div>
         </div>
       </AnimateOnScroll>
     </section>

@@ -1,7 +1,7 @@
 import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import "../styles/HowItWorks.css";
-
+import MattA2x2 from "../assets/MattA2x2.png";
 const HowItWorks: React.FC = () => {
   return (
     <section className="how-it-works">
@@ -33,7 +33,9 @@ const HowItWorks: React.FC = () => {
               </div>
 
               <div className="how-it-works-image">
-                <div className="how-it-works-image-box">Pic</div>
+                <div className="how-it-works-image-box">
+                  <img src={MattA2x2} alt="MattA2x2" />
+                </div>
               </div>
             </div>
           </div>

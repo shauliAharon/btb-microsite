@@ -426,13 +426,10 @@
 .how-it-works-steps {
   line-height: 1.75rem;
   white-space: nowrap;
-
-
 }
 
 .how-it-works-footer {
   margin-top: 1rem;
-
 }
 .whats-included-flex-row {
   display: flex;
@@ -510,7 +507,6 @@
   .additional-info-title-text {
     text-align: center;
     font-size: 1.25rem;
-
   }
   .founders-title-text {
     white-space: normal;

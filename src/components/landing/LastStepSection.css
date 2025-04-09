@@ -75,24 +75,25 @@
 
 @media (min-width: 768px) {
   .imageContainer {
-    width: 450px;
+    width: 550px;
   }
 }
 
 .imagePlaceholder {
   border-radius: 0.5rem;
-  width: 100%;
+  width: 400px;
   height: 300px;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: contain;
 }
 
 @media (min-width: 768px) {
   .imagePlaceholder {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
   }
 }
 

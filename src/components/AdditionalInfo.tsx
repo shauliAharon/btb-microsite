@@ -1,14 +1,14 @@
 import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import "../styles/AdditionalInfo.css";
-
+import BTBhub from "../assets/BTBhub.jpg";
 const AdditionalInfo: React.FC = () => {
   return (
     <section className="additional-info">
       <AnimateOnScroll>
         <div className="graphic-banner">
           <img
-            src="/your-image-path.png"
+            src={BTBhub}
             alt="Graphic banner"
             className="graphic-banner-image"
           />
