@@ -71,6 +71,8 @@
 
 .imageContainer {
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -81,12 +83,20 @@
 
 .imagePlaceholder {
   border-radius: 0.5rem;
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: contain;
+}
+
+.imagePlaceholder img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 

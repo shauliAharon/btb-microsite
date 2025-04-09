@@ -32,7 +32,7 @@
   font-weight: bold;
   margin-bottom: 1rem;
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 @media (min-width: 768px) {
@@ -44,14 +44,14 @@
 .white-text {
   color: white;
   text-align: left;
-  margin-bottom:0rem;
-  font-size: 1.25rem;
+  margin-bottom: 0rem;
+  font-size: 1.125rem;
 }
 .white-text-bold {
   color: white;
   text-align: left;
-  margin-bottom:0rem;
-  font-size: 1.25rem;
+  margin-bottom: 0rem;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
@@ -69,7 +69,7 @@
   font-weight: bold;
   margin-bottom: 0rem;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 @media (min-width: 768px) {

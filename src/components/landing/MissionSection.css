@@ -23,7 +23,7 @@
 }
 
 .points-list1 {
-  @apply space-y-4 text-[20px] text-white;
+  @apply space-y-4 text-[20px] md:text-[20px] text-white;
   text-align: left;
 }
 
@@ -38,7 +38,6 @@
 
 .details-text {
   @apply space-y-2 text-[18px] text-white/80;
-
 }
 
 .gold-list {
@@ -76,21 +75,37 @@
     @apply text-center;
   }
 
+  .intro-text {
+    font-size: 18px !important;
+  }
+
+  .highlighted-title {
+    font-size: 18px !important;
+  }
+
+  .points-list1 p {
+    font-size: 18px !important;
+  }
+
   .points-list {
-    @apply text-center text-[20px];
+    @apply text-center;
   }
 
   .points-list p {
-    @apply text-[20px];
+    font-size: 18px !important;
     text-align: left;
     justify-content: left;
   }
 
-  .details-text {
-    @apply text-center;
+  .details-text p {
+    font-size: 18px !important;
   }
 
-  .gold-list {
-    @apply text-center;
+  .gold-list p {
+    font-size: 18px !important;
+  }
+
+  .bold-gold {
+    font-size: 18px !important;
   }
 }

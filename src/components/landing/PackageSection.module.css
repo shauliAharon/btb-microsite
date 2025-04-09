@@ -3,7 +3,6 @@
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-
 }
 
 @media (min-width: 768px) {
@@ -171,4 +170,19 @@
   color: #d4af37;
   text-align: left;
   font-weight: bold;
+}
+
+/* Mobile text size */
+@media (max-width: 767px) {
+  .italicText,
+  .goldText,
+  .packageTitle,
+  .whatYouGet,
+  .bulletItem,
+  .descriptionText,
+  .descriptionText p,
+  .whiteText,
+  .goldBoldText {
+    font-size: 18px;
+  }
 }

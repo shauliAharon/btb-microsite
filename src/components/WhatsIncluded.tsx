@@ -1,18 +1,21 @@
 import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import "../styles/WhatsIncluded.css";
-
+import GnightStreet from "../assets/GnightStreet.png";
 
 const WhatsIncluded: React.FC = () => {
   return (
     <section className="whats-included">
       <AnimateOnScroll>
-    
-
         <div className="whats-included-content">
           <div className="whats-included-box">
             <div className="whats-included-flex-row">
               <div className="whats-included-title-left">
+                <img
+                  src={GnightStreet}
+                  alt="GnightStreet"
+                  className="whats-included-image"
+                />
                 <h2 className="whats-included-title-text">What Is This?</h2>
               </div>
 

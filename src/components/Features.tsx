@@ -1,7 +1,7 @@
 import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import "../styles/Features.css";
-import pack from "../assets/pack.jpg";
+import pack from "../assets/pack.png";
 const Features: React.FC = () => {
   return (
     <section className="features-section">

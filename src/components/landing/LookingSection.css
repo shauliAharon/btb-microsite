@@ -53,7 +53,6 @@
   text-align: left;
   margin-bottom: 0rem;
   white-space: nowrap;
-
 }
 
 .looking-section-text-bold {
@@ -90,6 +89,7 @@
     padding: 1rem;
     gap: 1rem;
     overflow: hidden;
+    position: relative;
   }
 
   .looking-section-content {
@@ -98,6 +98,18 @@
     z-index: 2;
     order: 2;
     padding-right: 0;
+    margin-top: 1rem;
+  }
+
+  .looking-section-title,
+  .looking-section-text,
+  .looking-section-text-bold,
+  .looking-section-text-gold,
+  .looking-section-list li {
+    font-size: 18px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .image-container {
@@ -108,6 +120,8 @@
     order: 1;
     display: flex;
     justify-content: center;
+    top: 0;
+    padding: 1rem 0;
   }
 
   .image-outside-frame {
@@ -115,5 +129,7 @@
     height: auto;
     max-width: 300px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
   }
 }

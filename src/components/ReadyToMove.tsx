@@ -2,6 +2,7 @@ import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import Button from "./Button";
 import "../styles/ReadyToMove.css";
+import GImage from "../assets/G.svg";
 
 interface ReadyToMoveProps {
   onSignupClick: () => void;
@@ -33,7 +34,9 @@ const ReadyToMove: React.FC<ReadyToMoveProps> = ({ onSignupClick }) => {
             </div>
           </div>
 
-          <div className="ready-to-move-image">Pic</div>
+          <div className="ready-to-move-image">
+            <img src={GImage} alt="G" />
+          </div>
         </div>
       </AnimateOnScroll>
     </section>
