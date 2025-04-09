@@ -1,0 +1,102 @@
+.whats-included {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.graphic-banner {
+  width: 100%;
+  height: 6.25rem;
+  background-color: #6b7280;
+  margin-bottom: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8.25rem;
+}
+
+.graphic-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.whats-included-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.whats-included-box {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.whats-included-flex-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.whats-included-title-left {
+  flex: 0 0 30%;
+}
+
+.whats-included-title-text {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 2.125rem;
+  white-space: nowrap;
+}
+
+.whats-included-text-right {
+  flex: 1;
+}
+
+.whats-included-text-right p {
+  font-size: 22px;
+  line-height: 1.75rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.whats-included-text {
+  font-weight: bold;
+}
+
+.highlight {
+  color: #d4af37;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .whats-included {
+    padding: 2rem 1rem;
+  }
+
+  .whats-included-box {
+    padding: 1.5rem;
+  }
+
+  .whats-included-title-text {
+    font-size: 1.8rem;
+    white-space: normal;
+  }
+
+  .whats-included-text-right p {
+    font-size: 1.1rem;
+  }
+
+  .graphic-banner {
+    margin-top: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .whats-included-flex-row {
+    flex-direction: row;
+  }
+}

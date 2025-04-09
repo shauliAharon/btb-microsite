@@ -90,7 +90,10 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
           </button>
 
           {/* Email Input */}
-          <form onSubmit={handleEmailSubmit} className="flex space-x-2">
+          <form
+            onSubmit={handleEmailSubmit}
+            className="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0"
+          >
             <input
               type="email"
               name="email"
