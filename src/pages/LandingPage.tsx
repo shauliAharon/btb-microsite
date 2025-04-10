@@ -19,8 +19,13 @@ export default function LandingPage() {
 
   return (
     <div
-      className="space-y-16 md:space-y-32"
-      style={{ width: "80vw", margin: "auto" }}
+      style={{
+        width: "80vw",
+        margin: "auto",
+        display: "flex",
+        flexDirection: "column",
+        gap: "9rem",
+      }}
     >
       <HeroSection />
       <MissionSection onSignupClick={handleSignupClick} />
@@ -31,7 +36,6 @@ export default function LandingPage() {
       <NotForEveryoneSection />
       <LookingSection />
       <LastStepSection onSignupClick={handleSignupClick} />
-      {/* Rest of the sections will be moved to separate components */}
     </div>
   );
 }

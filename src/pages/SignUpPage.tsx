@@ -25,7 +25,15 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="signup-page" style={{ width: "80vw", margin: "auto" }}>
+    <div
+      style={{
+        width: "80vw",
+        margin: "auto",
+        display: "flex",
+        flexDirection: "column",
+        gap: "4rem",
+      }}
+    >
       <FoundersCircle />
       <WhatsIncluded />
       <Features />

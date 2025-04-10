@@ -3,6 +3,8 @@
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  width: 90%;
+
 }
 
 @media (min-width: 768px) {
@@ -29,6 +31,7 @@
 
 .imageContainer {
   width: 100%;
+  margin-right: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -103,7 +106,7 @@
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  max-width: 100vw;
+  max-width: 50vw;
 }
 
 .packageContent p {

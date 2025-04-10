@@ -30,7 +30,7 @@
   align-items: center;
 }
 .last-step-title-text {
-  color: #d4af37;
+  color: #d4af37 !important;
   white-space: nowrap;
 }
 .last-step-title {

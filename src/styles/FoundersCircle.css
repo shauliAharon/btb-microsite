@@ -38,7 +38,7 @@
 }
 
 .founders-paragraph {
-  font-size: 22px;
+  font-size: 24px;
   color: #d1d5db;
   margin-bottom: 1.5rem;
   text-align: left;
@@ -54,8 +54,8 @@
 
 .founders-image {
   position: absolute;
-  right: -14.25rem;
-  bottom: -11rem;
+  right: -15.25rem;
+  bottom: -5rem;
   width: 31rem;
   height: 22.875rem;
   /* background-color: #726d6d; */

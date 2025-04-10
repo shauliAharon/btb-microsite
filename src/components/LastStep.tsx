@@ -18,12 +18,12 @@ const LastStep: React.FC<LastStepProps> = ({ onSignupClick }) => {
               <p className="last-step-title-pic">
                 <img src={MattA2} alt="MattA2" />
               </p>
-              <p className="last-step-title-text">
-                What You're Paying For (No Surprises):
-              </p>
             </div>
           </div>
           <div className="last-step-right">
+            <p className="last-step-title-text last-step-title">
+              What You're Paying For (No Surprises):
+            </p>
             <p className="last-step-text">
               ✅ One-time $1,000 setup <br />
               ✅ Lifetime access to the platform <br />
