@@ -16,19 +16,19 @@ export default function HeroSection() {
           <p className="hero-subtitle">Are you one of them?</p>
         </AnimateOnScroll>
         <div className="hero-text-group">
-          <AnimateOnScroll delay={0.4}>
+          <AnimateOnScroll delay={0.3}>
             <p className="hero-text">We're not opening the doors.</p>
           </AnimateOnScroll>
-          <AnimateOnScroll delay={0.4}>
+          <AnimateOnScroll delay={0.3}>
             <p className="hero-text">We're cracking them — just enough</p>
           </AnimateOnScroll>
-          <AnimateOnScroll delay={0.4}>
+          <AnimateOnScroll delay={0.3}>
             <p className="hero-text">
               for the next generation of digital owners.
             </p>
           </AnimateOnScroll>
         </div>
-        <AnimateOnScroll>
+        <AnimateOnScroll delay={0.4}>
           <h1 className="hero-cta">
             You're not here to play. You're here to win.
           </h1>
