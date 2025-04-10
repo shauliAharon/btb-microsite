@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   overflow-x: hidden;
-  margin-bottom: 12rem;
+  /* margin-bottom: 12rem; */
 }
 .hero-icon {
   width: 2rem;
@@ -121,15 +121,16 @@
   }
 
   .hero-subtitle {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .hero-text {
-    font-size: 15px;
+    font-size: 18px;
     white-space: nowrap;
   }
 
   .hero-cta {
     font-size: 22px;
+    margin-bottom: 0;
   }
 }

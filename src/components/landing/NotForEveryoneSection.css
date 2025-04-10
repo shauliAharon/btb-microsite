@@ -33,6 +33,7 @@
   margin-bottom: 1rem;
   text-align: left;
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
@@ -46,6 +47,7 @@
   text-align: left;
   margin-bottom: 0rem;
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 .white-text-bold {
   color: white;
@@ -53,6 +55,7 @@
   margin-bottom: 0rem;
   font-size: 1.125rem;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
@@ -70,6 +73,7 @@
   margin-bottom: 0rem;
   text-align: left;
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {

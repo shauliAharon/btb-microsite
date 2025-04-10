@@ -39,12 +39,14 @@
 
 @media (max-width: 768px) {
   #intro .left p {
-    font-size: 15px !important;
+    font-size: 18px !important;
     margin-bottom: 0.2rem !important;
-    line-height: 1.2 !important;
+    line-height: 1.5 !important;
   }
   #intro .title {
     font-size: 20px !important;
+    line-height: 1.5;
+
   }
   #intro .right .image-wrapper img {
     width: 100% !important;
@@ -53,6 +55,7 @@
   }
   #intro .left .gold {
     white-space: normal !important;
+
   }
 }
 

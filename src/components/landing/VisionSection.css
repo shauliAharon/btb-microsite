@@ -112,16 +112,24 @@
 
 @media (max-width: 767px) {
   .styled-list li {
-    font-size: 15px !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+
   }
   .vision-title {
     font-size: 20px !important;
+    line-height: 1.5 !important;
+
   }
   .vision-gold-text {
-    font-size: 15px !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+
   }
   .vision-paragraph {
-    font-size: 15px !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+
   }
 }
 

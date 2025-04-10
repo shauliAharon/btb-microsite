@@ -1,10 +1,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 1rem;
-  padding-right: 1rem; */
   width: 90%;
-
 }
 
 @media (min-width: 768px) {
@@ -106,7 +103,6 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-
 }
 
 .packageContent p {
@@ -186,7 +182,7 @@
   .descriptionText p,
   .whiteText,
   .goldBoldText {
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 1.5;
   }
-
 }

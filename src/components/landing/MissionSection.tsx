@@ -15,7 +15,7 @@ export default function MissionSection({ onSignupClick }: MissionSectionProps) {
           {/* Left side: Text */}
           <div className="mission-text">
             <p className="intro-text">
-              Because deep down, you know you were built for more than
+              Because deep down, you know you were built for more than{" "}
               <br className="desktop-only" />
               permission, and playing small.
             </p>

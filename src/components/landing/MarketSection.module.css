@@ -70,7 +70,7 @@
   list-style-type: none;
   padding-left: 1.5rem;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .bulletList li {
@@ -94,28 +94,30 @@
 }
 
 .text {
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   margin-bottom: 1rem;
   text-align: left;
-  line-height: 1;
+  line-height: 1.5;
 }
 .text_bold {
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   margin-bottom: 1rem;
   text-align: left;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: 700;
 }
 
 @media (min-width: 768px) {
   .text {
     font-size: 1.5rem;
+    line-height: 1;
   }
   .text_bold {
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 1;
   }
 }
 

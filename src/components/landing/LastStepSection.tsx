@@ -54,7 +54,7 @@ export default function LastStepSection({
               <br />
               We bring the machine.
               <br />
-              Let's F*ing Do It.** <br />
+              Let's F*ing Do It. <br />
               <span className="gold-text">Let'em talk.</span>
               <br />
               You click.{" "}

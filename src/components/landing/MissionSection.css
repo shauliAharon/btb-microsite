@@ -1,5 +1,6 @@
 .mission-section {
   padding: 4rem 0;
+
 }
 
 @media (min-width: 768px) {
@@ -130,18 +131,21 @@
 
   .mission-text {
     text-align: center;
+    line-height: 1.5;
   }
 
   .intro-text {
-    font-size: 15px !important;
+    font-size: 18px !important;
+    line-height: 1.5;
+
   }
 
   .highlighted-title {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 
   .points-list1 p {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 
   .points-list {
@@ -149,20 +153,20 @@
   }
 
   .points-list p {
-    font-size: 15px !important;
+    font-size: 18px !important;
     text-align: left;
     justify-content: left;
   }
 
   .details-text p {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 
   .gold-list p {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 
   .bold-gold {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 }
