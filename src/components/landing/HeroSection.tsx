@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section id="hero" className="hero-section">
       <div className="hero-content">
-        <AnimateOnScroll>
+        <AnimateOnScroll delay={0.1}>
           <h1 className="hero-title">
             The doors are opening for a select few...
           </h1>

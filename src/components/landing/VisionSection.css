@@ -112,7 +112,16 @@
 
 @media (max-width: 767px) {
   .styled-list li {
-    font-size: 18px !important;
+    font-size: 15px !important;
+  }
+  .vision-title {
+    font-size: 20px !important;
+  }
+  .vision-gold-text {
+    font-size: 15px !important;
+  }
+  .vision-paragraph {
+    font-size: 15px !important;
   }
 }
 
@@ -154,16 +163,20 @@
 @media (max-width: 768px) {
   .vision-container {
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .vision-flex-wrapper {
     gap: 1rem;
+    order: 1;
   }
 
   .banner {
     width: 90vw;
     height: 200px;
-    margin: 0 auto 1rem auto;
+    margin: 1rem auto 0 auto;
+    order: 2;
   }
 }
 
@@ -176,7 +189,7 @@
 .styled-list li {
   position: relative;
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 0px !important;
   color: white;
 }
 
