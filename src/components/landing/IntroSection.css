@@ -32,19 +32,33 @@
 }
 
 #intro .left p {
-  font-size: 24px;
+  font-size: 22px !important;
   line-height: 1;
-  margin-bottom: 1rem;
+
 }
 
 @media (max-width: 768px) {
   #intro .left p {
-    font-size: 18px !important;
+    font-size: 15px !important;
+    margin-bottom: 0.2rem !important;
+    line-height: 1.2 !important;
+  }
+  #intro .title {
+    font-size: 20px !important;
+  }
+  #intro .right .image-wrapper img {
+    width: 100% !important;
+    height: auto;
+    display: block;
+  }
+  #intro .left .gold {
+    white-space: normal !important;
   }
 }
 
 #intro .left .gold {
   color: #d4af37;
+  white-space: nowrap;
 }
 
 #intro .left .bold {
@@ -53,6 +67,7 @@
 
 #intro .left .normal {
   font-weight: normal;
+
 }
 
 #intro .right {
@@ -66,7 +81,7 @@
 }
 
 #intro .right .image-wrapper img {
-  width: 100%;
+  width: 70%;
   height: auto;
   display: block;
 }

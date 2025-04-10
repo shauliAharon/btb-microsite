@@ -6,7 +6,7 @@ export default function IntroSection() {
   return (
     <section id="intro">
       <AnimateOnScroll>
-        <h1>Introducing: BTB — Be The Boss by Playbita</h1>
+        <h1 className="title">Introducing: BTB — Be The Boss by Playbita</h1>
         <div className="content">
           <div className="left">
             <p>This is not some affiliate gimmick.</p>
