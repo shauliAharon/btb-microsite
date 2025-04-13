@@ -8,11 +8,21 @@ export default function LookingSection() {
         <div className="looking-section">
           <div className="looking-section-content">
             <p className="looking-section-title">We're looking for:</p>
-            <ul className="looking-section-list">
-              <li>Builders</li>
-              <li>Operators</li>
-              <li>Owners</li>
-            </ul>
+            <AnimateOnScroll delay={0.2}>
+              <p className="listItem">
+                <span style={{ color: "#d4af37" }}>◆</span> Builders
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={0.4}>
+              <p className="listItem">
+                <span style={{ color: "#d4af37" }}>◆</span> Operators
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={0.6}>
+              <p className="listItem">
+                <span style={{ color: "#d4af37" }}>◆</span> Owners
+              </p>
+            </AnimateOnScroll>
 
             <p className="looking-section-text">
               There is a cost.
@@ -43,7 +53,7 @@ export default function LookingSection() {
           </div>
           <div className="image-container">
             <AnimateOnScroll delay={0.2}>
-            <img src={MattB} alt="MattB" className="image-outside-frame" />
+              <img src={MattB} alt="MattB" className="image-outside-frame" />
             </AnimateOnScroll>
           </div>
         </div>

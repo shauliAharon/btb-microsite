@@ -1,7 +1,8 @@
+import { scrollToSection } from "../../utils/scrollUtils";
 import AnimateOnScroll from "../AnimateOnScroll";
 import Button from "../Button";
 import styles from "./MarketSection.module.css";
-
+import { ArrowDownIcon } from "@heroicons/react/24/outline";
 interface MarketSectionProps {
   onSignupClick: () => void;
 }
@@ -17,17 +18,28 @@ export default function MarketSection({ onSignupClick }: MarketSectionProps) {
         <div className={styles.contentWrapper}>
           <div className={styles.content}>
             <AnimateOnScroll>
-              <ul className={styles.bulletList}>
-                <li>$19.7B Social Gaming market (2023)</li>
-                <li>Projected $39.5B+ by 2028</li>
-                <li>
-                  Billions in revenue from platforms you've never heard of
-                </li>
-              </ul>
+              <AnimateOnScroll delay={0.2}>
+                <p className={styles.bulletItem}>
+                  <span style={{ color: "#d4af37" }}>◆</span> $19.7B Social
+                  Gaming market (2023)
+                </p>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={0.4}>
+                <p className={styles.bulletItem}>
+                  <span style={{ color: "#d4af37" }}>◆</span> Projected $39.5B+
+                  by 2028
+                </p>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={0.6}>
+                <p className={styles.bulletItem}>
+                  <span style={{ color: "#d4af37" }}>◆</span> Billions in
+                  revenue from platforms you've never heard of
+                </p>
+              </AnimateOnScroll>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.2}>
-              <div style={{ marginTop: "50px", marginBottom: "50px" }}>
+              <div className={styles.section_text}>
                 <p className={styles.text_bold}>Governments can't stop Web3.</p>
                 <p className={styles.text_bold}>
                   Legacy finance can't play in this sandbox.
@@ -74,6 +86,19 @@ export default function MarketSection({ onSignupClick }: MarketSectionProps) {
             I Don't need a Pitch. I Need In!
           </Button>
         </div>
+        <button
+          onClick={() =>
+            scrollToSection("package", window.innerWidth <= 768 ? 50 : 100)
+          }
+          className="scroll-button1"
+        >
+          <div className="hero-icon1">
+            <AnimateOnScroll delay={1.6}>
+              <ArrowDownIcon className="scroll-icon1" />
+              <div className="scroll-shimmer1" />
+            </AnimateOnScroll>
+          </div>
+        </button>
       </AnimateOnScroll>
     </section>
   );

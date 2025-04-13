@@ -4,10 +4,33 @@
   margin: 0 auto;
   padding: 0 1rem;
 }
+.bulletItem {
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.bulletItem span {
+  margin-right: 10px;
+}
+.section_text {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 
 @media (min-width: 768px) {
   .marketSection {
     padding: 0 1.5rem;
+  }
+  .bulletItem {
+    font-size: 24px;
+    line-height: 1.5;
+
+  }
+  .section_text {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -73,19 +96,7 @@
   font-size: 18px;
 }
 
-.bulletList li {
-  position: relative;
-  margin-bottom: 0.5rem;
-}
 
-.bulletList li::before {
-  content: "•";
-  color: #d4af37;
-  font-size: 1.5rem;
-  position: absolute;
-  left: -1.5rem;
-  top: 0;
-}
 
 @media (min-width: 768px) {
   .bulletList {

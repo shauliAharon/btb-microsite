@@ -4,6 +4,14 @@ import { scrollToSection } from "../../utils/scrollUtils";
 import "./HeroSection.css";
 
 export default function HeroSection() {
+  const handleScroll = () => {
+    const isMobile = window.innerWidth <= 768;
+    scrollToSection(
+      isMobile ? "mission-image" : "mission",
+      isMobile ? 100 : 200
+    );
+  };
+
   return (
     <section id="hero" className="hero-section">
       <div className="hero-content">
@@ -34,13 +42,13 @@ export default function HeroSection() {
           </h1>
         </AnimateOnScroll>
       </div>
-      <button
-        onClick={() => scrollToSection("mission")}
-        className="scroll-button"
-      >
+
+      <button onClick={handleScroll} className="scroll-button-hero">
         <div className="hero-icon">
-          <ArrowDownIcon className="scroll-icon" />
-          <div className="scroll-shimmer" />
+          <AnimateOnScroll delay={2}>
+            <ArrowDownIcon className="scroll-icon-hero" />
+          </AnimateOnScroll>
+          <div className="scroll-shimmer-hero" />
         </div>
       </button>
     </section>

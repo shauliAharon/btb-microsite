@@ -2,7 +2,8 @@ import AnimateOnScroll from "../AnimateOnScroll";
 import Button from "../Button";
 import pic1 from "../../assets/pic1.jpeg";
 import "./MissionSection.css";
-
+import { scrollToSection } from "../../utils/scrollUtils";
+import { ArrowDownIcon } from "@heroicons/react/24/outline";
 interface MissionSectionProps {
   onSignupClick: () => void;
 }
@@ -75,12 +76,26 @@ export default function MissionSection({ onSignupClick }: MissionSectionProps) {
           </div>
 
           {/* Right side: Image */}
-          <div className="mission-image">
+          <div className="mission-image" id="mission-image">
             <AnimateOnScroll delay={0.7}>
               <img src={pic1} alt="Hero character" />
             </AnimateOnScroll>
           </div>
         </div>
+
+        <button
+          onClick={() =>
+            scrollToSection("intro", window.innerWidth <= 768 ? 100 : 200)
+          }
+          className="scroll-button1"
+        >
+          <div className="hero-icon1">
+            <AnimateOnScroll delay={1.6}>
+              <ArrowDownIcon className="scroll-icon1" />
+              <div className="scroll-shimmer1" />
+            </AnimateOnScroll>
+          </div>
+        </button>
       </AnimateOnScroll>
     </section>
   );

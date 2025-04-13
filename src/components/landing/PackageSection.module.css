@@ -144,10 +144,20 @@
   margin: 0;
   gap: 0rem;
   margin-bottom: 1rem;
+  margin-top: 10px;
 }
+
 .bulletItem {
   margin: 0;
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  margin-top: 1rem;
 }
+.bulletItem span {
+  margin-right: 10px;
+}
+
 .descriptionText {
   text-align: left;
   margin-bottom: 0px;
@@ -156,6 +166,9 @@
 @media (min-width: 768px) {
   .descriptionText {
     font-size: 1.25rem;
+  }
+  .bulletItem {
+    font-size: 24px;
   }
 }
 
@@ -184,5 +197,50 @@
   .goldBoldText {
     font-size: 18px;
     line-height: 1.5;
+  }
+}
+
+/* Mobile layout adjustments */
+@media (max-width: 767px) {
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contentWrapper .italicText,
+  .contentWrapper .goldText {
+    display: none;
+  }
+
+  .contentWrapper {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .imageText {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobileText {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .mobileText .italicText,
+  .mobileText .goldText {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .sectionWrapper {
+    gap: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobileText {
+    display: none;
   }
 }

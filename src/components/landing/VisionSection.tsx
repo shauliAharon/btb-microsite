@@ -6,9 +6,11 @@ export default function VisionSection() {
   return (
     <>
       <section id="vision" className="vision-container">
-      <div className="banner">
-        <img src={MattA} alt="Graphic banner" />
-      </div>
+        <div className="banner_vision">
+          <AnimateOnScroll>
+            <img src={MattA} alt="Graphic banner" />
+          </AnimateOnScroll>
+        </div>
         <div className="vision-flex-wrapper">
           <div className="vision-text-box">
             <AnimateOnScroll>
@@ -23,17 +25,42 @@ export default function VisionSection() {
                     of social gaming + digital prestige:
                   </p>
                   <div className="vision-list">
-                    <ul className="styled-list">
-                      <li>Social games</li>
-                      <li>PvP sports picks</li>
-                      <li>Market trading sims</li>
-                      <li>Built-in token mechanics</li>
-                      <li>Quick, Automatic Payouts without delays.</li>
-                      <li>
-                        Prestige Economy System (status-based progression
-                        rolling out soon)
-                      </li>
-                    </ul>
+                    <AnimateOnScroll delay={0.2}>
+                      <p className="listItem">
+                        <span style={{ color: "#d4af37" }}>◆</span> Social games
+                      </p>
+                    </AnimateOnScroll>
+                    <AnimateOnScroll delay={0.4}>
+                      <p className="listItem">
+                        <span style={{ color: "#d4af37" }}>◆</span> PvP sports
+                        picks
+                      </p>
+                    </AnimateOnScroll>
+                    <AnimateOnScroll delay={0.6}>
+                      <p className="listItem">
+                        <span style={{ color: "#d4af37" }}>◆</span> Market
+                        trading sims
+                      </p>
+                    </AnimateOnScroll>
+                    <AnimateOnScroll delay={0.8}>
+                      <p className="listItem">
+                        <span style={{ color: "#d4af37" }}>◆</span> Built-in
+                        token mechanics
+                      </p>
+                    </AnimateOnScroll>
+                    <AnimateOnScroll delay={1.0}>
+                      <p className="listItem">
+                        <span style={{ color: "#d4af37" }}>◆</span> Quick,
+                        Automatic Payouts without delays.
+                      </p>
+                    </AnimateOnScroll>
+                    <AnimateOnScroll delay={1.2}>
+                      <p className="listItem">
+                        <span style={{ color: "#d4af37" }}>◆</span> Prestige
+                        Economy System (status-based progression rolling out
+                        soon)
+                      </p>
+                    </AnimateOnScroll>
                   </div>
                 </div>
 
@@ -74,7 +101,6 @@ export default function VisionSection() {
               </div>
             </AnimateOnScroll>
           </div>
- 
         </div>
       </section>
     </>

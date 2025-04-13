@@ -11,6 +11,18 @@ export default function PackageSection() {
             <div className={styles.imageWrapper}>
               <img src={UpvsDown} alt="UpvsDown" className={styles.imageText} />
             </div>
+            <div className={styles.mobileText}>
+              <p className={styles.italicText}>
+                Most people will scroll.
+                <br /> Few will apply.
+                <br /> Fewer will get in.
+                <br />
+                That's the point. This could be your moment.
+              </p>
+              <p className={styles.goldText}>
+                Miss it — and... well, you've been there before.
+              </p>
+            </div>
             <div className={styles.imageWrapper1}>
               <img
                 src={UpvsDown1}
@@ -40,21 +52,36 @@ export default function PackageSection() {
                 </p>
                 <p className={styles.whatYouGet}>What you get:</p>
                 <div className={styles.bulletList}>
-                  <p className={styles.bulletItem}>
-                    🔹 Multiple verticals (casino-style, sports, financial)
-                  </p>
-                  <p className={styles.bulletItem}>
-                    🔹 Full backend, wallet system, player engine
-                  </p>
-                  <p className={styles.bulletItem}>
-                    🔹 Funnels, creatives, brand assets
-                  </p>
-                  <p className={styles.bulletItem}>
-                    🔹 Direct earning from every player you bring in
-                  </p>
-                  <p className={styles.bulletItem}>
-                    🔹 Founder-only access, bonuses, and tiered status
-                  </p>
+                  <AnimateOnScroll delay={0.2}>
+                    <p className={styles.bulletItem}>
+                      <span style={{ color: "#d4af37" }}>◆</span> Multiple
+                      verticals (casino-style, sports, financial)
+                    </p>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.4}>
+                    <p className={styles.bulletItem}>
+                      <span style={{ color: "#d4af37" }}>◆</span> Full backend,
+                      wallet system, player engine
+                    </p>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.6}>
+                    <p className={styles.bulletItem}>
+                      <span style={{ color: "#d4af37" }}>◆</span> Funnels,
+                      creatives, brand assets
+                    </p>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.8}>
+                    <p className={styles.bulletItem}>
+                      <span style={{ color: "#d4af37" }}>◆</span> Direct earning
+                      from every player you bring in
+                    </p>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={1}>
+                    <p className={styles.bulletItem}>
+                      <span style={{ color: "#d4af37" }}>◆</span> Founder-only
+                      access, bonuses, and tiered status
+                    </p>
+                  </AnimateOnScroll>
                 </div>
               </div>
 

@@ -61,7 +61,9 @@ const Button: React.FC<ButtonProps> = ({
         ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
       `}
     >
-      <span className="relative z-10 animate-pulse">{children}</span>
+      <span className="relative z-10 animate-pulse whitespace-nowrap">
+        {children}
+      </span>
 
       {/* Shimmer effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer-fast" />

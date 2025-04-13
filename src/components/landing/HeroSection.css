@@ -68,7 +68,7 @@
   text-align: center;
 }
 
-.scroll-button {
+.scroll-button-hero {
   position: absolute;
   bottom: 0.25rem;
   left: 50%;
@@ -76,14 +76,14 @@
   cursor: pointer;
 }
 
-.scroll-icon {
+.scroll-icon-hero {
   width: 2rem;
   height: 2rem;
   color: #d4af37;
   animation: float 2s ease-in-out infinite;
 }
 
-.scroll-shimmer {
+.scroll-shimmer-hero {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -132,5 +132,8 @@
   .hero-cta {
     font-size: 22px;
     margin-bottom: 0;
+  }
+  .scroll-button-hero {
+    /* top: 40rem; */
   }
 }
