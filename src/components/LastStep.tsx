@@ -24,15 +24,36 @@ const LastStep: React.FC<LastStepProps> = ({ onSignupClick }) => {
             <p className="last-step-title-text last-step-title">
               What You're Paying For (No Surprises):
             </p>
-            <p className="last-step-text">
-              ✅ One-time $1,000 setup <br />
-              ✅ Lifetime access to the platform <br />
-              ✅ No hidden fees. No monthly anything. <br />
-              ✅ You get a full business in a box. <br />
-            </p>
+            <div className="last-step-text">
+              <AnimateOnScroll delay={0.2}>
+                <div className="price-line">
+                  <span className="check-icon">✅</span>
+                  <span>One-time $1,000 setup</span>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={0.4}>
+                <div className="price-line">
+                  <span className="check-icon">✅</span>
+                  <span>Lifetime access to the platform</span>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={0.6}>
+                <div className="price-line">
+                  <span className="check-icon">✅</span>
+                  <span>No hidden fees. No monthly anything.</span>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={0.8}>
+                <div className="price-line">
+                  <span className="check-icon">✅</span>
+                  <span>You get a full business in a box.</span>
+                </div>
+              </AnimateOnScroll>
+            </div>
 
             <p className="last-step-highlight">
-              This is a founders-level asset, not a toy.
+              This is a founders-level <br />
+              asset, not a toy.
               <br />
               Let's F*ing Go!
             </p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
 import Button from "./Button";
 import "../styles/ReadyToMove.css";
@@ -9,6 +9,18 @@ interface ReadyToMoveProps {
 }
 
 const ReadyToMove: React.FC<ReadyToMoveProps> = ({ onSignupClick }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <section className="ready-to-move">
       <AnimateOnScroll>
@@ -27,17 +39,26 @@ const ReadyToMove: React.FC<ReadyToMoveProps> = ({ onSignupClick }) => {
               <br />
               <span className="bold">Start earning daily.</span>
             </p>
-            <div className="ready-to-move-button">
-              <Button variant="primary" size="lg" onClick={onSignupClick}>
-                Take Me to My Spot!
-              </Button>
-            </div>
+            {!isMobile && (
+              <div className="ready-to-move-button">
+                <Button variant="primary" size="lg" onClick={onSignupClick}>
+                  Take Me to My Spot!
+                </Button>
+              </div>
+            )}
           </div>
 
           <div className="ready-to-move-image">
             <img src={GImage} alt="G" />
           </div>
         </div>
+        {isMobile && (
+          <div className="ready-to-move-button">
+            <Button variant="primary" size="lg" onClick={onSignupClick}>
+              Take Me to My Spot!
+            </Button>
+          </div>
+        )}
       </AnimateOnScroll>
     </section>
   );

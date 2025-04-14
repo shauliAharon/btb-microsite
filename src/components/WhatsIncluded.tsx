@@ -14,7 +14,7 @@ const WhatsIncluded: React.FC = () => {
                 <img
                   src={GnightStreet}
                   alt="GnightStreet"
-                  className="whats-included-image"
+                  className="whats-included-image desktop-only"
                 />
                 <h2 className="whats-included-title-text">What Is This?</h2>
               </div>
@@ -47,6 +47,13 @@ const WhatsIncluded: React.FC = () => {
                   <span className="highlight">This is ownership.</span>
                 </p>
               </div>
+            </div>
+            <div className="mobile-image-container">
+              <img
+                src={GnightStreet}
+                alt="GnightStreet"
+                className="whats-included-image mobile-only"
+              />
             </div>
           </div>
         </div>

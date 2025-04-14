@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import "./AuthModal.css";
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -51,99 +52,69 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+      className="auth-modal-overlay"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.95, opacity: 0 }}
-        className="bg-[#1a1b1f] rounded-xl p-6 w-full max-w-md relative"
+        className="auth-modal"
       >
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-white"
-        >
+        <button onClick={onClose} className="auth-modal-close">
           <XMarkIcon className="w-6 h-6" />
         </button>
 
-        <h2 className="text-2xl font-bold text-white text-center mb-8">
-          Connect with
-        </h2>
+        <h2 className="auth-modal-title">Connect with</h2>
 
         <div className="space-y-4">
           {/* Google Sign In */}
-          <button
-            onClick={handleGoogleSignIn}
-            className="w-full bg-[#2a2b2f] hover:bg-[#3a3b3f] text-white p-3 rounded-lg flex items-center justify-center space-x-3 transition-colors"
-          >
-            <img src="/google-icon.svg" alt="Google" className="w-6 h-6" />
+          <button onClick={handleGoogleSignIn} className="auth-modal-button">
+            <img src="/google-icon.svg" alt="Google" />
             <span>Google</span>
           </button>
 
           {/* Apple Sign In */}
-          <button
-            onClick={handleAppleSignIn}
-            className="w-full bg-[#2a2b2f] hover:bg-[#3a3b3f] text-white p-3 rounded-lg flex items-center justify-center space-x-3 transition-colors"
-          >
-            <img src="/apple-icon.svg" alt="Apple" className="w-6 h-6" />
+          <button onClick={handleAppleSignIn} className="auth-modal-button">
+            <img src="/apple-icon.svg" alt="Apple" />
             <span>Apple</span>
           </button>
 
           {/* Email Input */}
-          <form
-            onSubmit={handleEmailSubmit}
-            className="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0"
-          >
+          <form onSubmit={handleEmailSubmit} className="auth-modal-form">
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="flex-1 bg-[#2a2b2f] text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-btb-gold text-center"
+              className="auth-modal-input"
               required
             />
-            <button
-              type="submit"
-              className="bg-[#2a2b2f] hover:bg-[#3a3b3f] text-white px-6 py-3 rounded-lg transition-colors"
-            >
+            <button type="submit" className="auth-modal-button">
               Send
             </button>
           </form>
 
-          <div className="relative my-6">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-600"></div>
-            </div>
-            <div className="relative flex justify-center text-sm">
-              <span className="px-2 text-gray-500 bg-[#1a1b1f]">
-                or continue with wallet
-              </span>
+          <div className="auth-modal-divider">
+            <div className="auth-modal-divider-text">
+              or continue with wallet
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="auth-modal-grid">
             {/* MetaMask */}
             <button
               onClick={handleMetaMaskConnect}
-              className="bg-[#2a2b2f] hover:bg-[#3a3b3f] text-white p-3 rounded-lg flex items-center justify-center space-x-2 transition-colors"
+              className="auth-modal-button"
             >
-              <img
-                src="/metamask-icon.svg"
-                alt="MetaMask"
-                className="w-6 h-6"
-              />
+              <img src="/metamask-icon.svg" alt="MetaMask" />
               <span>MetaMask</span>
             </button>
 
             {/* Coinbase */}
             <button
               onClick={handleCoinbaseConnect}
-              className="bg-[#2a2b2f] hover:bg-[#3a3b3f] text-white p-3 rounded-lg flex items-center justify-center space-x-2 transition-colors"
+              className="auth-modal-button"
             >
-              <img
-                src="/coinbase-icon.svg"
-                alt="Coinbase"
-                className="w-6 h-6"
-              />
+              <img src="/coinbase-icon.svg" alt="Coinbase" />
               <span>Coinbase</span>
             </button>
           </div>

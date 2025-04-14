@@ -223,12 +223,12 @@
 }
 
 /* Ready to Move Section */
-.ready-to-move {
+/* .ready-to-move {
   max-width: 72rem;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-}
+} */
 .ready-to-move-title {
   font-size: 2.25rem;
   font-weight: bold;
@@ -428,9 +428,6 @@
   white-space: nowrap;
 }
 
-.how-it-works-footer {
-  margin-top: 1rem;
-}
 .whats-included-flex-row {
   display: flex;
   flex-direction: row;

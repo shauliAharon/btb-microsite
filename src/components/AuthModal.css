@@ -1,0 +1,125 @@
+.auth-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.auth-modal {
+  background-color: #1a1b1f;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 28rem;
+  position: relative;
+}
+
+.auth-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #9ca3af;
+  transition: color 0.2s;
+}
+
+.auth-modal-close:hover {
+  color: white;
+}
+
+.auth-modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-modal-button {
+  width: 100%;
+  background-color: #2a2b2f;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: background-color 0.2s;
+}
+
+.auth-modal-button:hover {
+  background-color: #3a3b3f;
+}
+
+.auth-modal-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.auth-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .auth-modal-form {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+.auth-modal-input {
+  flex: 1;
+  background-color: #2a2b2f;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.auth-modal-input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #b8860b;
+}
+
+.auth-modal-divider {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.auth-modal-divider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+}
+
+.auth-modal-divider::after {
+  content: "";
+  width: 100%;
+  border-top: 1px solid #4b5563;
+}
+
+.auth-modal-divider-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 0.875rem;
+  padding: 0 0.5rem;
+  color: #6b7280;
+  background-color: #1a1b1f;
+}
+
+.auth-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}

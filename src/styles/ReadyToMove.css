@@ -1,8 +1,7 @@
 .ready-to-move {
-  max-width: 72rem;
+  max-width: 85rem;
+  /* padding-left: 25rem; */
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .ready-to-move-title {
@@ -24,7 +23,8 @@
 }
 
 .ready-to-move-text {
-  flex: 1;
+  /* flex: 1; */
+  padding-right: 25rem;
 }
 
 .ready-to-move-paragraph {
@@ -85,12 +85,20 @@
 
   .ready-to-move-image {
     width: 600px;
-    /* height: 15rem; */
     position: absolute;
     right: 0;
     left: -10rem;
     bottom: -10rem;
     margin-top: 2rem;
+  }
+
+  .ready-to-move-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  .ready-to-move-text {
+    padding-right: 0;
   }
 }
 

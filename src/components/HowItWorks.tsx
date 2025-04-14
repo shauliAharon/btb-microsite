@@ -11,21 +11,37 @@ const HowItWorks: React.FC = () => {
           <div className="how-it-works-box">
             <div className="how-it-works-flex">
               <div className="how-it-works-text">
-                <p className="how-it-works-steps">
-                  1. Connect Wallet — Takes 2 minutes. No KYC, no nonsense.
-                  <br />
-                  2. Pay One-Time $1,000 Setup — No subscriptions. No upsells.
-                  <br />
-                  3. Pick Your Portal Name — YourBrand.pvxpx.com style.
-                  <br />
-                  4. Go Live Instantly — Everything's done-for-you.
-                  <br />
-                  5. Drive Players — Use your audience, ads, or affiliates.
-                  <br />
-                  6. Get Paid — Daily. Automatically. Forever.
-                </p>
+                <ol className="how-it-works-steps">
+                  <AnimateOnScroll delay={0.2}>
+                    <li>
+                      Connect Wallet — Takes 2 minutes. No KYC, no nonsense.
+                    </li>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.4}>
+                    <li>
+                      Pay One-Time $1,000 Setup — No subscriptions. No upsells.
+                    </li>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.6}>
+                    <li>Pick Your Portal Name — YourBrand.pvxpx.com style.</li>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.8}>
+                    <li>Go Live Instantly — Everything's done-for-you.</li>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={1.0}>
+                    <li>
+                      Drive Players — Use your audience, ads, or affiliates.
+                    </li>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={1.2}>
+                    <li>Get Paid — Daily. Automatically. Forever.</li>
+                  </AnimateOnScroll>
+                </ol>
 
-                <p className="how-it-works-footer bold" style={{textAlign:"center"}}>
+                <p
+                  className="how-it-works-footer bold"
+                  style={{ textAlign: "center" }}
+                >
                   You're not promoting a brand.
                   <br />
                   <strong>You're building your own.</strong>

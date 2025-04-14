@@ -29,31 +29,66 @@ const AdditionalInfo: React.FC = () => {
                 <p>
                   No fluff. Just your empire, ready to launch.
                   <br />
-                  🔹 <span className="bold">Your Own Gaming Portal</span> —
-                  Fully branded, fully yours.
-                  <br />
-                  🔹{" "}
-                  <span className="highlight bold">
-                    50% Rev Share on Token Sales
-                  </span>
-                  — During presale, you get half of every G Coin purchase.
-                  <br />
-                  🔹 <span className="bold">50% Rev Share on Game Fees</span>
-                  — Ongoing revenue every time your players play.
-                  <br />
-                  🔹{" "}
-                  <span className="highlight bold">
-                    No Tech Headaches — No devs.
-                  </span>
-                  <br />
-                  🔹 <span className="bold">No integrations.</span> Just plug &
-                  profit.
-                  <br />
-                  🔹 <span className="highlight bold">Instant Setup</span> —
-                  Your portal goes live in minutes. Literally.
-                  <br />
-                  🔹 <span className="bold">Automated Daily Payouts</span> —
-                  Earnings drop into your wallet every day at 12PM GMT.
+                  <AnimateOnScroll delay={0.2}>
+                    <div>
+                      <span style={{ color: "#d4af37" }}>◆</span>{" "}
+                      <span className="bold">Your Own Gaming Portal</span> —
+                      Fully branded, fully yours.
+                    </div>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.4}>
+                    <div>
+                      <span style={{ color: "#d4af37" }}>◆</span>{" "}
+                      <span className="highlight bold">
+                        50% Rev Share on Token Sales
+                      </span>
+                      — During presale, you get half of every G Coin purchase.
+                    </div>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.6}>
+                    <div>
+                      <span style={{ color: "#d4af37" }}>◆</span>{" "}
+                      <span className="bold">50% Rev Share on Game Fees</span>—
+                      Ongoing revenue every time your players play.
+                    </div>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={0.8}>
+                    <div>
+                      <span style={{ color: "#d4af37" }}>◆</span>{" "}
+                      <span className="highlight bold">
+                        No Tech Headaches — No devs.
+                      </span>
+                    </div>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={1.0}>
+                    <div>
+                      <span style={{ color: "#d4af37" }}>◆</span>{" "}
+                      <span className="highlight bold">
+                        No Tech Headaches — No devs.
+                      </span>
+                    </div>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={1.2}>
+                    <div>
+                      <span style={{ color: "#d4af37" }}>◆</span>{" "}
+                      <span className="bold">No integrations.</span> Just plug &
+                      profit.
+                    </div>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={1.4}>
+                    <div>
+                      <span style={{ color: "#d4af37" }}>◆</span>{" "}
+                      <span className="highlight bold">Instant Setup</span> —
+                      Your portal goes live in minutes. Literally.
+                    </div>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll delay={1.6}>
+                    <div>
+                      <span style={{ color: "#d4af37" }}>◆</span>{" "}
+                      <span className="bold">Automated Daily Payouts</span> —
+                      Earnings drop into your wallet every day at 12PM GMT.
+                    </div>
+                  </AnimateOnScroll>
                 </p>
               </div>
             </div>
@@ -68,7 +103,10 @@ const AdditionalInfo: React.FC = () => {
                 — no cap.
               </p>
             </div>
-            <p style={{ color: "#d4af37" }}>
+            <p
+              className="additional-info-example-text"
+              style={{ color: "#d4af37" }}
+            >
               Now, imagine if you had just 1,000 players in a year . . .
             </p>
           </div>

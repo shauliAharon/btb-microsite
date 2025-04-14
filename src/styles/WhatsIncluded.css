@@ -86,11 +86,11 @@
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .whats-included {
-    padding: 2rem 1rem;
+    padding: 0rem;
   }
 
   .whats-included-box {
-    padding: 1.5rem;
+    padding: 0rem;
   }
 
   .whats-included-title-text {
@@ -106,10 +106,39 @@
     margin-top: 4rem;
     height: 4rem;
   }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .mobile-image-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-image-container .whats-included-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: 769px) {
   .whats-included-flex-row {
     flex-direction: row;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
   }
 }

@@ -10,7 +10,6 @@
   font-weight: bold;
   text-align: left;
   color: #d4af37;
-  margin-bottom: 0;
 }
 
 .how-it-works-content {
@@ -42,8 +41,26 @@
   min-height: 22.875rem;
 }
 .how-it-works-steps {
+  list-style: none;
+  counter-reset: steps;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
   white-space: nowrap;
 }
+
+.how-it-works-steps li {
+  counter-increment: steps;
+  margin-bottom: 1rem;
+}
+
+.how-it-works-steps li::before {
+  content: counter(steps) ". ";
+  display: inline-block;
+  min-width: 1.5em;
+}
+
 .how-it-works-image-box {
   width: 100%;
   height: 100%;
@@ -67,7 +84,9 @@
 .bold {
   font-weight: bold;
 }
-
+.how-it-works-footer {
+  margin-top: 1rem;
+}
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .how-it-works {
@@ -102,8 +121,23 @@
   }
 
   .how-it-works-steps {
-    white-space: normal;
     font-size: 18px;
+    white-space: normal;
+  }
+
+  .how-it-works-steps li {
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+  }
+
+  .how-it-works-footer {
+    font-size: 18px;
+  }
+
+  .how-it-works-footer {
+    font-size: 18px;
+    line-height: 1.5;
+    white-space: nowrap;
   }
 }
 

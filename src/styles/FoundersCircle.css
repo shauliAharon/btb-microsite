@@ -73,6 +73,9 @@
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  .founders-circle {
+    padding-top: 2rem;
+  }
   .founders-content {
     padding-bottom: 12rem;
   }

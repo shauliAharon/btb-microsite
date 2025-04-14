@@ -32,6 +32,7 @@ export default function SignUpPage() {
         display: "flex",
         flexDirection: "column",
         gap: "4rem",
+        overflowX: "hidden",
       }}
     >
       <FoundersCircle />
