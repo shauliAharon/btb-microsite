@@ -29,10 +29,8 @@ export default function SignUpPage() {
       style={{
         width: "80vw",
         margin: "auto",
-        display: "flex",
-        flexDirection: "column",
-        gap: "4rem",
         overflowX: "hidden",
+        overflowY: "hidden",
       }}
     >
       <FoundersCircle />

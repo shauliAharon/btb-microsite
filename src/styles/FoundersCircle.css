@@ -1,8 +1,7 @@
 .founders-circle {
   max-width: 72rem;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* margin: 0 auto; */
+
 }
 
 .founders-title {
@@ -27,7 +26,7 @@
 .founders-content {
   position: relative;
   width: 100%;
-  padding: 1.25rem;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   background-color: #1a1a1a;
