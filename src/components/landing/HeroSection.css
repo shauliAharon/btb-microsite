@@ -1,10 +1,11 @@
 .hero-section {
-  /* min-height: 100vh; */
+  /* min-width: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
   /* margin-bottom: 12rem; */
 }
 .hero-icon {
@@ -16,9 +17,9 @@
 }
 .hero-content {
   text-align: center;
-  padding: 0 1rem;
+  /* padding: 0 1rem;
   max-width: 90vw;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 .hero-title {
@@ -122,10 +123,11 @@
 
   .hero-subtitle {
     font-size: 18px;
+    margin-bottom: 0.8rem;
   }
 
   .hero-text {
-    font-size: 18px;
+    font-size: 17px;
     white-space: nowrap;
   }
 

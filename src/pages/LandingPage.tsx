@@ -19,8 +19,13 @@ export default function LandingPage() {
 
   return (
     <div
-      className="space-y-16 md:space-y-32"
-      style={{ width: "80vw", margin: "auto", overflowX: "hidden",overflowY: "hidden" }}
+      className="space-y-16 0md:space-y-32"
+      style={{
+        width: "80vw",
+        margin: "auto",
+        overflowX: "hidden",
+        overflowY: "hidden",
+      }}
     >
       <HeroSection />
       <MissionSection onSignupClick={handleSignupClick} />

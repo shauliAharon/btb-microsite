@@ -98,7 +98,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="flex-1 bg-[#2a2b2f] text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-btb-gold"
+              className="flex-1 bg-[#2a2b2f] text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-btb-gold text-center"
               required
             />
             <button
